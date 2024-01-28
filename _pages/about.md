@@ -11,7 +11,7 @@ profile:
   more_info: >
     <p>BHEE 230</p>
     <p>465 Northwestern Ave</p>
-    <p>West Lafayette, IN 47907</p>
+    <p> West Lafayette, IN </p>
 
 news: true # includes a list of news items
 latest_posts: true # includes a list of the newest posts
