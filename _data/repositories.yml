@@ -2,10 +2,4 @@ github_users:
   - ben2002chou
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
   - ben2002chou/audioset-processing-fix
