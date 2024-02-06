@@ -2,96 +2,66 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Benjamin Shiue-Hal Chou
+    - name: Contact
+      value: Phone: 765-409-1859, Email: ben2002chou@gmail.com, LinkedIn: linkedin.com/in/benjamin-chou-6aa058228/, GitHub: github.com/ben2002chou
     - name: Languages
-      value: English, German
+      value: Native English, Native Chinese
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Master's in Electrical and Computer Engineering
+      institution: Purdue University, West Lafayette, IN
+      year: Aug. 2023 -- Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - GPA: 4.0/4.0
+        - Courses: Deep Learning Optimization, Reinforcement Learning, Deep Learning, Computer Communication Networks, Linear Algebra, Computational Models and Methods
+    - title: Bachelor of Science in Electrical Engineering
+      institution: National Cheng Kung University (NCKU Purdue 3+1+1 Program), Tainan, Taiwan
+      year: Sep. 2020 -- May 2023
       description:
-        - Description 1.
-        - Description 2.
+        - GPA: 4.0/4.3
+        - Finished 144 credit-hours of coursework in 3 years
+        - Awards: Outstanding Student Scholarship, Transnational Research Scholarship Grant, Tainan City Digital Governance Talent Award
+        - Class President for three years
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Graduate Research Assistant
+      institution: SERIS Lab under Prof. Yung-Hsiang Lu, Purdue University, West Lafayette, IN
+      year: Aug 2023 -- Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Developed an AI teaching model that helps reduces errors in musical performances
+        - Enhanced the efficacy of Vision Transformers through advanced self-supervised pretraining across multiple modalities
+        - Innovated a cross-dataset pretraining approach that elevates model robustness and transfer learning capabilities
+    - title: Startup Founder
+      institution: LocaLens, West Lafayette, IN
+      year: March 2023 -- Jan 2024
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Established a startup that built a travel app for menu translation, currency conversion, and allergen detection
+        - Managed a dynamic team to develop and refine the minimum viable product in 4 months
+        - Conducted weekly strategic meetings to drive product progress
+        - Developed apps with Android Studio, Flutter, and Google ML Toolkit
+    - title: Research Assistant
+      institution: Under Prof. Hsun-Ping Hsieh, National Cheng Kung University, Tainan, Taiwan
+      year: March 2023 -- Aug 2023
       description:
+        - Developed a model to identify and invite at-risk patients for cancer screenings
+        - Found root cause of manufacturing defects in flash chips using model ensembling and Gaussian process regression
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: Technical Skills
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Languages: Python, MATLAB, C++, C
+    - App and Web Dev: Flutter, Dart, React, React Native, Android Studio, Javascript, NextJs, Vue, SQLite
+    - Tools: Git, HPC (Apptainer, SLURM, PBS), WandB, Conda, Venv
+    - ML/Data Science: TensorFlow, PyTorch, Distributed Training, HuggingFace, NumPy, OpenCV, SKLearn, Dask
+
+- title: Additional Information
+  type: map
+  contents:
+    - name: Citizenship
+      value: USA
+
