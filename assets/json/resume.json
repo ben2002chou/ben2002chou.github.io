@@ -127,64 +127,61 @@
         "OpenCV",
         "SKLearn",
         "Dask"
-        ]
+      ]
     }
-    ],
-    "languages": [
+  ],
+  "languages": [
     {
-    "language": "English",
-    "fluency": "Native",
-    "icon": ""
-    },
-    {
-    "language": "Chinese",
-    "fluency": "Native",
-    "icon": ""
+      "language": "English",
+      "fluency": "Native",
+      "icon": ""
     }
-    ],
-    "projects": [
+  ],
+  "projects": [
     {
-    "name": "Cancer Screening Prediction Model",
-    "summary": "Developed a model that improved efficiency for cancer screenings by 83% by predicting at-risk patients using Python, XGBoost, LightGBM.",
-    "highlights": ["Improved cancer screening efficiency by 83%"],
-    "startDate": "",
-    "endDate": "",
-    "url": ""
+      "name": "Cancer Screening Prediction Model",
+      "summary": "Developed a model that improved efficiency for cancer screenings by 83% by predicting at-risk patients using Python, XGBoost, LightGBM.",
+      "highlights": ["Improved cancer screening efficiency by 83%"],
+      "startDate": "",
+      "endDate": "",
+      "url": ""
     },
     {
-    "name": "Winbond EQC Failure Analysis",
-    "summary": "Devised Gaussian Kernels for EQC failure tracing, enhancing accuracy with model ensemble using Scikit-Learn.",
-    "highlights": ["EQC failure tracing", "Accuracy enhancement with model ensemble"],
-    "startDate": "",
-    "endDate": "",
-    "url": ""
+      "name": "Winbond EQC Failure Analysis",
+      "summary": "Devised Gaussian Kernels for EQC failure tracing, enhancing accuracy with model ensemble using Scikit-Learn.",
+      "highlights": ["EQC failure tracing", "Accuracy enhancement with model ensemble"],
+      "startDate": "",
+      "endDate": "",
+      "url": ""
     },
     {
-    "name": "Multi-Agent Self-Play for Beating Atari Games",
-    "summary": "Analyzed efficacy of self-play in multi-agent games with Reinforcement Learning algorithms like DQN and PPO using OpenAI Gym, PettingZoo, Pytorch.",
-    "highlights": ["Efficacy analysis of self-play in multi-agent games"],
-    "startDate": "",
-    "endDate": "",
-    "url": ""
+      "name": "Multi-Agent Self-Play for Beating Atari Games",
+      "summary": "Analyzed efficacy of self-play in multi-agent games with Reinforcement Learning algorithms like DQN and PPO using OpenAI Gym, PettingZoo, Pytorch.",
+      "highlights": ["Efficacy analysis of self-play in multi-agent games"],
+      "startDate": "",
+      "endDate": "",
+      "url": ""
     },
     {
-    "name": "Waymo 2D Object Detection",
-    "summary": "Trained YOLOv8 with competition grade autonomous car dataset on M2 Max chip and achieved 0.64 AP using YOLOv8, Dask, gsutil, Metal Performance Shaders.",
-    "highlights": ["0.64 AP achievement on Waymo dataset"],
-    "startDate": "",
-    "endDate": "",
-    "url": ""
+      "name": "Waymo 2D Object Detection",
+      "summary": "Trained YOLOv8 with competition grade autonomous car dataset on M2 Max chip and achieved 0.64 AP using YOLOv8, Dask, gsutil, Metal Performance Shaders.",
+      "highlights": ["0.64 AP achievement on Waymo dataset"],
+      "startDate": "",
+      "endDate": "",
+      "url": ""
     },
     {
-    "name": "Spectral Image Inpainting with Deep Learning",
-    "summary": "Implemented a hybrid image reconstruction framework that outperformed competitors in speed and accuracy by fusing ADMM convex optimization with Adam optimizer using MATLAB.",
-    "highlights": ["Hybrid image reconstruction framework implementation"],
-    "startDate": "",
-    "endDate": "",
-    "url": ""
+      "name": "Spectral Image Inpainting with Deep Learning",
+      "summary": "Implemented a hybrid image reconstruction framework that outperformed competitors in speed and accuracy by fusing ADMM convex optimization with Adam optimizer using MATLAB.",
+      "highlights": ["Hybrid image reconstruction framework implementation"],
+      "startDate": "",
+      "endDate": "",
+      "url": ""
     }
-    ],
+  ],
   "additionalInformation": {
-  "Citizenship": "USA"
+    "Citizenship": "USA",
+    "Languages": "Native English, Native Chinese"
   }
 }
+
