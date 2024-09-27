@@ -1,97 +1,97 @@
-- title: General Information
-   type: map
-   contents:
-     - name: Full Name
-       value: Albert Einstein
-     - name: Date of Birth
-       value: 14th March 1879
-     - name: Languages
-       value: English, German
+# _data/cv.yml
 
- - title: Education
-   type: time_table
-   contents:
-     - title: PhD
-       institution: University of Zurich, Zurich, Switzerland
-       year: 1905
-       description:
-         - Description 1.
-         - Description 2.
-         - title: Description 3.
-           contents:
-             - Sub-description 1.
-             - Sub-description 2.
-     - title: Federal teaching diploma
-       institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-       year: 1900
-       description:
-         - Description 1.
-         - Description 2.
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D. in Electrical and Computer Engineering
+      institution: Purdue University
+      location: West Lafayette, IN
+      duration: "Jan. 2024 -- Present"
+      details:
+        - GPA: "4.0/4.0"
+        - Awards: "Semester Honors"
+        - Courses:
+            - "Machine Learning for Cloud Computing"
+            - "Deep Learning Optimization"
+            - "Reinforcement Learning"
+            - "Deep Learning"
+            - "Computer Communication Networks"
 
- - title: Experience
-   type: time_table
-   contents:
-     - title: Professor of Theoretical Physics
-       institution: Institute for Advanced Study, Princeton University
-       year: 1933 - 1955
-       description:
-         - Description 1.
-         - Description 2.
-         - title: Description 3.
-           contents:
-             - Sub-description 1.
-             - Sub-description 2.
-     - title: Visiting Professor
-       institution: California Institute of Technology, Pasadena, California, US
-       year: 1933
-       description:
-         - Description 1.
-         - Description 2.
+    - title: Bachelor of Science in Electrical Engineering
+      institution: National Cheng Kung University (NCKU Purdue 3+1+1 Program)
+      location: Tainan, Taiwan
+      duration: "Sep. 2020 -- May. 2023"
+      details:
+        - GPA: "4.0/4.3"
+        - Awards: "Outstanding Student Scholarship, Transnational Research Scholarship Grant, Tainan City Digital Governance Talent Award"
+        - Activities: "Class President for three years"
 
-     - title: Director
-       institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-       year: 1917-1933
+- title: Experience
+  type: time_table
+  contents:
+    - title: Graduate Research Assistant
+      institution: SERIS Lab under Dr. Yung-Hsiang Lu, Purdue University
+      location: West Lafayette, IN
+      duration: "Jan. 2024 -- Present"
+      details:
+        - "Developed a state-of-the-art AI tutoring model that detects music mistakes with 2 to 5 times higher accuracy across various mistake types."
+        - "Proposed a novel method that uses generative models to create synthetic music performances containing intentional mistakes, specifically for training systems that detect errors in music."
 
-     - title: Professor of Theoretical Physics
-       institution: Karl-Ferdinand University, Prague, Czechoslovakia
-       year: 1911 - 1917
-       description:
+    - title: Startup Founder
+      institution: LocaLens
+      location: West Lafayette, IN
+      duration: "Mar. 2023 -- Jan. 2024"
+      details:
+        - "Founded a startup delivering an app for menu translation, currency conversion, and allergen detection."
+        - "Led a team to build and launch a minimum viable product in just four months."
+        - "Orchestrated weekly strategic meetings, driving fast product iteration and team cohesion."
+        - "Built apps using Android Studio, Flutter, and Google ML Toolkit for cross-platform functionality."
 
-     - title: Associate Professor of Theoretical Physics
-       institution: University of Zurich, Zurich, Switzerland
-       year: 1909 - 1911
+    - title: Research Assistant
+      institution: Under Dr. Hsun-Ping Hsieh, National Cheng Kung University
+      location: Tainan, Taiwan
+      duration: "Mar. 2023 -- Aug. 2023"
+      details:
+        - "Developed a model to identify and invite at-risk patients for cancer screenings with 83% accuracy."
+        - "Found root causes of manufacturing defects in flash chips using model ensembling and Gaussian process regression."
 
- - title: Open Source Projects
-   type: time_table
-   contents:
-     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-       year: 2015-now
-       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+- title: Publications
+  type: publications
+  contents:
+    - status: "Under Review"
+      authors: ["B. Chou", "P. Jajal", "N. J. Eliopoulos", "T. Nadolsky", "C.-Y. Yang", "N. Ravi", "J. C. Davis", "K. Y.-J. Yun", "Y. Lu"]
+      title: "A Musician’s Muse: Detecting Performance Errors with Transformers"
+      venue: "Anonymous Submission"
 
- - title: Honors and Awards
-   type: time_table
-   contents:
-     - year: 1921
-       items:
-         - Nobel Prize in Physics
-         - Matteucci Medal
-     - year: 2029
-       items:
-         - Max Planck Medal
+    - authors: ["P. Jajal", "N. J. Eliopoulos", "B. Chou", "G. K. Thiravathukal", "J. C. Davis", "Y.-H. Lu"]
+      title: "Token Turing Machines are Efficient Vision Models"
+      venue: "arXiv preprint arXiv:2409.07613"
+      link: "https://arxiv.org/abs/2409.07613"
+      year: 2024
 
- - title: Academic Interests
-   type: nested_list
-   contents:
-     - title: Topic 1.
-       items:
-         - Description 1.
-         - Description 2.
-     - title: Topic 2.
-       items:
-         - Description 1.
-         - Description 2.
+- title: Projects
+  type: projects
+  contents:
+    - title: "Automatic Music Transcription | PyTorch Lightning, Tensorflow, Librosa"
+      details:
+        - "Implemented and trained an MT3 model with PyTorch, achieving a 94% F1 score on the MAESTRO dataset (Just 2% difference from original paper)."
 
- - title: Other Interests
-   type: list
-   contents:
-     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: "Multi-Agent Self-Play for Beating Atari Games | OpenAI Gym, PettingZoo, PyTorch"
+      details:
+        - "Analyzed the efficacy of self-play in multi-agent games using reinforcement learning algorithms like DQN and PPO."
+
+    - title: "Waymo 2D Object Detection | YOLOv8, Dask, gsutil, Metal Performance Shaders"
+      details:
+        - "Trained YOLOv8 on a competition-grade autonomous car dataset using an M2 Max chip, achieving a 0.64 mAP."
+
+    - title: "Spectral Image Inpainting with Deep Learning | MATLAB"
+      details:
+        - "Implemented a hybrid image reconstruction framework combining ADMM convex optimization and the Adam optimizer, achieving an RMSE of 0.02 on a hyperspectral image with a 97.87% miss rate."
+
+- title: Technical Skills
+  type: list
+  contents:
+    - "**Languages:** Python, MATLAB, C++, C"
+    - "**Machine Learning/Data Science:** TensorFlow, PyTorch, Distributed Training, HuggingFace, NumPy, OpenCV, scikit-learn, Dask, Librosa"
+    - "**Tools:** Git, HPC (SLURM, PBS), Weights and Biases, Conda, Venv"
+    - "**App and Web Development:** Flutter, Dart, React, React Native, Android Studio, JavaScript, Next.js, Vue.js, SQLite"
