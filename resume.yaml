@@ -1,0 +1,141 @@
+resume:
+  header:
+    name: "Benjamin Shiue-Hal Chou"
+    role: "PhD Student, Electrical & Computer Engineering"
+    contact: "765-409-1859 | ben2002chou@gmail.com | linkedin.com/in/benjamin-chou | github.com/ben2002chou"
+
+  professional_summary: |
+    I am a PhD student in Electrical & Computer Engineering at Purdue, seeking an AI/ML researcher internship.
+    I specialize in deep learning, audio processing, generative AI, transformers, HPC, and multimodal language models.
+    My expertise is in developing AI models for music and speech, with a focus on anomaly detection in the forms of human skill assessment and fake data detection.
+    I am also well-versed in classical ML, efficient computer vision, image diffusion models and have experience in startups, internships, and leadership roles.
+    My key skills include Python, C++, PyTorch, scikit-learn, HPC, classical ML, CV, NLP, audio machine learning, leadership, time management, and communication.
+
+  focus_areas:
+    - Deep learning
+    - Audio processing
+    - Generative AI
+    - Transformers
+    - High-performance computing
+    - Multimodal language models
+
+  expertise:
+    - AI models for music and speech
+    - Anomaly detection for human skill assessment
+    - Fake data detection and authenticity verification
+    - Classical machine learning and optimization
+    - Efficient computer vision systems
+    - Image diffusion models
+    - Startup leadership and cross-functional collaboration
+
+  skills:
+    - Python
+    - C++
+    - PyTorch
+    - scikit-learn
+    - High-performance computing
+    - Classical machine learning
+    - Computer vision
+    - Natural language processing
+    - Audio machine learning
+    - Leadership
+    - Time management
+    - Communication
+
+  education:
+    - degree: "Ph.D. in Electrical & Computer Engineering"
+      institution: "Purdue Univ."
+      location: "West Lafayette, IN"
+      date: "2023 -- Present"
+      gpa: "4.0/4.0"
+
+    - degree: "B.Sc. in Electrical Engineering"
+      institution: "National Cheng Kung University"
+      location: "Tainan, Taiwan"
+      date: "2020 -- 2023"
+      gpa: "4.0/4.3"
+      details:
+        - "Class President for three years"
+
+  work_experience:
+    - title: "Applied Research Scientist Intern"
+      organization: "Reality Defender"
+      location: "Manhattan, New York"
+      date: "May '25 – Sep '25"
+      bullet_points:
+        - "Developed an in-context learning framework with large audio language models (Audio Flamingo 3 and Gemini) for robust deepfake detection. Our framework achieved SOTA detection accuracy on in-the-wild speech (+54.9% avg Macro F1 improvement) **(RAG, ICL, OOD detection)**."
+
+    - title: "Graduate Research Assistant"
+      organization: "Under Dr. Yung-Hsiang Lu, Purdue University"
+      location: "West Lafayette, IN"
+      date: "Jan '24 – Present"
+      bullet_points:
+        - "Developed an AI tutoring model with 6× higher F1 than prior work, accepted to AAAI **(PyTorch, NLP, Audio Transformers, HPC, HuggingFace, research, writing)**."
+        - "Created generative pipelines for music mistakes, boosting detection **(GenAI, HPC, Linux)**."
+        - "Organized 'AI for Music' Workshops at AAAI 2025 & IEEE ICME 2025 & NeurIPS 2025; meta-reviewed 25 papers for the AAAI Workshop **(leadership, communication)**."
+
+    - title: "Startup Founder"
+      organization: "LocaLens"
+      location: "West Lafayette, IN"
+      date: "Mar '23 – Jan '24"
+      bullet_points:
+        - "Launched an app for menu translation, currency conversion, and allergen alerts **(Flutter, Android Studio)**."
+        - "Built an MVP in 4 months with weekly sprints **(time management, leadership, collaboration)**."
+        - "Integrated Google ML Toolkit for cross-platform AI **(computer vision, optimization)**."
+
+    - title: "Research Assistant"
+      organization: "Under Dr. Hsun-Ping Hsieh, National Cheng Kung University"
+      location: "Taiwan"
+      date: "Mar '23 – Aug 2023"
+      bullet_points:
+        - "Raised cancer-screening invitations to 83% accuracy **(scikit-learn, tree-based classification)**."
+        - "Elevated flash-chip yield by 17% with ensembling and Gaussian processes **(classical ML)**."
+
+  projects:
+    - title: "*Improving Developer Code Understanding with GitHub Issues and Retrieval-Augmented Generation*"
+      skills: "**ChatGPT API, REST, Git, GitHub API**"
+      bullet_points:
+        - "Built a RAG-based doc tool with GitHub issues; raised README clarity by 116% and code clarity by 16%."
+
+    - title: "*Multi-Agent Self-Play for Beating Atari Games*"
+      skills: "**OpenAI Gym, PettingZoo, PyTorch, RL, Multi-agent systems**"
+      bullet_points:
+        - "Used DQN/PPO self-play to boost Atari win rates by 11–32%."
+
+  honors_awards:
+    - "Outstanding Student Scholarship, top 2 in NCKU-Purdue program (2020–2023)"
+    - "AAAI Student Scholarship (2025)"
+
+  publications:
+    - authors: "**B. Chou**, Y. Zhu, S. Koppisetti"
+      title: "ICLAD: In-Context Learning with Comparison-Guidance for Audio Deepfake Detection"
+      venue: "Under Submission"
+      link:
+
+    - authors: "**B. Chou**, P. Jajal, N. J. Eliopoulos, J. C. Davis, G. K. Thiravathukal, K. Y.-J. Yun, Y.-H. Lu"
+      title: "LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection"
+      venue: "Under Submission"
+      link: "https://arxiv.org/abs/2510.08580"
+
+    - authors: "O. Chaturvedi, K. Bhardwaj, T. Gondil, **B. Chou**, Y. Yan, K. Y.-J. Yun, Y.-H. Lu"
+      title: "Advancing Multi-Instrument Music Transcription: Results from the 2025 AMT Challenge"
+      venue: "NeurIPS 2025 Workshop on AI for Music"
+      link: "https://openreview.net/forum?id=NG187AZ71W&referrer=%5BAuthor+Console%5D%28%2Fgroup%3Fid%3DNeurIPS.cc%2F2025%2FWorkshop%2FAI4Music%2FAuthors%23your-submissions%29"
+
+    - authors: "P. Jajal, N. J. Eliopoulos, **B. Chou**, G. K. Thiravathukal, J. C. Davis, Y. Lu"
+      title: "Inference-Time Alignment of Diffusion Models with Evolutionary Algorithms"
+      venue: "Under Submission"
+      link: "https://arxiv.org/abs/2506.00299"
+
+    - authors: "**B. Chou**, P. Jajal, N. J. Eliopoulos, T. Nadolsky, C.-Y. Yang, N. Ravi, J. C. Davis, K. Y.-J. Yun, Y. Lu"
+      title: "A Musician’s Muse: Detecting Performance Errors with Transformers"
+      venue: "Accepted to AAAI 2025"
+      link: "https://arxiv.org/pdf/2501.02030"
+
+    - authors: "P. Jajal, N. J. Eliopoulos, **B. Chou**, G. K. Thiravathukal, J. C. Davis, Y.-H. Lu"
+      title: "Token Turing Machines are Efficient Vision Models"
+      venue: "WACV 2025"
+      link: "https://arxiv.org/abs/2409.07613"
+
+  patent:
+    - "System and Method for Detecting Musical Performance Errors, Provisional Patent Application 2024."
