@@ -1,46 +1,14 @@
 resume:
   header:
     name: "Benjamin Shiue-Hal Chou"
-    role: "PhD Student, Electrical & Computer Engineering"
     contact: "765-409-1859 | ben2002chou@gmail.com | linkedin.com/in/benjamin-chou | github.com/ben2002chou"
 
-  professional_summary: |
+  professional_summary: >
     I am a PhD student in Electrical & Computer Engineering at Purdue, seeking an AI/ML researcher internship.
     I specialize in deep learning, audio processing, generative AI, transformers, HPC, and multimodal language models.
     My expertise is in developing AI models for music and speech, with a focus on anomaly detection in the forms of human skill assessment and fake data detection.
     I am also well-versed in classical ML, efficient computer vision, image diffusion models and have experience in startups, internships, and leadership roles.
     My key skills include Python, C++, PyTorch, scikit-learn, HPC, classical ML, CV, NLP, audio machine learning, leadership, time management, and communication.
-
-  focus_areas:
-    - Deep learning
-    - Audio processing
-    - Generative AI
-    - Transformers
-    - High-performance computing
-    - Multimodal language models
-
-  expertise:
-    - AI models for music and speech
-    - Anomaly detection for human skill assessment
-    - Fake data detection and authenticity verification
-    - Classical machine learning and optimization
-    - Efficient computer vision systems
-    - Image diffusion models
-    - Startup leadership and cross-functional collaboration
-
-  skills:
-    - Python
-    - C++
-    - PyTorch
-    - scikit-learn
-    - High-performance computing
-    - Classical machine learning
-    - Computer vision
-    - Natural language processing
-    - Audio machine learning
-    - Leadership
-    - Time management
-    - Communication
 
   education:
     - degree: "Ph.D. in Electrical & Computer Engineering"
