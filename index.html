@@ -16,263 +16,115 @@
             <div class="sidebar__brand">
                 <img src="source/me.jpg" alt="Benjamin Shiue-Hal Chou" class="sidebar__photo">
                 <div>
-                    <h1 class="sidebar__name">Benjamin Shiue-Hal Chou</h1>
-                    <p class="sidebar__role">Ph.D. Student · Purdue University</p>
+                    <h1 class="sidebar__name" data-name></h1>
+                    <p class="sidebar__role" data-role></p>
                 </div>
             </div>
             <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
                 <span class="theme-toggle__icon" aria-hidden="true"></span>
                 <span class="theme-toggle__label">Switch to dark mode</span>
             </button>
-            <nav class="sidebar__nav" data-nav>
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#news">News</a>
-                <a href="#services">Academic Service</a>
-                <a href="#publications">Publications</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <div class="sidebar__contact">
-                <a href="mailto:ben2002chou@gmail.com"><i class="fas fa-envelope"></i><span>Email</span></a>
-                <a href="https://github.com/ben2002chou" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>GitHub</span></a>
-                <a href="https://linkedin.com/in/benjamin-chou-6aa058228" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
-            </div>
+            <nav class="sidebar__nav" data-nav></nav>
+            <div class="sidebar__contact" data-sidebar-contact></div>
         </aside>
         <main class="content" id="top">
-            <section class="hero">
-                <div class="hero__badge">AI · Music · Generative Modeling</div>
-                <h2 class="hero__title">Designing intelligent systems for expressive music performance.</h2>
-                <p class="hero__lead">
-                    I build AI-powered tools that enhance the way musicians learn, practice, and perform. My research explores
-                    performance error detection, intelligent tutoring, and synthetic data generation for resilient machine
-                    learning systems.
-                </p>
-                <div class="hero__quick-stats">
-                    <div>
-                        <span class="stat__label">Advisor</span>
-                        <span class="stat__value">Dr. Yung-Hsiang Lu</span>
+            <section class="hero" id="overview">
+                <div class="hero__grid">
+                    <div class="hero__content">
+                        <span class="hero__badge" data-hero-badge></span>
+                        <h2 class="hero__title" data-hero-title></h2>
+                        <div class="hero__lead" data-hero-lead></div>
+                        <div class="hero__actions" data-hero-actions></div>
+                        <dl class="hero__stats" data-hero-stats></dl>
                     </div>
-                    <div>
-                        <span class="stat__label">Research Lab</span>
-                        <span class="stat__value">School of ECE, Purdue University</span>
-                    </div>
-                    <div>
-                        <span class="stat__label">Recent Publication</span>
-                        <span class="stat__value">Music Error Detection with Transformers (AAAI 2025)</span>
-                    </div>
+                    <div class="hero__panels" data-hero-panels></div>
                 </div>
             </section>
 
             <section id="about" class="section">
                 <header class="section__header">
-                    <span class="section__eyebrow">Profile</span>
-                    <h2>About</h2>
+                    <span class="section__eyebrow" data-section-eyebrow="about"></span>
+                    <h2 data-section-title="about"></h2>
                 </header>
-                <div class="section__body">
-                    <p>
-                        I am a researcher focused on building AI-powered tools that improve the way people learn and perform
-                        music. My current projects span music performance error detection, intelligent tutoring systems, and
-                        the design of synthetic datasets for robust model training. I am passionate about creating practical
-                        systems that bring advanced machine learning into everyday creative practice.
-                    </p>
+                <div class="about__grid">
+                    <div class="about__summary" data-about-summary></div>
+                    <div class="about__details" data-about-details></div>
                 </div>
             </section>
 
             <section id="education" class="section">
                 <header class="section__header">
-                    <span class="section__eyebrow">Academic Path</span>
-                    <h2>Education</h2>
+                    <span class="section__eyebrow" data-section-eyebrow="education"></span>
+                    <h2 data-section-title="education"></h2>
                 </header>
-                <div class="timeline">
-                    <article class="timeline__item">
-                        <div class="timeline__dot" aria-hidden="true"></div>
-                        <div class="timeline__content">
-                            <h3>Ph.D. in Electrical and Computer Engineering</h3>
-                            <p class="timeline__meta">Purdue University · Jan 2024 – Present</p>
-                            <p>GPA: 4.0/4.0 · Semester Honors</p>
-                            <ul>
-                                <li>Machine Learning for Cloud Computing</li>
-                                <li>Deep Learning Optimization</li>
-                                <li>Reinforcement Learning</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="timeline__item">
-                        <div class="timeline__dot" aria-hidden="true"></div>
-                        <div class="timeline__content">
-                            <h3>B.Sc. in Electrical Engineering</h3>
-                            <p class="timeline__meta">National Cheng Kung University · Sep 2020 – May 2023</p>
-                            <p>Graduated with a GPA of 4.0/4.3 · Class President (2020–2023)</p>
-                        </div>
-                    </article>
-                </div>
+                <div class="timeline" data-education></div>
             </section>
 
             <section id="experience" class="section">
                 <header class="section__header">
-                    <span class="section__eyebrow">Leadership & Research</span>
-                    <h2>Experience</h2>
+                    <span class="section__eyebrow" data-section-eyebrow="experience"></span>
+                    <h2 data-section-title="experience"></h2>
                 </header>
-                <div class="timeline">
-                    <article class="timeline__item">
-                        <div class="timeline__dot" aria-hidden="true"></div>
-                        <div class="timeline__content">
-                            <h3>Graduate Research Assistant</h3>
-                            <p class="timeline__meta">Purdue University · Jan 2024 – Present</p>
-                            <ul>
-                                <li>Designed an AI tutoring model for music performance error detection, improving F1 score by 2–6× over baseline.</li>
-                                <li>Developed synthetic music performance datasets to accelerate model training.</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="timeline__item">
-                        <div class="timeline__dot" aria-hidden="true"></div>
-                        <div class="timeline__content">
-                            <h3>Founder</h3>
-                            <p class="timeline__meta">LocaLens · Mar 2023 – Jan 2024</p>
-                            <ul>
-                                <li>Built a mobile app for menu translation, allergen detection, and currency conversion.</li>
-                                <li>Delivered an MVP within four months for public testing.</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section id="news" class="section">
-                <header class="section__header">
-                    <span class="section__eyebrow">Highlights</span>
-                    <h2>Recent News</h2>
-                </header>
-                <ul class="cards">
-                    <li class="card">
-                        <span class="card__date">Jan 2025</span>
-                        <p>Our paper on transformer-based error detection in music performance was accepted to AAAI 2025.</p>
-                    </li>
-                    <li class="card">
-                        <span class="card__date">Nov 2024</span>
-                        <p>Presented a workshop on generative AI for expressive performance at Purdue ECE.</p>
-                    </li>
-                    <li class="card">
-                        <span class="card__date">Aug 2024</span>
-                        <p>Named lead instructor for Purdue's graduate seminar on human-centered machine learning.</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section id="services" class="section">
-                <header class="section__header">
-                    <span class="section__eyebrow">Community</span>
-                    <h2>Academic Service</h2>
-                </header>
-                <ul class="chips">
-                    <li>Program Committee · ISMIR 2024</li>
-                    <li>Reviewer · NeurIPS Music & Audio Workshop 2024</li>
-                    <li>Session Chair · Purdue Graduate Research Symposium 2024</li>
-                </ul>
-            </section>
-
-            <section id="publications" class="section">
-                <header class="section__header">
-                    <span class="section__eyebrow">Selected Work</span>
-                    <h2>Publications</h2>
-                </header>
-                <ol class="publication-list">
-                    <li>
-                        <span class="pub-title">Detecting Music Performance Errors with Transformers</span>
-                        <span class="pub-meta">AAAI 2025 · Benjamin S.-H. Chou, Jane Doe, Yung-Hsiang Lu</span>
-                    </li>
-                    <li>
-                        <span class="pub-title">Learning Expressive Piano Performance from Imperfect Practice</span>
-                        <span class="pub-meta">ISMIR 2024 · Benjamin S.-H. Chou, Alex Kim</span>
-                    </li>
-                    <li>
-                        <span class="pub-title">Synthesizing Feedback for Music Students using RLHF</span>
-                        <span class="pub-meta">Workshop on Human-in-the-Loop ML 2024 · Benjamin S.-H. Chou</span>
-                    </li>
-                </ol>
+                <div class="timeline" data-experience></div>
             </section>
 
             <section id="projects" class="section">
                 <header class="section__header">
-                    <span class="section__eyebrow">Hands-on</span>
-                    <h2>Projects</h2>
+                    <span class="section__eyebrow" data-section-eyebrow="projects"></span>
+                    <h2 data-section-title="projects"></h2>
                 </header>
-                <ul class="cards">
-                    <li class="card">
-                        <h3>Virtuoso Coach</h3>
-                        <p>An AI-driven coach that listens to practice sessions and offers real-time performance guidance.</p>
-                    </li>
-                    <li class="card">
-                        <h3>PracticeRooms</h3>
-                        <p>A web platform for collaborative score annotation and asynchronous feedback exchange.</p>
-                    </li>
-                    <li class="card">
-                        <h3>LocaLens</h3>
-                        <p>Mobile app delivering on-device translation, allergen detection, and currency conversion for travelers.</p>
-                    </li>
-                </ul>
+                <ul class="cards" data-projects></ul>
             </section>
 
             <section id="skills" class="section">
                 <header class="section__header">
-                    <span class="section__eyebrow">Toolkit</span>
-                    <h2>Skills</h2>
+                    <span class="section__eyebrow" data-section-eyebrow="skills"></span>
+                    <h2 data-section-title="skills"></h2>
                 </header>
-                <div class="skills-grid">
-                    <div>
-                        <h3>Technical</h3>
-                        <ul class="chip-list">
-                            <li>Python</li>
-                            <li>PyTorch</li>
-                            <li>TensorFlow</li>
-                            <li>Docker</li>
-                            <li>GCP</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Research</h3>
-                        <ul class="chip-list">
-                            <li>Music Information Retrieval</li>
-                            <li>Generative Modeling</li>
-                            <li>Reinforcement Learning</li>
-                            <li>Human-Centered AI</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Creative</h3>
-                        <ul class="chip-list">
-                            <li>Piano Performance</li>
-                            <li>Composition</li>
-                            <li>Audio Engineering</li>
-                        </ul>
-                    </div>
-                </div>
+                <div class="skills-grid" data-skills></div>
+            </section>
+
+            <section id="honors" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow" data-section-eyebrow="honors"></span>
+                    <h2 data-section-title="honors"></h2>
+                </header>
+                <ul class="chip-list" data-honors></ul>
+            </section>
+
+            <section id="publications" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow" data-section-eyebrow="publications"></span>
+                    <h2 data-section-title="publications"></h2>
+                </header>
+                <ol class="publication-list" data-publications></ol>
+            </section>
+
+            <section id="patents" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow" data-section-eyebrow="patents"></span>
+                    <h2 data-section-title="patents"></h2>
+                </header>
+                <ul class="cards" data-patents></ul>
             </section>
 
             <section id="contact" class="section section--accent">
                 <header class="section__header">
-                    <span class="section__eyebrow">Let's Collaborate</span>
-                    <h2>Contact</h2>
+                    <span class="section__eyebrow" data-section-eyebrow="contact"></span>
+                    <h2 data-section-title="contact"></h2>
                 </header>
                 <div class="contact-card">
-                    <p>I'm always interested in collaborations on AI for music, creative learning tools, and human-centered ML research.</p>
-                    <div class="contact-card__actions">
-                        <a class="button primary" href="mailto:ben2002chou@gmail.com"><i class="fas fa-envelope"></i>Email</a>
-                        <a class="button" href="https://github.com/ben2002chou" target="_blank" rel="noopener"><i class="fab fa-github"></i>GitHub</a>
-                        <a class="button" href="https://linkedin.com/in/benjamin-chou-6aa058228" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i>LinkedIn</a>
-                    </div>
+                    <div class="contact-card__body" data-contact-body></div>
+                    <div class="contact-card__actions" data-contact-actions></div>
                 </div>
             </section>
 
             <footer class="footer">
-                <p>&copy; <span id="year"></span> Benjamin Shiue-Hal Chou. All rights reserved.</p>
+                <p>&copy; <span id="year"></span> <span data-footer-name></span>. All rights reserved.</p>
             </footer>
         </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
     <script>
         (function () {
             const root = document.documentElement;
@@ -318,14 +170,94 @@
                 prefersDark.addListener(handlePreferenceChange);
             }
 
-            const nav = document.querySelector('[data-nav]');
-            const navLinks = nav ? Array.from(nav.querySelectorAll('a')) : [];
-            const sections = navLinks
-                .map((link) => document.querySelector(link.getAttribute('href')))
-                .filter(Boolean);
 
-            if (sections.length && navLinks.length) {
-                const observer = new IntersectionObserver(
+            const nav = document.querySelector('[data-nav]');
+            let navLinks = [];
+            let intersectionObserver;
+
+            const formatMarkdown = (text = '') => {
+                if (!text) return '';
+                return text
+                    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\*(.+?)\*/g, '<em>$1</em>');
+            };
+
+            const toParagraphs = (text = '') => {
+                return text
+                    .split(/\n+/)
+                    .map((line) => line.trim())
+                    .filter(Boolean);
+            };
+
+            const toggleElement = (element, hasContent) => {
+                if (!element) return;
+                element.style.display = hasContent ? '' : 'none';
+            };
+
+            const toggleSection = (sectionId, hasContent) => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.style.display = hasContent ? '' : 'none';
+                }
+            };
+
+            const parseContact = (contactStr = '') => {
+                return contactStr
+                    .split('|')
+                    .map((entry) => entry.trim())
+                    .filter(Boolean)
+                    .map((entry) => {
+                        const lower = entry.toLowerCase();
+                        if (lower.includes('@')) {
+                            return { type: 'email', label: entry, href: `mailto:${entry}` };
+                        }
+                        if (lower.includes('linkedin')) {
+                            const url = entry.startsWith('http') ? entry : `https://${entry}`;
+                            return { type: 'linkedin', label: 'LinkedIn', href: url };
+                        }
+                        if (lower.includes('github')) {
+                            const url = entry.startsWith('http') ? entry : `https://${entry}`;
+                            return { type: 'github', label: 'GitHub', href: url };
+                        }
+                        const digits = entry.replace(/[^0-9]/g, '');
+                        if (digits.length >= 7) {
+                            return { type: 'phone', label: entry, href: `tel:${digits}` };
+                        }
+                        const url = entry.startsWith('http') ? entry : `https://${entry}`;
+                        return { type: 'link', label: entry, href: url };
+                    });
+            };
+
+            const createStat = (term, description) => {
+                if (!term || !description) return null;
+                const wrapper = document.createElement('div');
+                wrapper.className = 'hero__stat';
+                const dt = document.createElement('dt');
+                dt.textContent = term;
+                const dd = document.createElement('dd');
+                dd.textContent = description;
+                wrapper.append(dt, dd);
+                return wrapper;
+            };
+
+            const populateNav = (items) => {
+                if (!nav) return;
+                nav.innerHTML = '';
+                navLinks = items.map((item) => {
+                    const link = document.createElement('a');
+                    link.href = `#${item.id}`;
+                    link.textContent = item.label;
+                    nav.appendChild(link);
+                    return link;
+                });
+                if (intersectionObserver) {
+                    intersectionObserver.disconnect();
+                }
+                const sections = navLinks
+                    .map((link) => document.querySelector(link.getAttribute('href')))
+                    .filter(Boolean);
+                if (!sections.length) return;
+                intersectionObserver = new IntersectionObserver(
                     (entries) => {
                         entries.forEach((entry) => {
                             const id = entry.target.getAttribute('id');
@@ -338,8 +270,606 @@
                     },
                     { rootMargin: '-50% 0px -45% 0px', threshold: 0.1 }
                 );
-                sections.forEach((section) => observer.observe(section));
-            }
+                sections.forEach((section) => intersectionObserver.observe(section));
+            };
+
+            const populateResume = (resume) => {
+                if (!resume) return;
+                const {
+                    section_labels: sectionLabels = {},
+                    header = {},
+                    professional_summary = '',
+                    focus_areas = [],
+                    expertise = [],
+                    skills: skillList = [],
+                    education = [],
+                    work_experience = [],
+                    projects = [],
+                    honors_awards = [],
+                    publications = [],
+                    patent = []
+                } = resume;
+
+                const summaryParagraphs = toParagraphs(professional_summary);
+                const setSectionHeader = (key) => {
+                    const eyebrowEl = document.querySelector(`[data-section-eyebrow="${key}"]`);
+                    const titleEl = document.querySelector(`[data-section-title="${key}"]`);
+                    const config = sectionLabels[key] || {};
+                    if (eyebrowEl) {
+                        const text = (config.eyebrow || '').trim();
+                        eyebrowEl.textContent = text;
+                        toggleElement(eyebrowEl, Boolean(text));
+                    }
+                    if (titleEl) {
+                        const text = (config.title || '').trim();
+                        titleEl.textContent = text;
+                        toggleElement(titleEl, Boolean(text));
+                    }
+                };
+                const getNavLabel = (key) => {
+                    return (sectionLabels[key]?.nav || '').trim();
+                };
+                const humanizeKey = (key = '') =>
+                    key
+                        .split(/[_-]+/)
+                        .filter(Boolean)
+                        .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+                        .join(' ');
+                const resolveLabel = (group, key) => {
+                    const value = group && typeof group[key] === 'string' ? group[key].trim() : '';
+                    return value || humanizeKey(key);
+                };
+
+                ['about', 'education', 'experience', 'projects', 'skills', 'honors', 'publications', 'patents', 'contact'].forEach(
+                    setSectionHeader
+                );
+
+                const nameEl = document.querySelector('[data-name]');
+                const roleEl = document.querySelector('[data-role]');
+                const heroBadgeEl = document.querySelector('[data-hero-badge]');
+                const heroTitleEl = document.querySelector('[data-hero-title]');
+                const heroLeadEl = document.querySelector('[data-hero-lead]');
+                const heroActionsEl = document.querySelector('[data-hero-actions]');
+                const heroStatsEl = document.querySelector('[data-hero-stats]');
+                const heroPanelsEl = document.querySelector('[data-hero-panels]');
+                const heroPanelLabels = sectionLabels.overview?.hero_panels || {};
+                const heroStatLabels = sectionLabels.overview?.stats || {};
+                const aboutSummaryEl = document.querySelector('[data-about-summary]');
+                const aboutDetailsEl = document.querySelector('[data-about-details]');
+                const aboutCardLabels = sectionLabels.about?.cards || {};
+                const educationEl = document.querySelector('[data-education]');
+                const experienceEl = document.querySelector('[data-experience]');
+                const projectsEl = document.querySelector('[data-projects]');
+                const skillsEl = document.querySelector('[data-skills]');
+                const honorsEl = document.querySelector('[data-honors]');
+                const publicationsEl = document.querySelector('[data-publications]');
+                const patentsEl = document.querySelector('[data-patents]');
+                const sidebarContactEl = document.querySelector('[data-sidebar-contact]');
+                const contactBodyEl = document.querySelector('[data-contact-body]');
+                const contactActionsEl = document.querySelector('[data-contact-actions]');
+                const footerNameEl = document.querySelector('[data-footer-name]');
+
+                if (nameEl) {
+                    nameEl.textContent = header.name || '';
+                }
+                if (footerNameEl) {
+                    footerNameEl.textContent = header.name || '';
+                }
+
+                if (roleEl) {
+                    const roleText = header.role || '';
+                    roleEl.textContent = roleText;
+                    toggleElement(roleEl, Boolean(roleText));
+                }
+
+                const heroBadgeText = focus_areas.length ? focus_areas.slice(0, 3).join(' · ') : '';
+                if (heroBadgeEl) {
+                    heroBadgeEl.textContent = heroBadgeText;
+                    toggleElement(heroBadgeEl, Boolean(heroBadgeText));
+                }
+
+                if (heroTitleEl) {
+                    heroTitleEl.textContent = header.name || '';
+                }
+
+                if (heroLeadEl) {
+                    heroLeadEl.innerHTML = '';
+                    summaryParagraphs.slice(0, 2).forEach((paragraph) => {
+                        const p = document.createElement('p');
+                        p.textContent = paragraph;
+                        heroLeadEl.appendChild(p);
+                    });
+                    toggleElement(heroLeadEl, Boolean(heroLeadEl.children.length));
+                }
+
+                const contacts = parseContact(header.contact || '');
+                if (heroActionsEl) {
+                    heroActionsEl.innerHTML = '';
+                    contacts
+                        .filter((item) => ['email', 'linkedin', 'github'].includes(item.type))
+                        .slice(0, 2)
+                        .forEach((item, index) => {
+                            const link = document.createElement('a');
+                            link.className = `button${index === 0 ? ' primary' : ''}`;
+                            link.href = item.href;
+                            if (item.type !== 'email') {
+                                link.target = '_blank';
+                                link.rel = 'noopener';
+                            }
+                            link.textContent = item.type === 'email' ? 'Email me' : `View ${item.label}`;
+                            heroActionsEl.appendChild(link);
+                        });
+                    toggleElement(heroActionsEl, Boolean(heroActionsEl.children.length));
+                }
+
+                if (heroStatsEl) {
+                    heroStatsEl.innerHTML = '';
+                    const stats = [
+                        header.role ? createStat(resolveLabel(heroStatLabels, 'role'), header.role) : null,
+                        education[0]
+                            ? createStat(
+                                  resolveLabel(heroStatLabels, 'education'),
+                                  `${education[0].degree || ''}${
+                                      education[0].institution ? ` · ${education[0].institution}` : ''
+                                  }`
+                              )
+                            : null,
+                        focus_areas.length
+                            ? createStat(
+                                  resolveLabel(heroStatLabels, 'focus_areas'),
+                                  focus_areas.slice(0, 2).join(', ')
+                              )
+                            : null,
+                        publications.length
+                            ? createStat(
+                                  resolveLabel(heroStatLabels, 'publications'),
+                                  `${publications.length} listed`
+                              )
+                            : null,
+                        honors_awards.length
+                            ? createStat(resolveLabel(heroStatLabels, 'honors'), `${honors_awards.length} awards`)
+                            : null
+                    ].filter(Boolean);
+
+                    stats.forEach((stat) => heroStatsEl.appendChild(stat));
+                    toggleElement(heroStatsEl, Boolean(heroStatsEl.children.length));
+                }
+
+                if (heroPanelsEl) {
+                    heroPanelsEl.innerHTML = '';
+                    if (focus_areas.length) {
+                        const focusCard = document.createElement('article');
+                        focusCard.className = 'hero-card';
+                        const title = document.createElement('h3');
+                        title.textContent = resolveLabel(heroPanelLabels, 'focus_areas');
+                        const list = document.createElement('ul');
+                        focus_areas.slice(0, 6).forEach((item) => {
+                            const li = document.createElement('li');
+                            li.textContent = item;
+                            list.appendChild(li);
+                        });
+                        focusCard.append(title, list);
+                        heroPanelsEl.appendChild(focusCard);
+                    }
+
+                    if (expertise.length) {
+                        const expertiseCard = document.createElement('article');
+                        expertiseCard.className = 'hero-card hero-card--accent';
+                        const title = document.createElement('h3');
+                        title.textContent = resolveLabel(heroPanelLabels, 'expertise');
+                        const list = document.createElement('ul');
+                        expertise.slice(0, 6).forEach((item) => {
+                            const li = document.createElement('li');
+                            li.textContent = item;
+                            list.appendChild(li);
+                        });
+                        expertiseCard.append(title, list);
+                        heroPanelsEl.appendChild(expertiseCard);
+                    }
+
+                    if (skillList.length) {
+                        const skillsCard = document.createElement('article');
+                        skillsCard.className = 'hero-card';
+                        const title = document.createElement('h3');
+                        title.textContent = resolveLabel(heroPanelLabels, 'skills');
+                        const list = document.createElement('ul');
+                        skillList.slice(0, 6).forEach((item) => {
+                            const li = document.createElement('li');
+                            li.textContent = item;
+                            list.appendChild(li);
+                        });
+                        skillsCard.append(title, list);
+                        heroPanelsEl.appendChild(skillsCard);
+                    }
+
+                    toggleElement(heroPanelsEl, Boolean(heroPanelsEl.children.length));
+                }
+
+                if (aboutSummaryEl) {
+                    aboutSummaryEl.innerHTML = '';
+                    summaryParagraphs.forEach((paragraph) => {
+                        const p = document.createElement('p');
+                        p.textContent = paragraph;
+                        aboutSummaryEl.appendChild(p);
+                    });
+                }
+
+                if (aboutDetailsEl) {
+                    aboutDetailsEl.innerHTML = '';
+                    if (expertise.length) {
+                        const expertiseCard = document.createElement('article');
+                        expertiseCard.className = 'about-card';
+                        const title = document.createElement('h3');
+                        title.textContent = resolveLabel(aboutCardLabels, 'expertise');
+                        const list = document.createElement('ul');
+                        list.className = 'about-card__list';
+                        expertise.forEach((item) => {
+                            const li = document.createElement('li');
+                            li.textContent = item;
+                            list.appendChild(li);
+                        });
+                        expertiseCard.append(title, list);
+                        aboutDetailsEl.appendChild(expertiseCard);
+                    }
+
+                    if (focus_areas.length) {
+                        const focusCard = document.createElement('article');
+                        focusCard.className = 'about-card';
+                        const title = document.createElement('h3');
+                        title.textContent = resolveLabel(aboutCardLabels, 'focus_areas');
+                        const list = document.createElement('ul');
+                        list.className = 'about-card__list';
+                        focus_areas.forEach((item) => {
+                            const li = document.createElement('li');
+                            li.textContent = item;
+                            list.appendChild(li);
+                        });
+                        focusCard.append(title, list);
+                        aboutDetailsEl.appendChild(focusCard);
+                    }
+
+                    if (skillList.length) {
+                        const skillsCard = document.createElement('article');
+                        skillsCard.className = 'about-card';
+                        const title = document.createElement('h3');
+                        title.textContent = resolveLabel(aboutCardLabels, 'skills');
+                        const list = document.createElement('ul');
+                        list.className = 'about-card__list';
+                        skillList.forEach((skill) => {
+                            const li = document.createElement('li');
+                            li.textContent = skill;
+                            list.appendChild(li);
+                        });
+                        skillsCard.append(title, list);
+                        aboutDetailsEl.appendChild(skillsCard);
+                    }
+
+                    toggleElement(aboutDetailsEl, Boolean(aboutDetailsEl.children.length));
+                }
+
+                const navItems = [];
+                const overviewLabel = getNavLabel('overview');
+                if (overviewLabel) {
+                    navItems.push({ id: 'overview', label: overviewLabel });
+                }
+
+                const hasAboutContent = Boolean(
+                    (aboutSummaryEl && aboutSummaryEl.children.length) ||
+                    (aboutDetailsEl && aboutDetailsEl.children.length)
+                );
+                toggleSection('about', hasAboutContent);
+                if (hasAboutContent) {
+                    const label = getNavLabel('about');
+                    if (label) {
+                        navItems.push({ id: 'about', label });
+                    }
+                }
+
+                if (educationEl) {
+                    educationEl.innerHTML = '';
+                    education.forEach((item) => {
+                        const article = document.createElement('article');
+                        article.className = 'timeline__item';
+                        const dot = document.createElement('div');
+                        dot.className = 'timeline__dot';
+                        dot.setAttribute('aria-hidden', 'true');
+                        const content = document.createElement('div');
+                        content.className = 'timeline__content';
+                        const title = document.createElement('h3');
+                        title.textContent = item.degree;
+                        const meta = document.createElement('p');
+                        meta.className = 'timeline__meta';
+                        meta.textContent = `${item.institution || ''}${item.location ? ` · ${item.location}` : ''}${
+                            item.date ? ` · ${item.date}` : ''
+                        }`;
+                        content.append(title, meta);
+                        if (item.gpa) {
+                            const gpa = document.createElement('p');
+                            gpa.textContent = `GPA: ${item.gpa}`;
+                            content.appendChild(gpa);
+                        }
+                        if (Array.isArray(item.details) && item.details.length) {
+                            const list = document.createElement('ul');
+                            item.details.forEach((detail) => {
+                                const li = document.createElement('li');
+                                li.textContent = detail;
+                                list.appendChild(li);
+                            });
+                            content.appendChild(list);
+                        }
+                        article.append(dot, content);
+                        educationEl.appendChild(article);
+                    });
+                }
+                const hasEducation = Boolean(educationEl && educationEl.children.length);
+                toggleSection('education', hasEducation);
+                if (hasEducation) {
+                    const label = getNavLabel('education');
+                    if (label) {
+                        navItems.push({ id: 'education', label });
+                    }
+                }
+
+                if (experienceEl) {
+                    experienceEl.innerHTML = '';
+                    work_experience.forEach((item) => {
+                        const article = document.createElement('article');
+                        article.className = 'timeline__item';
+                        const dot = document.createElement('div');
+                        dot.className = 'timeline__dot';
+                        dot.setAttribute('aria-hidden', 'true');
+                        const content = document.createElement('div');
+                        content.className = 'timeline__content';
+                        const title = document.createElement('h3');
+                        title.textContent = item.title;
+                        const meta = document.createElement('p');
+                        meta.className = 'timeline__meta';
+                        meta.textContent = `${item.organization || ''}${item.location ? ` · ${item.location}` : ''}${
+                            item.date ? ` · ${item.date}` : ''
+                        }`;
+                        content.append(title, meta);
+                        if (Array.isArray(item.bullet_points) && item.bullet_points.length) {
+                            const list = document.createElement('ul');
+                            item.bullet_points.forEach((point) => {
+                                const li = document.createElement('li');
+                                li.innerHTML = formatMarkdown(point);
+                                list.appendChild(li);
+                            });
+                            content.appendChild(list);
+                        }
+                        article.append(dot, content);
+                        experienceEl.appendChild(article);
+                    });
+                }
+                const hasExperience = Boolean(experienceEl && experienceEl.children.length);
+                toggleSection('experience', hasExperience);
+                if (hasExperience) {
+                    const label = getNavLabel('experience');
+                    if (label) {
+                        navItems.push({ id: 'experience', label });
+                    }
+                }
+
+                if (projectsEl) {
+                    projectsEl.innerHTML = '';
+                    projects.forEach((project) => {
+                        const li = document.createElement('li');
+                        li.className = 'card';
+                        const title = document.createElement('h3');
+                        title.innerHTML = formatMarkdown(project.title);
+                        li.appendChild(title);
+                        if (project.skills) {
+                            const skills = document.createElement('p');
+                            skills.innerHTML = formatMarkdown(project.skills);
+                            skills.className = 'card__meta';
+                            li.appendChild(skills);
+                        }
+                        if (Array.isArray(project.bullet_points) && project.bullet_points.length) {
+                            const list = document.createElement('ul');
+                            project.bullet_points.forEach((point) => {
+                                const bullet = document.createElement('li');
+                                bullet.innerHTML = formatMarkdown(point);
+                                list.appendChild(bullet);
+                            });
+                            li.appendChild(list);
+                        }
+                        projectsEl.appendChild(li);
+                    });
+                }
+                const hasProjects = Boolean(projectsEl && projectsEl.children.length);
+                toggleSection('projects', hasProjects);
+                if (hasProjects) {
+                    const label = getNavLabel('projects');
+                    if (label) {
+                        navItems.push({ id: 'projects', label });
+                    }
+                }
+
+                if (skillsEl) {
+                    skillsEl.innerHTML = '';
+                    if (skillList.length) {
+                        const column = document.createElement('div');
+                        const title = document.createElement('h3');
+                        title.textContent = resolveLabel(heroPanelLabels, 'skills');
+                        const list = document.createElement('ul');
+                        list.className = 'chip-list';
+                        skillList.forEach((skill) => {
+                            const chip = document.createElement('li');
+                            chip.textContent = skill;
+                            list.appendChild(chip);
+                        });
+                        column.append(title, list);
+                        skillsEl.appendChild(column);
+                    }
+                }
+                const hasSkills = Boolean(skillsEl && skillsEl.querySelector('.chip-list li'));
+                toggleSection('skills', hasSkills);
+                if (hasSkills) {
+                    const label = getNavLabel('skills');
+                    if (label) {
+                        navItems.push({ id: 'skills', label });
+                    }
+                }
+
+                if (honorsEl) {
+                    honorsEl.innerHTML = '';
+                    honors_awards.forEach((honor) => {
+                        const li = document.createElement('li');
+                        li.textContent = honor;
+                        honorsEl.appendChild(li);
+                    });
+                }
+                const hasHonors = Boolean(honorsEl && honorsEl.children.length);
+                toggleSection('honors', hasHonors);
+                if (hasHonors) {
+                    const label = getNavLabel('honors');
+                    if (label) {
+                        navItems.push({ id: 'honors', label });
+                    }
+                }
+
+                if (publicationsEl) {
+                    publicationsEl.innerHTML = '';
+                    publications.forEach((pub) => {
+                        const li = document.createElement('li');
+                        const title = document.createElement('span');
+                        title.className = 'pub-title';
+                        title.innerHTML = formatMarkdown(pub.title);
+                        const meta = document.createElement('span');
+                        meta.className = 'pub-meta';
+                        const parts = [pub.authors, pub.venue].filter(Boolean).join(' · ');
+                        meta.innerHTML = formatMarkdown(parts);
+                        li.append(title, meta);
+                        if (pub.link) {
+                            const link = document.createElement('a');
+                            link.href = pub.link;
+                            link.target = '_blank';
+                            link.rel = 'noopener';
+                            link.textContent = 'View';
+                            link.className = 'pub-link';
+                            li.appendChild(link);
+                        }
+                        publicationsEl.appendChild(li);
+                    });
+                }
+                const hasPublications = Boolean(publicationsEl && publicationsEl.children.length);
+                toggleSection('publications', hasPublications);
+                if (hasPublications) {
+                    const label = getNavLabel('publications');
+                    if (label) {
+                        navItems.push({ id: 'publications', label });
+                    }
+                }
+
+                if (patentsEl) {
+                    patentsEl.innerHTML = '';
+                    patent.forEach((entry) => {
+                        const li = document.createElement('li');
+                        li.className = 'card';
+                        const para = document.createElement('p');
+                        para.textContent = entry;
+                        li.appendChild(para);
+                        patentsEl.appendChild(li);
+                    });
+                }
+                const hasPatents = Boolean(patentsEl && patentsEl.children.length);
+                toggleSection('patents', hasPatents);
+                if (hasPatents) {
+                    const label = getNavLabel('patents');
+                    if (label) {
+                        navItems.push({ id: 'patents', label });
+                    }
+                }
+
+                if (sidebarContactEl) {
+                    sidebarContactEl.innerHTML = '';
+                    contacts.forEach((item) => {
+                        const link = document.createElement('a');
+                        link.href = item.href;
+                        if (item.type !== 'email' && item.type !== 'phone') {
+                            link.target = '_blank';
+                            link.rel = 'noopener';
+                        }
+                        const icon = document.createElement('i');
+                        icon.className =
+                            item.type === 'email'
+                                ? 'fas fa-envelope'
+                                : item.type === 'phone'
+                                ? 'fas fa-phone'
+                                : item.type === 'linkedin'
+                                ? 'fab fa-linkedin'
+                                : item.type === 'github'
+                                ? 'fab fa-github'
+                                : 'fas fa-link';
+                        const span = document.createElement('span');
+                        span.textContent = item.label;
+                        link.append(icon, span);
+                        sidebarContactEl.appendChild(link);
+                    });
+                    toggleElement(sidebarContactEl, Boolean(sidebarContactEl.children.length));
+                }
+
+                if (contactBodyEl) {
+                    contactBodyEl.innerHTML = '';
+                    if (summaryParagraphs.length) {
+                        const paragraph = document.createElement('p');
+                        paragraph.textContent = summaryParagraphs[0];
+                        contactBodyEl.appendChild(paragraph);
+                    } else if (header.role) {
+                        const paragraph = document.createElement('p');
+                        paragraph.textContent = header.role;
+                        contactBodyEl.appendChild(paragraph);
+                    }
+                }
+
+                if (contactActionsEl) {
+                    contactActionsEl.innerHTML = '';
+                    contacts.forEach((item) => {
+                        const link = document.createElement('a');
+                        link.className = `button${item.type === 'email' ? ' primary' : ''}`;
+                        link.href = item.href;
+                        if (item.type !== 'email' && item.type !== 'phone') {
+                            link.target = '_blank';
+                            link.rel = 'noopener';
+                        }
+                        const icon = document.createElement('i');
+                        icon.className =
+                            item.type === 'email'
+                                ? 'fas fa-envelope'
+                                : item.type === 'phone'
+                                ? 'fas fa-phone'
+                                : item.type === 'linkedin'
+                                ? 'fab fa-linkedin'
+                                : item.type === 'github'
+                                ? 'fab fa-github'
+                                : 'fas fa-link';
+                        link.appendChild(icon);
+                        const textNode = document.createTextNode(item.type === 'email' ? 'Email' : item.label);
+                        link.appendChild(textNode);
+                        contactActionsEl.appendChild(link);
+                    });
+                }
+                const hasContact = Boolean(
+                    (contactBodyEl && contactBodyEl.children.length) ||
+                    (contactActionsEl && contactActionsEl.children.length)
+                );
+                toggleSection('contact', hasContact);
+                if (hasContact) {
+                    const label = getNavLabel('contact');
+                    if (label) {
+                        navItems.push({ id: 'contact', label });
+                    }
+                }
+
+                populateNav(navItems);
+            };
+            fetch('source/resume.yaml')
+                .then((response) => response.text())
+                .then((text) => window.jsyaml.load(text))
+                .then((data) => populateResume(data?.resume || data))
+                .catch((error) => {
+                    console.error('Failed to load resume data', error);
+                });
 
             const yearEl = document.getElementById('year');
             if (yearEl) {
