@@ -1,137 +1,724 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjamin Shiue-Hal Chou - Portfolio</title>
+    <title>Benjamin Shiue-Hal Chou | Academic Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header-light">
-        <div class="header-content">
-            <img src="source/me.jpg" alt="Benjamin Chou" class="profile-photo">
-            <div>
-                <h1>Benjamin Shiue-Hal Chou</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#services">Academic Services</a></li>
-                        <li><a href="#publications">Publications</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+    <div class="layout">
+        <aside class="sidebar" aria-label="Section navigation">
+            <div class="sidebar__brand">
+                <img src="source/me.jpg" alt="Benjamin Shiue-Hal Chou" class="sidebar__photo">
+                <div>
+                    <h1 class="sidebar__name" data-name></h1>
+                    <p class="sidebar__role" data-role></p>
+                </div>
             </div>
-        </div>
-    </header>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+                <span class="theme-toggle__icon" aria-hidden="true"></span>
+                <span class="theme-toggle__label">Switch to dark mode</span>
+            </button>
+            <nav class="sidebar__nav" data-nav></nav>
+            <div class="sidebar__contact" data-sidebar-contact></div>
+        </aside>
+        <main class="content" id="top">
+            <section class="hero" id="overview">
+                <div class="hero__grid">
+                    <div class="hero__content">
+                        <span class="hero__badge" data-hero-badge></span>
+                        <h2 class="hero__title" data-hero-title></h2>
+                        <div class="hero__lead" data-hero-lead></div>
+                        <div class="hero__actions" data-hero-actions></div>
+                        <dl class="hero__stats" data-hero-stats></dl>
+                    </div>
+                    <div class="hero__panels" data-hero-panels></div>
+                </div>
+            </section>
 
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am a Ph.D. student in Electrical and Computer Engineering at Purdue University, advised by Dr. Yung-Hsiang Lu. 
-                My research focuses on AI-driven solutions, including music performance error detection and generative models.
-            </p>
-            <p>Feel free to reach out via email or connect with me on LinkedIn or GitHub.</p>
-        </section>
+            <section id="about" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Profile</span>
+                    <h2>Professional Summary</h2>
+                </header>
+                <div class="about__grid">
+                    <div class="about__summary" data-about-summary></div>
+                    <div class="about__details" data-about-details></div>
+                </div>
+            </section>
 
-        <!-- Education Section -->
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <i class="fas fa-university"></i> <strong>Purdue University</strong> - Ph.D. in Electrical and Computer Engineering (Jan 2024 - Present)
-                    <ul>
-                        <li>GPA: 4.0/4.0; Received Semester Honors.</li>
-                        <li>Courses: Machine Learning for Cloud Computing, Deep Learning Optimization, Reinforcement Learning.</li>
-                    </ul>
-                </li>
-                <li>
-                    <i class="fas fa-school"></i> <strong>National Cheng Kung University</strong> - B.Sc. in Electrical Engineering (Sep 2020 - May 2023)
-                    <ul>
-                        <li>Graduated with a GPA of 4.0/4.3.</li>
-                        <li>Class President for three years.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+            <section id="education" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Academic Path</span>
+                    <h2>Education</h2>
+                </header>
+                <div class="timeline" data-education></div>
+            </section>
 
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li>
-                    <i class="fas fa-briefcase"></i> <strong>Graduate Research Assistant</strong> - Purdue University (Jan 2024 - Present)
-                    <ul>
-                        <li>Designed an AI tutoring model for music performance error detection, improving F1 score by 2-6x over baseline.</li>
-                        <li>Developed synthetic datasets of music performances for model training.</li>
-                    </ul>
-                </li>
-                <li>
-                    <i class="fas fa-rocket"></i> <strong>Startup Founder</strong> - LocaLens (Mar 2023 - Jan 2024)
-                    <ul>
-                        <li>Developed a mobile app for menu translation, allergen detection, and currency conversion.</li>
-                        <li>Launched an MVP within four months.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+            <section id="experience" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Leadership & Research</span>
+                    <h2>Experience</h2>
+                </header>
+                <div class="timeline" data-experience></div>
+            </section>
 
-        <!-- News Section -->
-        <section id="news">
-            <h2>News</h2>
-            <ul>
-                <li><strong>Dec 2024:</strong> Our paper "Detecting Music Performance Errors with Transformers" was accepted at AAAI 2025.</li>
-                <li><strong>July 2024:</strong> Invited keynote speaker at Artificial Intelligence for Music Workshop, ICME 2025.</li>
-                <li><strong>Jan 2024:</strong> Started the Purdue Ph.D. program in Electrical and Computer Engineering.</li>
-            </ul>
-        </section>
+            <section id="projects" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Hands-on</span>
+                    <h2>Projects</h2>
+                </header>
+                <ul class="cards" data-projects></ul>
+            </section>
 
-        <!-- Academic Services Section -->
-        <section id="services">
-            <h2>Academic Services</h2>
-            <ul>
-                <li>Organizer: Artificial Intelligence for Music Workshop, AAAI 2025 and IEEE ICME 2025.</li>
-                <li>Meta Reviewer: AAAI 2025 Workshop on Artificial Intelligence for Music (Reviewed 25 papers).</li>
-            </ul>
-        </section>
+            <section id="skills" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Toolkit</span>
+                    <h2>Skills</h2>
+                </header>
+                <div class="skills-grid" data-skills></div>
+            </section>
 
-        <!-- Publications Section -->
-        <section id="publications">
-            <h2>Publications</h2>
-            <ul>
-                <li>
-                    <i class="fas fa-book"></i> <strong>Detecting Music Performance Errors with Transformers</strong><br>
-                    Benjamin Chou, P. Jajal, et al. - AAAI 2025.
-                    <a href="https://arxiv.org/pdf/2501.02030" target="_blank">[Link]</a>
-                </li>
-                <li>
-                    <i class="fas fa-book"></i> <strong>Token Turing Machines are Efficient Vision Models</strong><br>
-                    P. Jajal, N. Eliopoulos, Benjamin Chou, et al. - WACV 2025.
-                    <a href="https://arxiv.org/abs/2409.07613" target="_blank">[Link]</a>
-                </li>
-            </ul>
-        </section>
+            <section id="honors" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Recognition</span>
+                    <h2>Honors & Awards</h2>
+                </header>
+                <ul class="chip-list" data-honors></ul>
+            </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <ul>
-                <li><i class="fas fa-envelope"></i> Email: <a href="mailto:ben2002chou@gmail.com">ben2002chou@gmail.com</a></li>
-                <li><i class="fab fa-github"></i> GitHub: <a href="https://github.com/ben2002chou" target="_blank">github.com/ben2002chou</a></li>
-                <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/benjamin-chou-6aa058228" target="_blank">linkedin.com/in/benjamin-chou-6aa058228</a></li>
-            </ul>
-        </section>
-    </main>
+            <section id="publications" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Selected Work</span>
+                    <h2>Publications</h2>
+                </header>
+                <ol class="publication-list" data-publications></ol>
+            </section>
 
-    <footer>
-        <p>© 2025 Benjamin Shiue-Hal Chou</p>
-    </footer>
+            <section id="patents" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Innovation</span>
+                    <h2>Patents</h2>
+                </header>
+                <ul class="cards" data-patents></ul>
+            </section>
+
+            <section id="contact" class="section section--accent">
+                <header class="section__header">
+                    <span class="section__eyebrow">Let's Collaborate</span>
+                    <h2>Contact</h2>
+                </header>
+                <div class="contact-card">
+                    <div class="contact-card__body" data-contact-body></div>
+                    <div class="contact-card__actions" data-contact-actions></div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>&copy; <span id="year"></span> <span data-footer-name></span>. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script>
+        (function () {
+            const root = document.documentElement;
+            const toggleButton = document.querySelector('[data-theme-toggle]');
+            const toggleLabel = toggleButton?.querySelector('.theme-toggle__label');
+            const icon = toggleButton?.querySelector('.theme-toggle__icon');
+            const storedTheme = window.localStorage.getItem('theme-preference');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+            const applyTheme = (theme, persist = true) => {
+                root.setAttribute('data-theme', theme);
+                if (persist) {
+                    window.localStorage.setItem('theme-preference', theme);
+                }
+                if (toggleLabel) {
+                    toggleLabel.textContent = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+                }
+                if (toggleButton) {
+                    toggleButton.setAttribute('aria-pressed', theme === 'dark');
+                }
+                if (icon) {
+                    icon.dataset.mode = theme;
+                }
+            };
+
+            const initialTheme = storedTheme || (prefersDark.matches ? 'dark' : 'light');
+            applyTheme(initialTheme, Boolean(storedTheme));
+
+            toggleButton?.addEventListener('click', () => {
+                const nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                applyTheme(nextTheme);
+            });
+
+            const handlePreferenceChange = (event) => {
+                if (!window.localStorage.getItem('theme-preference')) {
+                    applyTheme(event.matches ? 'dark' : 'light', false);
+                }
+            };
+
+            if (typeof prefersDark.addEventListener === 'function') {
+                prefersDark.addEventListener('change', handlePreferenceChange);
+            } else if (typeof prefersDark.addListener === 'function') {
+                prefersDark.addListener(handlePreferenceChange);
+            }
+
+            const nav = document.querySelector('[data-nav]');
+            let navLinks = [];
+            let intersectionObserver;
+
+            const formatMarkdown = (text = '') => {
+                if (!text) return '';
+                return text
+                    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\*(.+?)\*/g, '<em>$1</em>');
+            };
+
+            const sentenceData = (summary = '') => {
+                const normalized = summary.replace(/\s+/g, ' ').trim();
+                const sentences = normalized ? normalized.match(/[^.!?]+[.!?]/g) : [];
+                return { normalized, sentences: sentences ? sentences.map((s) => s.trim()) : [] };
+            };
+
+            const extractList = (sentence, phrase) => {
+                if (!sentence) return [];
+                const lower = sentence.toLowerCase();
+                const index = lower.indexOf(phrase.toLowerCase());
+                const start = index > -1 ? index + phrase.length : 0;
+                const body = sentence.slice(start).replace(/^[:\s-]+/, '').replace(/[.]+$/, '').trim();
+                if (!body) return [];
+                return body
+                    .replace(/ and /gi, ', ')
+                    .split(/,\s*/)
+                    .map((item) => item.replace(/^[\s-]+/, '').trim())
+                    .filter(Boolean);
+            };
+
+            const parseContact = (contactStr = '') => {
+                return contactStr
+                    .split('|')
+                    .map((entry) => entry.trim())
+                    .filter(Boolean)
+                    .map((entry) => {
+                        const lower = entry.toLowerCase();
+                        if (lower.includes('@')) {
+                            return { type: 'email', label: entry, href: `mailto:${entry}` };
+                        }
+                        if (lower.includes('linkedin')) {
+                            const url = entry.startsWith('http') ? entry : `https://${entry}`;
+                            return { type: 'linkedin', label: 'LinkedIn', href: url };
+                        }
+                        if (lower.includes('github')) {
+                            const url = entry.startsWith('http') ? entry : `https://${entry}`;
+                            return { type: 'github', label: 'GitHub', href: url };
+                        }
+                        const digits = entry.replace(/[^0-9]/g, '');
+                        if (digits.length >= 7) {
+                            return { type: 'phone', label: entry, href: `tel:${digits}` };
+                        }
+                        const url = entry.startsWith('http') ? entry : `https://${entry}`;
+                        return { type: 'link', label: entry, href: url };
+                    });
+            };
+
+            const createStat = (term, description) => {
+                if (!term || !description) return null;
+                const wrapper = document.createElement('div');
+                wrapper.className = 'hero__stat';
+                const dt = document.createElement('dt');
+                dt.textContent = term;
+                const dd = document.createElement('dd');
+                dd.textContent = description;
+                wrapper.append(dt, dd);
+                return wrapper;
+            };
+
+            const populateNav = (items) => {
+                if (!nav) return;
+                nav.innerHTML = '';
+                navLinks = items.map((item) => {
+                    const link = document.createElement('a');
+                    link.href = `#${item.id}`;
+                    link.textContent = item.label;
+                    nav.appendChild(link);
+                    return link;
+                });
+                if (intersectionObserver) {
+                    intersectionObserver.disconnect();
+                }
+                const sections = navLinks
+                    .map((link) => document.querySelector(link.getAttribute('href')))
+                    .filter(Boolean);
+                if (!sections.length) return;
+                intersectionObserver = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            const id = entry.target.getAttribute('id');
+                            const activeLink = nav.querySelector(`[href="#${id}"]`);
+                            if (entry.isIntersecting && activeLink) {
+                                navLinks.forEach((link) => link.classList.remove('is-active'));
+                                activeLink.classList.add('is-active');
+                            }
+                        });
+                    },
+                    { rootMargin: '-50% 0px -45% 0px', threshold: 0.1 }
+                );
+                sections.forEach((section) => intersectionObserver.observe(section));
+            };
+
+            const populateResume = (resume) => {
+                if (!resume) return;
+                const { header = {}, professional_summary = '', education = [], work_experience = [], projects = [], honors_awards = [], publications = [], patent = [] } = resume;
+
+                const { normalized, sentences } = sentenceData(professional_summary);
+                const firstSentence = sentences[0] || '';
+                const specializationSentence = sentences.find((s) => /specialize/i.test(s));
+                const expertiseSentence = sentences.find((s) => /expertise/i.test(s));
+                const wellVersedSentence = sentences.find((s) => /well-versed/i.test(s));
+                const skillsSentence = sentences.find((s) => /key skills include/i.test(s));
+                const goalMatch = firstSentence.match(/seeking\s+an?\s+([^.,]+)/i);
+
+                const nameEl = document.querySelector('[data-name]');
+                const roleEl = document.querySelector('[data-role]');
+                const heroBadgeEl = document.querySelector('[data-hero-badge]');
+                const heroTitleEl = document.querySelector('[data-hero-title]');
+                const heroLeadEl = document.querySelector('[data-hero-lead]');
+                const heroActionsEl = document.querySelector('[data-hero-actions]');
+                const heroStatsEl = document.querySelector('[data-hero-stats]');
+                const heroPanelsEl = document.querySelector('[data-hero-panels]');
+                const aboutSummaryEl = document.querySelector('[data-about-summary]');
+                const aboutDetailsEl = document.querySelector('[data-about-details]');
+                const educationEl = document.querySelector('[data-education]');
+                const experienceEl = document.querySelector('[data-experience]');
+                const projectsEl = document.querySelector('[data-projects]');
+                const skillsEl = document.querySelector('[data-skills]');
+                const honorsEl = document.querySelector('[data-honors]');
+                const publicationsEl = document.querySelector('[data-publications]');
+                const patentsEl = document.querySelector('[data-patents]');
+                const sidebarContactEl = document.querySelector('[data-sidebar-contact]');
+                const contactBodyEl = document.querySelector('[data-contact-body]');
+                const contactActionsEl = document.querySelector('[data-contact-actions]');
+                const footerNameEl = document.querySelector('[data-footer-name]');
+
+                if (nameEl) {
+                    nameEl.textContent = header.name || '';
+                }
+                if (footerNameEl) {
+                    footerNameEl.textContent = header.name || '';
+                }
+
+                const firstClause = firstSentence.split(',')[0]?.replace(/^I am\s+/i, '').trim();
+                if (roleEl) {
+                    roleEl.textContent = firstClause || '';
+                }
+
+                const specializationList = extractList(specializationSentence, 'I specialize in');
+                if (heroBadgeEl) {
+                    heroBadgeEl.textContent = specializationList.slice(0, 3).join(' · ') || 'AI · ML · Research';
+                }
+
+                if (heroTitleEl) {
+                    heroTitleEl.textContent = firstClause || header.name || '';
+                }
+
+                if (heroLeadEl) {
+                    heroLeadEl.innerHTML = '';
+                    sentences.slice(1).forEach((sentence) => {
+                        const p = document.createElement('p');
+                        p.textContent = sentence.replace(/[.]+$/, '.');
+                        heroLeadEl.appendChild(p);
+                    });
+                }
+
+                const contacts = parseContact(header.contact || '');
+                if (heroActionsEl) {
+                    heroActionsEl.innerHTML = '';
+                    contacts
+                        .filter((item) => ['email', 'linkedin', 'github'].includes(item.type))
+                        .slice(0, 2)
+                        .forEach((item, index) => {
+                            const link = document.createElement('a');
+                            link.className = `button${index === 0 ? ' primary' : ''}`;
+                            link.href = item.href;
+                            link.target = item.type === 'email' ? '_self' : '_blank';
+                            link.rel = item.type === 'email' ? '' : 'noopener';
+                            link.textContent = item.type === 'email' ? 'Email me' : `View ${item.label}`;
+                            heroActionsEl.appendChild(link);
+                        });
+                }
+
+                if (heroStatsEl) {
+                    heroStatsEl.innerHTML = '';
+                    const currentRole = work_experience.find((role) => /present/i.test(role.date || ''));
+                    const keySkills = extractList(skillsSentence, 'My key skills include');
+
+                    const stats = [
+                        createStat('Current Role', currentRole ? `${currentRole.title}, ${currentRole.organization}` : firstClause),
+                        createStat('Current Focus', specializationList.slice(0, 2).join(', ')),
+                        createStat('Goal', goalMatch ? `Seeking ${goalMatch[1]}` : ''),
+                        createStat('Top Skills', keySkills.slice(0, 3).join(', '))
+                    ].filter(Boolean);
+
+                    stats.forEach((stat) => heroStatsEl.appendChild(stat));
+                }
+
+                if (heroPanelsEl) {
+                    heroPanelsEl.innerHTML = '';
+                    if (specializationList.length) {
+                        const focusCard = document.createElement('article');
+                        focusCard.className = 'hero-card';
+                        const title = document.createElement('h3');
+                        title.textContent = 'Focus Areas';
+                        const list = document.createElement('ul');
+                        specializationList.slice(0, 4).forEach((item) => {
+                            const li = document.createElement('li');
+                            li.textContent = item;
+                            list.appendChild(li);
+                        });
+                        focusCard.append(title, list);
+                        heroPanelsEl.appendChild(focusCard);
+                    }
+
+                    const activeEducation = education.find((item) => /present/i.test(item.date || ''));
+                    if (activeEducation) {
+                        const currentCard = document.createElement('article');
+                        currentCard.className = 'hero-card hero-card--accent';
+                        const title = document.createElement('h3');
+                        title.textContent = 'Currently';
+                        const para = document.createElement('p');
+                        para.textContent = `Pursuing ${activeEducation.degree} at ${activeEducation.institution}.`;
+                        currentCard.append(title, para);
+                        heroPanelsEl.appendChild(currentCard);
+                    }
+
+                    const emailContact = contacts.find((item) => item.type === 'email');
+                    if (emailContact) {
+                        const connectCard = document.createElement('article');
+                        connectCard.className = 'hero-card';
+                        const title = document.createElement('h3');
+                        title.textContent = 'Connect';
+                        const para = document.createElement('p');
+                        para.textContent = goalMatch
+                            ? `Let's connect about ${goalMatch[1]} opportunities and collaborations.`
+                            : (specializationList[0] ? `Open to collaborations across ${specializationList[0]} and beyond.` : 'Let’s connect and collaborate.');
+                        const link = document.createElement('a');
+                        link.className = 'hero-card__link';
+                        link.href = emailContact.href;
+                        link.textContent = emailContact.label;
+                        connectCard.append(title, para, link);
+                        heroPanelsEl.appendChild(connectCard);
+                    }
+                }
+
+                if (aboutSummaryEl) {
+                    aboutSummaryEl.innerHTML = '';
+                    sentences.slice(0, 3).forEach((sentence) => {
+                        const p = document.createElement('p');
+                        p.textContent = sentence.replace(/[.]+$/, '.');
+                        aboutSummaryEl.appendChild(p);
+                    });
+                }
+
+                if (aboutDetailsEl) {
+                    aboutDetailsEl.innerHTML = '';
+                    const expertiseCard = document.createElement('article');
+                    expertiseCard.className = 'about-card';
+                    const expertiseTitle = document.createElement('h3');
+                    expertiseTitle.textContent = 'Research Themes';
+                    const expertiseList = document.createElement('ul');
+                    expertiseList.className = 'about-card__list';
+                    const expertiseItems = [];
+                    if (expertiseSentence) {
+                        const cleaned = expertiseSentence
+                            .replace(/^My expertise is in/i, '')
+                            .replace(/[.]+$/, '')
+                            .trim();
+                        const parts = cleaned.split(/,\s+with a focus on/i);
+                        if (parts[0]) {
+                            expertiseItems.push(parts[0].charAt(0).toUpperCase() + parts[0].slice(1));
+                        }
+                        if (parts[1]) {
+                            expertiseItems.push(`Focus on ${parts[1].replace(/[.]+$/, '')}`);
+                        }
+                    }
+                    if (!expertiseItems.length && specializationList.length) {
+                        expertiseItems.push(...specializationList.slice(0, 3));
+                    }
+                    expertiseItems.forEach((item) => {
+                        const li = document.createElement('li');
+                        li.textContent = item;
+                        expertiseList.appendChild(li);
+                    });
+                    expertiseCard.append(expertiseTitle, expertiseList);
+                    aboutDetailsEl.appendChild(expertiseCard);
+
+                    if (wellVersedSentence) {
+                        const wellVersedCard = document.createElement('article');
+                        wellVersedCard.className = 'about-card';
+                        const wellVersedTitle = document.createElement('h3');
+                        wellVersedTitle.textContent = 'Additional Experience';
+                        const para = document.createElement('p');
+                        para.textContent = wellVersedSentence.replace(/^I am also well-versed in\s*/i, '').replace(/[.]+$/, '.');
+                        wellVersedCard.append(wellVersedTitle, para);
+                        aboutDetailsEl.appendChild(wellVersedCard);
+                    }
+                }
+
+                if (educationEl) {
+                    educationEl.innerHTML = '';
+                    education.forEach((item) => {
+                        const article = document.createElement('article');
+                        article.className = 'timeline__item';
+                        const dot = document.createElement('div');
+                        dot.className = 'timeline__dot';
+                        dot.setAttribute('aria-hidden', 'true');
+                        const content = document.createElement('div');
+                        content.className = 'timeline__content';
+                        const title = document.createElement('h3');
+                        title.textContent = item.degree;
+                        const meta = document.createElement('p');
+                        meta.className = 'timeline__meta';
+                        meta.textContent = `${item.institution}${item.location ? ` · ${item.location}` : ''} · ${item.date}`;
+                        content.append(title, meta);
+                        if (item.gpa) {
+                            const gpa = document.createElement('p');
+                            gpa.textContent = `GPA: ${item.gpa}`;
+                            content.appendChild(gpa);
+                        }
+                        if (Array.isArray(item.details) && item.details.length) {
+                            const list = document.createElement('ul');
+                            item.details.forEach((detail) => {
+                                const li = document.createElement('li');
+                                li.textContent = detail;
+                                list.appendChild(li);
+                            });
+                            content.appendChild(list);
+                        }
+                        article.append(dot, content);
+                        educationEl.appendChild(article);
+                    });
+                }
+
+                if (experienceEl) {
+                    experienceEl.innerHTML = '';
+                    work_experience.forEach((item) => {
+                        const article = document.createElement('article');
+                        article.className = 'timeline__item';
+                        const dot = document.createElement('div');
+                        dot.className = 'timeline__dot';
+                        dot.setAttribute('aria-hidden', 'true');
+                        const content = document.createElement('div');
+                        content.className = 'timeline__content';
+                        const title = document.createElement('h3');
+                        title.textContent = item.title;
+                        const meta = document.createElement('p');
+                        meta.className = 'timeline__meta';
+                        meta.textContent = `${item.organization}${item.location ? ` · ${item.location}` : ''} · ${item.date}`;
+                        content.append(title, meta);
+                        if (Array.isArray(item.bullet_points) && item.bullet_points.length) {
+                            const list = document.createElement('ul');
+                            item.bullet_points.forEach((point) => {
+                                const li = document.createElement('li');
+                                li.innerHTML = formatMarkdown(point);
+                                list.appendChild(li);
+                            });
+                            content.appendChild(list);
+                        }
+                        article.append(dot, content);
+                        experienceEl.appendChild(article);
+                    });
+                }
+
+                if (projectsEl) {
+                    projectsEl.innerHTML = '';
+                    projects.forEach((project) => {
+                        const li = document.createElement('li');
+                        li.className = 'card';
+                        const title = document.createElement('h3');
+                        title.innerHTML = formatMarkdown(project.title);
+                        li.appendChild(title);
+                        if (project.skills) {
+                            const skills = document.createElement('p');
+                            skills.innerHTML = formatMarkdown(project.skills);
+                            skills.className = 'card__meta';
+                            li.appendChild(skills);
+                        }
+                        if (Array.isArray(project.bullet_points)) {
+                            const list = document.createElement('ul');
+                            project.bullet_points.forEach((point) => {
+                                const bullet = document.createElement('li');
+                                bullet.innerHTML = formatMarkdown(point);
+                                list.appendChild(bullet);
+                            });
+                            li.appendChild(list);
+                        }
+                        projectsEl.appendChild(li);
+                    });
+                }
+
+                if (skillsEl) {
+                    skillsEl.innerHTML = '';
+                    const keySkills = extractList(skillsSentence, 'My key skills include');
+                    if (keySkills.length) {
+                        const column = document.createElement('div');
+                        const title = document.createElement('h3');
+                        title.textContent = 'Key Skills';
+                        const list = document.createElement('ul');
+                        list.className = 'chip-list';
+                        keySkills.forEach((skill) => {
+                            const chip = document.createElement('li');
+                            chip.textContent = skill;
+                            list.appendChild(chip);
+                        });
+                        column.append(title, list);
+                        skillsEl.appendChild(column);
+                    }
+                }
+
+                if (honorsEl) {
+                    honorsEl.innerHTML = '';
+                    honors_awards.forEach((honor) => {
+                        const li = document.createElement('li');
+                        li.textContent = honor;
+                        honorsEl.appendChild(li);
+                    });
+                }
+
+                if (publicationsEl) {
+                    publicationsEl.innerHTML = '';
+                    publications.forEach((pub) => {
+                        const li = document.createElement('li');
+                        const title = document.createElement('span');
+                        title.className = 'pub-title';
+                        title.innerHTML = formatMarkdown(pub.title);
+                        const meta = document.createElement('span');
+                        meta.className = 'pub-meta';
+                        const parts = [pub.authors, pub.venue].filter(Boolean).join(' · ');
+                        meta.innerHTML = formatMarkdown(parts);
+                        li.append(title, meta);
+                        if (pub.link) {
+                            const link = document.createElement('a');
+                            link.href = pub.link;
+                            link.target = '_blank';
+                            link.rel = 'noopener';
+                            link.textContent = 'View';
+                            link.className = 'pub-link';
+                            li.appendChild(link);
+                        }
+                        publicationsEl.appendChild(li);
+                    });
+                }
+
+                if (patentsEl) {
+                    patentsEl.innerHTML = '';
+                    patent.forEach((entry) => {
+                        const li = document.createElement('li');
+                        li.className = 'card';
+                        const para = document.createElement('p');
+                        para.textContent = entry;
+                        li.appendChild(para);
+                        patentsEl.appendChild(li);
+                    });
+                }
+
+                if (sidebarContactEl) {
+                    sidebarContactEl.innerHTML = '';
+                    contacts.forEach((item) => {
+                        const link = document.createElement('a');
+                        link.href = item.href;
+                        if (item.type !== 'email' && item.type !== 'phone') {
+                            link.target = '_blank';
+                            link.rel = 'noopener';
+                        }
+                        const icon = document.createElement('i');
+                        icon.className =
+                            item.type === 'email'
+                                ? 'fas fa-envelope'
+                                : item.type === 'phone'
+                                ? 'fas fa-phone'
+                                : item.type === 'linkedin'
+                                ? 'fab fa-linkedin'
+                                : item.type === 'github'
+                                ? 'fab fa-github'
+                                : 'fas fa-link';
+                        const span = document.createElement('span');
+                        span.textContent = item.label;
+                        link.append(icon, span);
+                        sidebarContactEl.appendChild(link);
+                    });
+                }
+
+                if (contactBodyEl) {
+                    contactBodyEl.innerHTML = '';
+                    const paragraph = document.createElement('p');
+                    paragraph.textContent = goalMatch
+                        ? `I am seeking ${goalMatch[1]} and welcome conversations about collaborations.`
+                        : firstSentence.replace(/[.]+$/, '.');
+                    contactBodyEl.appendChild(paragraph);
+                }
+
+                if (contactActionsEl) {
+                    contactActionsEl.innerHTML = '';
+                    contacts.forEach((item) => {
+                        const link = document.createElement('a');
+                        link.className = `button${item.type === 'email' ? ' primary' : ''}`;
+                        link.href = item.href;
+                        if (item.type !== 'email' && item.type !== 'phone') {
+                            link.target = '_blank';
+                            link.rel = 'noopener';
+                        }
+                        const icon = document.createElement('i');
+                        icon.className =
+                            item.type === 'email'
+                                ? 'fas fa-envelope'
+                                : item.type === 'phone'
+                                ? 'fas fa-phone'
+                                : item.type === 'linkedin'
+                                ? 'fab fa-linkedin'
+                                : item.type === 'github'
+                                ? 'fab fa-github'
+                                : 'fas fa-link';
+                        link.appendChild(icon);
+                        const text = document.createTextNode(item.type === 'email' ? 'Email' : item.label);
+                        link.appendChild(text);
+                        contactActionsEl.appendChild(link);
+                    });
+                }
+
+                populateNav([
+                    { id: 'overview', label: 'Overview' },
+                    { id: 'about', label: 'Summary' },
+                    { id: 'education', label: 'Education' },
+                    { id: 'experience', label: 'Experience' },
+                    { id: 'projects', label: 'Projects' },
+                    { id: 'skills', label: 'Skills' },
+                    { id: 'honors', label: 'Honors' },
+                    { id: 'publications', label: 'Publications' },
+                    { id: 'patents', label: 'Patents' },
+                    { id: 'contact', label: 'Contact' }
+                ]);
+            };
+
+            fetch('resume.yaml')
+                .then((response) => response.text())
+                .then((text) => window.jsyaml.load(text))
+                .then((data) => populateResume(data?.resume || data))
+                .catch((error) => {
+                    console.error('Failed to load resume data', error);
+                });
+
+            const yearEl = document.getElementById('year');
+            if (yearEl) {
+                yearEl.textContent = new Date().getFullYear();
+            }
+        })();
+    </script>
 </body>
 </html>
