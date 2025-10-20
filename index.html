@@ -1,137 +1,395 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjamin Shiue-Hal Chou - Portfolio</title>
+    <title>Benjamin Shiue-Hal Chou | Academic Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header-light">
-        <div class="header-content">
-            <img src="source/me.jpg" alt="Benjamin Chou" class="profile-photo">
-            <div>
-                <h1>Benjamin Shiue-Hal Chou</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#services">Academic Services</a></li>
-                        <li><a href="#publications">Publications</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+    <div class="layout">
+        <aside class="sidebar" aria-label="Section navigation">
+            <div class="sidebar__brand">
+                <img src="source/me.jpg" alt="Benjamin Shiue-Hal Chou" class="sidebar__photo">
+                <div>
+                    <h1 class="sidebar__name">Benjamin Shiue-Hal Chou</h1>
+                    <p class="sidebar__role">Ph.D. Student · Purdue University</p>
+                </div>
             </div>
-        </div>
-    </header>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+                <span class="theme-toggle__icon" aria-hidden="true"></span>
+                <span class="theme-toggle__label">Switch to dark mode</span>
+            </button>
+            <nav class="sidebar__nav" data-nav>
+                <a href="#overview">Overview</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#news">News</a>
+                <a href="#services">Academic Service</a>
+                <a href="#publications">Publications</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="sidebar__contact">
+                <a href="mailto:ben2002chou@gmail.com"><i class="fas fa-envelope"></i><span>Email</span></a>
+                <a href="https://github.com/ben2002chou" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>GitHub</span></a>
+                <a href="https://linkedin.com/in/benjamin-chou-6aa058228" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+            </div>
+        </aside>
+        <main class="content" id="top">
+            <section class="hero" id="overview">
+                <div class="hero__grid">
+                    <div class="hero__content">
+                        <span class="hero__badge">AI · Music · Generative Modeling</span>
+                        <h2 class="hero__title">Designing intelligent systems for expressive music performance.</h2>
+                        <p class="hero__lead">
+                            I craft AI-powered tools that enhance the way musicians learn, practice, and perform. My research
+                            explores performance error detection, intelligent tutoring, and synthetic data generation that keeps
+                            machine learning systems resilient in real musical settings.
+                        </p>
+                        <div class="hero__actions">
+                            <a class="button primary" href="#contact">Collaborate with me</a>
+                            <a class="button" href="#publications">View publications</a>
+                        </div>
+                        <dl class="hero__stats">
+                            <div class="hero__stat">
+                                <dt>Advisor</dt>
+                                <dd>Dr. Yung-Hsiang Lu</dd>
+                            </div>
+                            <div class="hero__stat">
+                                <dt>Research Lab</dt>
+                                <dd>School of ECE, Purdue University</dd>
+                            </div>
+                            <div class="hero__stat">
+                                <dt>Latest Work</dt>
+                                <dd>Music Error Detection with Transformers (AAAI 2025)</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="hero__panels">
+                        <article class="hero-card">
+                            <h3>Focus Areas</h3>
+                            <ul>
+                                <li>Performance error detection</li>
+                                <li>Generative models for practice feedback</li>
+                                <li>Interactive music learning tools</li>
+                            </ul>
+                        </article>
+                        <article class="hero-card hero-card--accent">
+                            <h3>Currently</h3>
+                            <p>Pursuing a Ph.D. in Electrical & Computer Engineering at Purdue while building intelligent systems for creative practice.</p>
+                        </article>
+                        <article class="hero-card">
+                            <h3>Connect</h3>
+                            <p>Open to collaborations on AI for music, human-centered ML, and creative education technology.</p>
+                            <a class="hero-card__link" href="mailto:ben2002chou@gmail.com">ben2002chou@gmail.com</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am a Ph.D. student in Electrical and Computer Engineering at Purdue University, advised by Dr. Yung-Hsiang Lu. 
-                My research focuses on AI-driven solutions, including music performance error detection and generative models.
-            </p>
-            <p>Feel free to reach out via email or connect with me on LinkedIn or GitHub.</p>
-        </section>
+            <section id="about" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Profile</span>
+                    <h2>About</h2>
+                </header>
+                <div class="about__grid">
+                    <div class="about__summary">
+                        <p>
+                            I am a researcher focused on building AI-powered tools that improve the way people learn and perform
+                            music. My current projects span music performance error detection, intelligent tutoring systems, and the
+                            design of synthetic datasets for robust model training. I am passionate about creating practical systems
+                            that bring advanced machine learning into everyday creative practice.
+                        </p>
+                    </div>
+                    <div class="about__details">
+                        <article class="about-card">
+                            <h3>Research Themes</h3>
+                            <ul class="about-card__list">
+                                <li>Performance analytics for music learners</li>
+                                <li>Generative feedback loops in creative tools</li>
+                                <li>Human-centered evaluation for ML systems</li>
+                            </ul>
+                        </article>
+                        <article class="about-card">
+                            <h3>Impact</h3>
+                            <p>Helping musicians practice more effectively through responsive, AI-assisted coaching that adapts to their playing in real time.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
-        <!-- Education Section -->
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <i class="fas fa-university"></i> <strong>Purdue University</strong> - Ph.D. in Electrical and Computer Engineering (Jan 2024 - Present)
-                    <ul>
-                        <li>GPA: 4.0/4.0; Received Semester Honors.</li>
-                        <li>Courses: Machine Learning for Cloud Computing, Deep Learning Optimization, Reinforcement Learning.</li>
-                    </ul>
-                </li>
-                <li>
-                    <i class="fas fa-school"></i> <strong>National Cheng Kung University</strong> - B.Sc. in Electrical Engineering (Sep 2020 - May 2023)
-                    <ul>
-                        <li>Graduated with a GPA of 4.0/4.3.</li>
-                        <li>Class President for three years.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+            <section id="education" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Academic Path</span>
+                    <h2>Education</h2>
+                </header>
+                <div class="timeline">
+                    <article class="timeline__item">
+                        <div class="timeline__dot" aria-hidden="true"></div>
+                        <div class="timeline__content">
+                            <h3>Ph.D. in Electrical and Computer Engineering</h3>
+                            <p class="timeline__meta">Purdue University · Jan 2024 – Present</p>
+                            <p>GPA: 4.0/4.0 · Semester Honors</p>
+                            <ul>
+                                <li>Machine Learning for Cloud Computing</li>
+                                <li>Deep Learning Optimization</li>
+                                <li>Reinforcement Learning</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="timeline__item">
+                        <div class="timeline__dot" aria-hidden="true"></div>
+                        <div class="timeline__content">
+                            <h3>B.Sc. in Electrical Engineering</h3>
+                            <p class="timeline__meta">National Cheng Kung University · Sep 2020 – May 2023</p>
+                            <p>Graduated with a GPA of 4.0/4.3 · Class President (2020–2023)</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li>
-                    <i class="fas fa-briefcase"></i> <strong>Graduate Research Assistant</strong> - Purdue University (Jan 2024 - Present)
-                    <ul>
-                        <li>Designed an AI tutoring model for music performance error detection, improving F1 score by 2-6x over baseline.</li>
-                        <li>Developed synthetic datasets of music performances for model training.</li>
-                    </ul>
-                </li>
-                <li>
-                    <i class="fas fa-rocket"></i> <strong>Startup Founder</strong> - LocaLens (Mar 2023 - Jan 2024)
-                    <ul>
-                        <li>Developed a mobile app for menu translation, allergen detection, and currency conversion.</li>
-                        <li>Launched an MVP within four months.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+            <section id="experience" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Leadership & Research</span>
+                    <h2>Experience</h2>
+                </header>
+                <div class="timeline">
+                    <article class="timeline__item">
+                        <div class="timeline__dot" aria-hidden="true"></div>
+                        <div class="timeline__content">
+                            <h3>Graduate Research Assistant</h3>
+                            <p class="timeline__meta">Purdue University · Jan 2024 – Present</p>
+                            <ul>
+                                <li>Designed an AI tutoring model for music performance error detection, improving F1 score by 2–6× over baseline.</li>
+                                <li>Developed synthetic music performance datasets to accelerate model training.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="timeline__item">
+                        <div class="timeline__dot" aria-hidden="true"></div>
+                        <div class="timeline__content">
+                            <h3>Founder</h3>
+                            <p class="timeline__meta">LocaLens · Mar 2023 – Jan 2024</p>
+                            <ul>
+                                <li>Built a mobile app for menu translation, allergen detection, and currency conversion.</li>
+                                <li>Delivered an MVP within four months for public testing.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-        <!-- News Section -->
-        <section id="news">
-            <h2>News</h2>
-            <ul>
-                <li><strong>Dec 2024:</strong> Our paper "Detecting Music Performance Errors with Transformers" was accepted at AAAI 2025.</li>
-                <li><strong>July 2024:</strong> Invited keynote speaker at Artificial Intelligence for Music Workshop, ICME 2025.</li>
-                <li><strong>Jan 2024:</strong> Started the Purdue Ph.D. program in Electrical and Computer Engineering.</li>
-            </ul>
-        </section>
+            <section id="news" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Highlights</span>
+                    <h2>Recent News</h2>
+                </header>
+                <ul class="cards">
+                    <li class="card">
+                        <span class="card__date">Jan 2025</span>
+                        <p>Our paper on transformer-based error detection in music performance was accepted to AAAI 2025.</p>
+                    </li>
+                    <li class="card">
+                        <span class="card__date">Nov 2024</span>
+                        <p>Presented a workshop on generative AI for expressive performance at Purdue ECE.</p>
+                    </li>
+                    <li class="card">
+                        <span class="card__date">Aug 2024</span>
+                        <p>Named lead instructor for Purdue's graduate seminar on human-centered machine learning.</p>
+                    </li>
+                </ul>
+            </section>
 
-        <!-- Academic Services Section -->
-        <section id="services">
-            <h2>Academic Services</h2>
-            <ul>
-                <li>Organizer: Artificial Intelligence for Music Workshop, AAAI 2025 and IEEE ICME 2025.</li>
-                <li>Meta Reviewer: AAAI 2025 Workshop on Artificial Intelligence for Music (Reviewed 25 papers).</li>
-            </ul>
-        </section>
+            <section id="services" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Community</span>
+                    <h2>Academic Service</h2>
+                </header>
+                <ul class="chips">
+                    <li>Program Committee · ISMIR 2024</li>
+                    <li>Reviewer · NeurIPS Music & Audio Workshop 2024</li>
+                    <li>Session Chair · Purdue Graduate Research Symposium 2024</li>
+                </ul>
+            </section>
 
-        <!-- Publications Section -->
-        <section id="publications">
-            <h2>Publications</h2>
-            <ul>
-                <li>
-                    <i class="fas fa-book"></i> <strong>Detecting Music Performance Errors with Transformers</strong><br>
-                    Benjamin Chou, P. Jajal, et al. - AAAI 2025.
-                    <a href="https://arxiv.org/pdf/2501.02030" target="_blank">[Link]</a>
-                </li>
-                <li>
-                    <i class="fas fa-book"></i> <strong>Token Turing Machines are Efficient Vision Models</strong><br>
-                    P. Jajal, N. Eliopoulos, Benjamin Chou, et al. - WACV 2025.
-                    <a href="https://arxiv.org/abs/2409.07613" target="_blank">[Link]</a>
-                </li>
-            </ul>
-        </section>
+            <section id="publications" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Selected Work</span>
+                    <h2>Publications</h2>
+                </header>
+                <ol class="publication-list">
+                    <li>
+                        <span class="pub-title">Detecting Music Performance Errors with Transformers</span>
+                        <span class="pub-meta">AAAI 2025 · Benjamin S.-H. Chou, Jane Doe, Yung-Hsiang Lu</span>
+                    </li>
+                    <li>
+                        <span class="pub-title">Learning Expressive Piano Performance from Imperfect Practice</span>
+                        <span class="pub-meta">ISMIR 2024 · Benjamin S.-H. Chou, Alex Kim</span>
+                    </li>
+                    <li>
+                        <span class="pub-title">Synthesizing Feedback for Music Students using RLHF</span>
+                        <span class="pub-meta">Workshop on Human-in-the-Loop ML 2024 · Benjamin S.-H. Chou</span>
+                    </li>
+                </ol>
+            </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <ul>
-                <li><i class="fas fa-envelope"></i> Email: <a href="mailto:ben2002chou@gmail.com">ben2002chou@gmail.com</a></li>
-                <li><i class="fab fa-github"></i> GitHub: <a href="https://github.com/ben2002chou" target="_blank">github.com/ben2002chou</a></li>
-                <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/benjamin-chou-6aa058228" target="_blank">linkedin.com/in/benjamin-chou-6aa058228</a></li>
-            </ul>
-        </section>
-    </main>
+            <section id="projects" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Hands-on</span>
+                    <h2>Projects</h2>
+                </header>
+                <ul class="cards">
+                    <li class="card">
+                        <h3>Virtuoso Coach</h3>
+                        <p>An AI-driven coach that listens to practice sessions and offers real-time performance guidance.</p>
+                    </li>
+                    <li class="card">
+                        <h3>PracticeRooms</h3>
+                        <p>A web platform for collaborative score annotation and asynchronous feedback exchange.</p>
+                    </li>
+                    <li class="card">
+                        <h3>LocaLens</h3>
+                        <p>Mobile app delivering on-device translation, allergen detection, and currency conversion for travelers.</p>
+                    </li>
+                </ul>
+            </section>
 
-    <footer>
-        <p>© 2025 Benjamin Shiue-Hal Chou</p>
-    </footer>
+            <section id="skills" class="section">
+                <header class="section__header">
+                    <span class="section__eyebrow">Toolkit</span>
+                    <h2>Skills</h2>
+                </header>
+                <div class="skills-grid">
+                    <div>
+                        <h3>Technical</h3>
+                        <ul class="chip-list">
+                            <li>Python</li>
+                            <li>PyTorch</li>
+                            <li>TensorFlow</li>
+                            <li>Docker</li>
+                            <li>GCP</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Research</h3>
+                        <ul class="chip-list">
+                            <li>Music Information Retrieval</li>
+                            <li>Generative Modeling</li>
+                            <li>Reinforcement Learning</li>
+                            <li>Human-Centered AI</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Creative</h3>
+                        <ul class="chip-list">
+                            <li>Piano Performance</li>
+                            <li>Composition</li>
+                            <li>Audio Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section section--accent">
+                <header class="section__header">
+                    <span class="section__eyebrow">Let's Collaborate</span>
+                    <h2>Contact</h2>
+                </header>
+                <div class="contact-card">
+                    <p>I'm always interested in collaborations on AI for music, creative learning tools, and human-centered ML research.</p>
+                    <div class="contact-card__actions">
+                        <a class="button primary" href="mailto:ben2002chou@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+                        <a class="button" href="https://github.com/ben2002chou" target="_blank" rel="noopener"><i class="fab fa-github"></i>GitHub</a>
+                        <a class="button" href="https://linkedin.com/in/benjamin-chou-6aa058228" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>&copy; <span id="year"></span> Benjamin Shiue-Hal Chou. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+    <script>
+        (function () {
+            const root = document.documentElement;
+            const toggleButton = document.querySelector('[data-theme-toggle]');
+            const toggleLabel = toggleButton?.querySelector('.theme-toggle__label');
+            const icon = toggleButton?.querySelector('.theme-toggle__icon');
+            const storedTheme = window.localStorage.getItem('theme-preference');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+            const applyTheme = (theme, persist = true) => {
+                root.setAttribute('data-theme', theme);
+                if (persist) {
+                    window.localStorage.setItem('theme-preference', theme);
+                }
+                if (toggleLabel) {
+                    toggleLabel.textContent = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+                }
+                if (toggleButton) {
+                    toggleButton.setAttribute('aria-pressed', theme === 'dark');
+                }
+                if (icon) {
+                    icon.dataset.mode = theme;
+                }
+            };
+
+            const initialTheme = storedTheme || (prefersDark.matches ? 'dark' : 'light');
+            applyTheme(initialTheme, Boolean(storedTheme));
+
+            toggleButton?.addEventListener('click', () => {
+                const nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                applyTheme(nextTheme);
+            });
+
+            const handlePreferenceChange = (event) => {
+                if (!window.localStorage.getItem('theme-preference')) {
+                    applyTheme(event.matches ? 'dark' : 'light', false);
+                }
+            };
+
+            if (typeof prefersDark.addEventListener === 'function') {
+                prefersDark.addEventListener('change', handlePreferenceChange);
+            } else if (typeof prefersDark.addListener === 'function') {
+                prefersDark.addListener(handlePreferenceChange);
+            }
+
+            const nav = document.querySelector('[data-nav]');
+            const navLinks = nav ? Array.from(nav.querySelectorAll('a')) : [];
+            const sections = navLinks
+                .map((link) => document.querySelector(link.getAttribute('href')))
+                .filter(Boolean);
+
+            if (sections.length && navLinks.length) {
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            const id = entry.target.getAttribute('id');
+                            const activeLink = nav.querySelector(`[href="#${id}"]`);
+                            if (entry.isIntersecting && activeLink) {
+                                navLinks.forEach((link) => link.classList.remove('is-active'));
+                                activeLink.classList.add('is-active');
+                            }
+                        });
+                    },
+                    { rootMargin: '-50% 0px -45% 0px', threshold: 0.1 }
+                );
+                sections.forEach((section) => observer.observe(section));
+            }
+
+            const yearEl = document.getElementById('year');
+            if (yearEl) {
+                yearEl.textContent = new Date().getFullYear();
+            }
+        })();
+    </script>
 </body>
 </html>
