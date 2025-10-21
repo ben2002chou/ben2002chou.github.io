@@ -287,7 +287,8 @@
                     projects = [],
                     honors_awards = [],
                     publications = [],
-                    patent = []
+                    patent = [],
+                    hero_stats: heroStats = []
                 } = resume;
 
                 const summaryParagraphs = toParagraphs(professional_summary);
@@ -404,34 +405,38 @@
 
                 if (heroStatsEl) {
                     heroStatsEl.innerHTML = '';
-                    const stats = [
-                        header.role ? createStat(resolveLabel(heroStatLabels, 'role'), header.role) : null,
-                        education[0]
-                            ? createStat(
-                                  resolveLabel(heroStatLabels, 'education'),
-                                  `${education[0].degree || ''}${
-                                      education[0].institution ? ` · ${education[0].institution}` : ''
-                                  }`
-                              )
-                            : null,
-                        focus_areas.length
-                            ? createStat(
-                                  resolveLabel(heroStatLabels, 'focus_areas'),
-                                  focus_areas.slice(0, 2).join(', ')
-                              )
-                            : null,
-                        publications.length
-                            ? createStat(
-                                  resolveLabel(heroStatLabels, 'publications'),
-                                  `${publications.length} listed`
-                              )
-                            : null,
-                        honors_awards.length
-                            ? createStat(resolveLabel(heroStatLabels, 'honors'), `${honors_awards.length} awards`)
-                            : null
-                    ].filter(Boolean);
+                    const statsSource = Array.isArray(heroStats) ? heroStats : [];
 
-                    stats.forEach((stat) => heroStatsEl.appendChild(stat));
+                    if (statsSource.length) {
+                        statsSource.forEach((item) => {
+                            const label = (item?.label || '').trim();
+                            const value = (item?.value || '').trim();
+                            const stat = createStat(label, value);
+                            if (stat) {
+                                heroStatsEl.appendChild(stat);
+                            }
+                        });
+                    } else {
+                        const fallbackStats = [
+                            header.role ? createStat(resolveLabel(heroStatLabels, 'role'), header.role) : null,
+                            education[0]
+                                ? createStat(
+                                      resolveLabel(heroStatLabels, 'education'),
+                                      `${education[0].degree || ''}${
+                                          education[0].institution ? ` · ${education[0].institution}` : ''
+                                      }`
+                                  )
+                                : null,
+                            focus_areas.length
+                                ? createStat(
+                                      resolveLabel(heroStatLabels, 'focus_areas'),
+                                      focus_areas.slice(0, 2).join(', ')
+                                  )
+                                : null
+                        ].filter(Boolean);
+                        fallbackStats.forEach((stat) => heroStatsEl.appendChild(stat));
+                    }
+
                     toggleElement(heroStatsEl, Boolean(heroStatsEl.children.length));
                 }
 
@@ -585,17 +590,20 @@
                         content.append(title, meta);
                         if (item.gpa) {
                             const gpa = document.createElement('p');
+                            gpa.className = 'timeline__detail timeline__detail--emphasis';
                             gpa.textContent = `GPA: ${item.gpa}`;
                             content.appendChild(gpa);
                         }
                         if (Array.isArray(item.details) && item.details.length) {
-                            const list = document.createElement('ul');
+                            const details = document.createElement('div');
+                            details.className = 'timeline__details';
                             item.details.forEach((detail) => {
-                                const li = document.createElement('li');
-                                li.textContent = detail;
-                                list.appendChild(li);
+                                const paragraph = document.createElement('p');
+                                paragraph.className = 'timeline__detail';
+                                paragraph.textContent = detail;
+                                details.appendChild(paragraph);
                             });
-                            content.appendChild(list);
+                            content.appendChild(details);
                         }
                         article.append(dot, content);
                         educationEl.appendChild(article);
@@ -629,13 +637,15 @@
                         }`;
                         content.append(title, meta);
                         if (Array.isArray(item.bullet_points) && item.bullet_points.length) {
-                            const list = document.createElement('ul');
-                            item.bullet_points.forEach((point) => {
-                                const li = document.createElement('li');
-                                li.innerHTML = formatMarkdown(point);
-                                list.appendChild(li);
+                            const details = document.createElement('div');
+                            details.className = 'timeline__details';
+                            item.bullet_points.forEach((point, index) => {
+                                const paragraph = document.createElement('p');
+                                paragraph.className = index === 0 ? 'timeline__summary' : 'timeline__detail';
+                                paragraph.innerHTML = formatMarkdown(point);
+                                details.appendChild(paragraph);
                             });
-                            content.appendChild(list);
+                            content.appendChild(details);
                         }
                         article.append(dot, content);
                         experienceEl.appendChild(article);
@@ -665,13 +675,12 @@
                             li.appendChild(skills);
                         }
                         if (Array.isArray(project.bullet_points) && project.bullet_points.length) {
-                            const list = document.createElement('ul');
-                            project.bullet_points.forEach((point) => {
-                                const bullet = document.createElement('li');
-                                bullet.innerHTML = formatMarkdown(point);
-                                list.appendChild(bullet);
+                            project.bullet_points.forEach((point, index) => {
+                                const paragraph = document.createElement('p');
+                                paragraph.className = index === 0 ? 'card__summary' : 'card__detail';
+                                paragraph.innerHTML = formatMarkdown(point);
+                                li.appendChild(paragraph);
                             });
-                            li.appendChild(list);
                         }
                         projectsEl.appendChild(li);
                     });

@@ -294,6 +294,11 @@ img {
     margin: 0 0 0.9rem;
 }
 
+.hero__lead p:first-child {
+    font-weight: 600;
+    color: var(--color-text);
+}
+
 .hero__lead p:last-child {
     margin-bottom: 0;
 }
@@ -502,6 +507,35 @@ img {
     margin-bottom: 0.6rem;
 }
 
+.timeline__details {
+    display: grid;
+    gap: 0.65rem;
+    color: var(--color-text-muted);
+    margin-top: 0.75rem;
+}
+
+.timeline__summary {
+    margin: 0;
+    font-weight: 600;
+    color: var(--color-text);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.timeline__detail {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.timeline__detail + .timeline__detail {
+    margin-top: 0.4rem;
+}
+
+.timeline__detail--emphasis {
+    font-weight: 600;
+    color: var(--color-text);
+}
+
 .cards {
     list-style: none;
     margin: 0;
@@ -532,11 +566,20 @@ img {
     font-weight: 600;
 }
 
-.card ul {
-    margin: 0.75rem 0 0;
-    padding-left: 1.25rem;
-    display: grid;
-    gap: 0.4rem;
+.card__summary {
+    margin: 0.9rem 0 0;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.card__detail {
+    margin: 0.6rem 0 0;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.card__detail + .card__detail {
+    margin-top: 0.45rem;
 }
 
 .card__date {
