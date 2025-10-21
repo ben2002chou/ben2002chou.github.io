@@ -54,8 +54,16 @@ resume:
       title: "Contact"
   header:
     name: "Benjamin Shiue-Hal Chou"
-    role: "PhD Student, Electrical & Computer Engineering"
+    role: "Graduate Research Assistant, Purdue University"
     contact: "765-409-1859 | ben2002chou@gmail.com | linkedin.com/in/benjamin-chou | github.com/ben2002chou"
+
+  hero_stats:
+    - label: "Role"
+      value: "Graduate Research Assistant · Purdue University"
+    - label: "Education"
+      value: "Ph.D. in Electrical & Computer Engineering · Purdue Univ."
+    - label: "Focus Areas"
+      value: "Deep learning, Audio processing"
 
   professional_summary: |
     I am a PhD student in Electrical & Computer Engineering at Purdue, seeking an AI/ML researcher internship.

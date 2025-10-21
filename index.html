@@ -287,7 +287,8 @@
                     projects = [],
                     honors_awards = [],
                     publications = [],
-                    patent = []
+                    patent = [],
+                    hero_stats: heroStats = []
                 } = resume;
 
                 const summaryParagraphs = toParagraphs(professional_summary);
@@ -404,34 +405,38 @@
 
                 if (heroStatsEl) {
                     heroStatsEl.innerHTML = '';
-                    const stats = [
-                        header.role ? createStat(resolveLabel(heroStatLabels, 'role'), header.role) : null,
-                        education[0]
-                            ? createStat(
-                                  resolveLabel(heroStatLabels, 'education'),
-                                  `${education[0].degree || ''}${
-                                      education[0].institution ? ` · ${education[0].institution}` : ''
-                                  }`
-                              )
-                            : null,
-                        focus_areas.length
-                            ? createStat(
-                                  resolveLabel(heroStatLabels, 'focus_areas'),
-                                  focus_areas.slice(0, 2).join(', ')
-                              )
-                            : null,
-                        publications.length
-                            ? createStat(
-                                  resolveLabel(heroStatLabels, 'publications'),
-                                  `${publications.length} listed`
-                              )
-                            : null,
-                        honors_awards.length
-                            ? createStat(resolveLabel(heroStatLabels, 'honors'), `${honors_awards.length} awards`)
-                            : null
-                    ].filter(Boolean);
+                    const statsSource = Array.isArray(heroStats) ? heroStats : [];
 
-                    stats.forEach((stat) => heroStatsEl.appendChild(stat));
+                    if (statsSource.length) {
+                        statsSource.forEach((item) => {
+                            const label = (item?.label || '').trim();
+                            const value = (item?.value || '').trim();
+                            const stat = createStat(label, value);
+                            if (stat) {
+                                heroStatsEl.appendChild(stat);
+                            }
+                        });
+                    } else {
+                        const fallbackStats = [
+                            header.role ? createStat(resolveLabel(heroStatLabels, 'role'), header.role) : null,
+                            education[0]
+                                ? createStat(
+                                      resolveLabel(heroStatLabels, 'education'),
+                                      `${education[0].degree || ''}${
+                                          education[0].institution ? ` · ${education[0].institution}` : ''
+                                      }`
+                                  )
+                                : null,
+                            focus_areas.length
+                                ? createStat(
+                                      resolveLabel(heroStatLabels, 'focus_areas'),
+                                      focus_areas.slice(0, 2).join(', ')
+                                  )
+                                : null
+                        ].filter(Boolean);
+                        fallbackStats.forEach((stat) => heroStatsEl.appendChild(stat));
+                    }
+
                     toggleElement(heroStatsEl, Boolean(heroStatsEl.children.length));
                 }
 
