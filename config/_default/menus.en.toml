@@ -11,10 +11,10 @@
   url = "/about/"
 
   [[main]]
-  name = "Research"
+  name = "Resume"
   weight = 300
-  identifier = "research"
-  url = "/research/"
+  identifier = "resume"
+  url = "/resume.pdf"
 
   [[main]]
   name = "Publications"

@@ -25,13 +25,6 @@ summary = summary.gsub(/\s+/, ' ')
 header = resume['header'] || {}
 contact = (header['contact'] || '').split('|').map(&:strip).reject(&:empty?)
 
-research_focus = [
-  'Audio and music machine learning',
-  'Multimodal systems',
-  'Generative model steering',
-  'Transformers for error detection',
-  'Deepfake detection and authenticity verification'
-]
 
 education_lines = (resume['education'] || []).map do |item|
   details = []
@@ -79,14 +72,6 @@ about_body = [
   education_lines.join("\n")
 ].join("\n").strip
 
-research_body = [
-  "My research focuses on:",
-  "",
-  research_focus.map { |item| "- #{item}" }.join("\n"),
-  "",
-  "I work at the intersection of audio DSP, deep learning, and multimodal modeling, with a focus on reliable detection of synthetic media and model steering for music and speech.".strip
-].join("\n")
-
 publications_body = publication_lines.join("\n")
 
 projects_body = project_blocks.join("\n\n")
@@ -113,7 +98,6 @@ contact_body = [
 
 pages = {
   'about.md' => [front_matter.call('About', 'Background and education.'), about_body],
-  'research.md' => [front_matter.call('Research', 'Research interests and focus areas.'), research_body],
   'publications.md' => [front_matter.call('Publications', 'Selected publications and preprints.'), publications_body],
   'projects.md' => [front_matter.call('Projects', 'Selected projects and research prototypes.'), projects_body],
   'experience.md' => [front_matter.call('Experience', 'Industry, research, and leadership experience.'), experience_body],
