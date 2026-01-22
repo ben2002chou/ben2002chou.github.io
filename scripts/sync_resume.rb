@@ -38,7 +38,21 @@ experience_blocks = (resume['work_experience'] || []).map do |item|
   lines = []
   lines << "### #{item['title']} — #{item['organization']}"
   lines << "*#{item['location']} · #{item['date']}*"
-  Array(item['bullet_points']).each { |point| lines << "- #{point}" }
+  Array(item['bullet_points']).each do |point|
+    original = point.to_s
+    cleaned = original
+    if original.include?('**')
+      last_bold = original.rindex('**')
+      period_before_bold = original.rindex('.', last_bold)
+      cleaned = original[0..period_before_bold] if period_before_bold
+    end
+    cleaned = cleaned.gsub(/\*\*([^*]+)\*\*/, '\1')
+    cleaned = cleaned.gsub(/\s{2,}/, ' ').strip
+    cleaned = cleaned.gsub(/\s+([.,;:])/, '\1')
+    cleaned = cleaned.gsub(/\s+and$/, '').strip
+    cleaned = cleaned.gsub(/[,;:]+$/, '').strip
+    lines << "- #{cleaned}"
+  end
   lines.join("\n")
 end
 
@@ -90,8 +104,6 @@ contact_body = [
   "LinkedIn: https://www.linkedin.com/in/benjamin-chou-6aa058228",
   "",
   "GitHub: https://github.com/ben2002chou",
-  "",
-  "Resume: [PDF](/resume.pdf)",
   citizenship ? "" : nil,
   citizenship ? "Citizenship: #{citizenship}" : nil
 ].compact.join("\n")

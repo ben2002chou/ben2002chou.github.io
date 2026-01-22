@@ -7,7 +7,7 @@ profilePicture = "images/profile.png"
 keywords = "audio machine learning, multimodal AI, deep learning, transformers, deepfake detection"
 favicon = "favicons/"
 # example ["css/custom.css"]
-customCss = []
+customCss = ["css/custom.css"]
 # example ["js/custom.js"]
 customJs = [] 
 mainSections = []

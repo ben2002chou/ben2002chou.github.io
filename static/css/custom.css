@@ -1,0 +1,4 @@
+.sidebar__introduction-description p {
+  max-width: 40ch;
+  margin: 0 auto;
+}
