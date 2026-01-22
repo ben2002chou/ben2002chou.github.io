@@ -10,8 +10,7 @@ This repo uses the Anatole Hugo theme.
    - Framework preset: **Hugo**
    - Build command:
      ```bash
-     ./scripts/setup_dart_sass.sh
-     PATH="$PWD/.tooling/dart-sass:$PATH" hugo --gc --minify
+     ./scripts/build.sh
      ```
    - Build output directory: `public`
    - Environment variables:
