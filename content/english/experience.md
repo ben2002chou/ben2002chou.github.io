@@ -19,6 +19,7 @@ date = "2026-01-22"
 - Made an app for menu translation, currency conversion, and allergen alerts using Flutter and Android Studio.
 - Built an MVP in 4 months with weekly sprints, emphasizing leadership and collaboration.
 - Integrated Google ML Toolkit for cross-platform AI with computer vision and real-time deployment.
+- Code: https://github.com/ben2002chou/local_lens_app
 
 ### Research Assistant — Under Dr. Hsun-Ping Hsieh, National Cheng Kung University
 *Taiwan · Mar '23 – Aug 2023*

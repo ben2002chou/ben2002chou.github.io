@@ -53,6 +53,9 @@ experience_blocks = (resume['work_experience'] || []).map do |item|
     cleaned = cleaned.gsub(/[,;:]+$/, '').strip
     lines << "- #{cleaned}"
   end
+  if item['title'].to_s.downcase.include?('startup founder')
+    lines << "- Code: https://github.com/ben2002chou/local_lens_app"
+  end
   lines.join("\n")
 end
 
@@ -100,6 +103,24 @@ publication_lines = (resume['publications'] || []).map do |pub|
   line = "- **#{title}** — #{authors}"
   line += ". *#{venue}*" if venue && !venue.empty?
   line += " ([link](#{link}))" if link && !link.to_s.empty?
+  extra_links = {
+    "Detecting Performance Errors with Transformers" => {
+      code: "https://github.com/ben2002chou/Polytune",
+      video: "https://underline.io/lecture/111588-detecting-music-performance-errors-with-transformers"
+    },
+    "Token Turing Machines are Efficient Vision Models" => {
+      code: "https://github.com/pjjajal/EfficientTTMs"
+    },
+    "AdaPerceiver: Transformers with Adaptive Width, Depth, and Tokens" => {
+      code: "https://github.com/pjjajal/adaperceiver-public"
+    }
+  }
+  if extra_links[title]
+    links = []
+    links << "[Code](#{extra_links[title][:code]})" if extra_links[title][:code]
+    links << "[Video](#{extra_links[title][:video]})" if extra_links[title][:video]
+    line += " " + links.join(' · ') unless links.empty?
+  end
   line
 end
 
