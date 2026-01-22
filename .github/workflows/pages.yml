@@ -39,9 +39,9 @@ jobs:
         run: ./scripts/setup_dart_sass.sh
 
       - name: Build
-        env:
-          PATH: ${{ github.workspace }}/.tooling/dart-sass:${{ env.PATH }}
-        run: hugo --gc --minify
+        run: |
+          export PATH="${GITHUB_WORKSPACE}/.tooling/dart-sass:${PATH}"
+          hugo --gc --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
