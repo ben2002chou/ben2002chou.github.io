@@ -14,6 +14,5 @@ Minimal academic site using the Anatole Hugo theme.
 ./scripts/dev.sh
 ```
 
-## Notes
-- Profile photo: `static/images/profile.jpg`
-- Resume PDF: `static/resume.pdf`
+## Deploy
+GitHub Actions builds and publishes to GitHub Pages on every push to `main`.
