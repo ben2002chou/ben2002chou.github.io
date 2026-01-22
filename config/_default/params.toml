@@ -5,7 +5,7 @@ author = "Benjamin Chou"
 description = "PhD student at Purdue University researching AI/ML for audio, music, and multimodal systems."
 profilePicture = "images/profile.png"
 keywords = "audio machine learning, multimodal AI, deep learning, transformers, deepfake detection"
-favicon = "favicons/"
+favicon = "/"
 # example ["css/custom.css"]
 customCss = ["css/custom.css"]
 # example ["js/custom.js"]
