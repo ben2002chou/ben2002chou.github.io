@@ -1,6 +1,6 @@
-# Cloudflare Pages + Porkbun DNS (Hugo Blox Academic)
+# Cloudflare Pages + Porkbun DNS (Anatole Hugo)
 
-This repo is configured for the Hugo Blox Academic (CV) template and is ready to deploy on Cloudflare Pages.
+This repo uses the Anatole Hugo theme.
 
 ## 1) Create the Cloudflare Pages project
 1. Log in to Cloudflare.
@@ -8,11 +8,14 @@ This repo is configured for the Hugo Blox Academic (CV) template and is ready to
 3. Connect your GitHub account and select this repo.
 4. Set build settings:
    - Framework preset: **Hugo**
-   - Build command: `pnpm install --no-frozen-lockfile && pnpm run build`
+   - Build command:
+     ```bash
+     ./scripts/setup_dart_sass.sh
+     PATH="$PWD/.tooling/dart-sass:$PATH" hugo --gc --minify
+     ```
    - Build output directory: `public`
    - Environment variables:
      - `HUGO_VERSION` = `0.154.5`
-     - `NODE_VERSION` = `22`
      - `HUGO_ENV` = `production`
 
 ## 2) Add the custom domain in Cloudflare Pages
@@ -38,8 +41,7 @@ Once the nameservers are active, Cloudflare will automatically create the needed
 - Visit `https://benschou.com` and `https://www.benschou.com`.
 - Cloudflare Pages will provision HTTPS certificates automatically.
 
-## Optional local preview
+## Local preview
 ```bash
-pnpm install
-pnpm run dev
+./scripts/dev.sh
 ```

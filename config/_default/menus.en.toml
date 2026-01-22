@@ -1,0 +1,41 @@
+  [[main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[main]]
+  name = "About"
+  weight = 200
+  identifier = "about"
+  url = "/about/"
+
+  [[main]]
+  name = "Research"
+  weight = 300
+  identifier = "research"
+  url = "/research/"
+
+  [[main]]
+  name = "Publications"
+  weight = 400
+  identifier = "publications"
+  url = "/publications/"
+
+  [[main]]
+  name = "Projects"
+  weight = 500
+  identifier = "projects"
+  url = "/projects/"
+
+  [[main]]
+  name = "Experience"
+  weight = 600
+  identifier = "experience"
+  url = "/experience/"
+
+  [[main]]
+  name = "Contact"
+  weight = 700
+  identifier = "contact"
+  url = "/contact/"

@@ -1,0 +1,127 @@
+#!/usr/bin/env ruby
+require 'yaml'
+require 'fileutils'
+
+root = File.expand_path('..', __dir__)
+source = ENV['RESUME_SOURCE'] || '/Users/Ben/Code/ben_resume/resume_linkedln.yaml'
+
+unless File.exist?(source)
+  warn "Resume source not found: #{source}"
+  exit 1
+end
+
+raw = YAML.safe_load(File.read(source))
+resume = raw['resume'] || raw
+
+FileUtils.mkdir_p(File.join(root, 'data'))
+File.write(File.join(root, 'data', 'resume.yaml'), YAML.dump(raw))
+
+content_dir = File.join(root, 'content', 'english')
+FileUtils.mkdir_p(content_dir)
+
+summary = (resume['professional_summary'] || '').strip
+summary = summary.gsub('Tensorflow', 'TensorFlow').gsub('Stem separation', 'stem separation')
+summary = summary.gsub(/\s+/, ' ')
+header = resume['header'] || {}
+contact = (header['contact'] || '').split('|').map(&:strip).reject(&:empty?)
+
+research_focus = [
+  'Audio and music machine learning',
+  'Multimodal systems',
+  'Generative model steering',
+  'Transformers for error detection',
+  'Deepfake detection and authenticity verification'
+]
+
+education_lines = (resume['education'] || []).map do |item|
+  details = []
+  details << "GPA: #{item['gpa']}" if item['gpa'] && !item['gpa'].empty?
+  details += Array(item['details'])
+  extra = details.empty? ? '' : " (#{details.join('; ')})"
+  "- **#{item['degree']}**, #{item['institution']} — #{item['location']} (#{item['date']})#{extra}"
+end
+
+experience_blocks = (resume['work_experience'] || []).map do |item|
+  lines = []
+  lines << "### #{item['title']} — #{item['organization']}"
+  lines << "*#{item['location']} · #{item['date']}*"
+  Array(item['bullet_points']).each { |point| lines << "- #{point}" }
+  lines.join("\n")
+end
+
+project_blocks = (resume['projects'] || []).map do |project|
+  lines = []
+  lines << "### #{project['title'].to_s.gsub('*', '')}"
+  skills = project['skills'].to_s.gsub('*', '')
+  lines << "*#{skills}*" unless skills.empty?
+  Array(project['bullet_points']).each { |point| lines << "- #{point}" }
+  lines.join("\n")
+end
+
+publication_lines = (resume['publications'] || []).map do |pub|
+  title = pub['title'].to_s.gsub('*', '')
+  authors = pub['authors'].to_s.gsub('*', '')
+  venue = pub['venue']
+  link = pub['link']
+  line = "- **#{title}** — #{authors}"
+  line += ". *#{venue}*" if venue && !venue.empty?
+  line += " ([link](#{link}))" if link && !link.to_s.empty?
+  line
+end
+
+front_matter = lambda do |title, description|
+  ["+++", "title = \"#{title}\"", "description = \"#{description}\"", "date = \"2026-01-22\"", "+++"].join("\n")
+end
+
+about_body = [
+  summary,
+  "\n## Education\n",
+  education_lines.join("\n")
+].join("\n").strip
+
+research_body = [
+  "My research focuses on:",
+  "",
+  research_focus.map { |item| "- #{item}" }.join("\n"),
+  "",
+  "I work at the intersection of audio DSP, deep learning, and multimodal modeling, with a focus on reliable detection of synthetic media and model steering for music and speech.".strip
+].join("\n")
+
+publications_body = publication_lines.join("\n")
+
+projects_body = project_blocks.join("\n\n")
+
+experience_body = experience_blocks.join("\n\n")
+
+email = contact.find { |c| c.include?('@') } || 'ben2002chou@gmail.com'
+phone = contact.find { |c| c.gsub(/\D/, '').length >= 7 }
+citizenship = contact.find { |c| c.downcase.include?('citizen') }
+
+contact_body = [
+  "Email: #{email}",
+  phone ? "" : nil,
+  phone ? "Phone: #{phone}" : nil,
+  "",
+  "LinkedIn: https://www.linkedin.com/in/benjamin-chou-6aa058228",
+  "",
+  "GitHub: https://github.com/ben2002chou",
+  "",
+  "Resume: [PDF](/resume.pdf)",
+  citizenship ? "" : nil,
+  citizenship ? "Citizenship: #{citizenship}" : nil
+].compact.join("\n")
+
+pages = {
+  'about.md' => [front_matter.call('About', 'Background and education.'), about_body],
+  'research.md' => [front_matter.call('Research', 'Research interests and focus areas.'), research_body],
+  'publications.md' => [front_matter.call('Publications', 'Selected publications and preprints.'), publications_body],
+  'projects.md' => [front_matter.call('Projects', 'Selected projects and research prototypes.'), projects_body],
+  'experience.md' => [front_matter.call('Experience', 'Industry, research, and leadership experience.'), experience_body],
+  'contact.md' => [front_matter.call('Contact', 'Get in touch.'), contact_body]
+}
+
+pages.each do |filename, parts|
+  File.write(File.join(content_dir, filename), parts.join("\n\n").strip + "\n")
+end
+
+puts 'Resume sync complete.'
