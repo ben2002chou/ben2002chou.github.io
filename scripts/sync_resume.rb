@@ -68,6 +68,23 @@ project_blocks = (resume['projects'] || []).map do |project|
   if project_links[title]
     lines << "[GitHub](#{project_links[title]})"
   end
+  project_assets = {
+    "Improving Developer Code Understanding with GitHub Issues and Retrieval-Augmented Generation" => {
+      paper: "/github_issues.pdf"
+    },
+    "Multi-Agent Self-Play for Beating Atari Games" => {
+      video: "https://youtu.be/B6ykyBO_HcU"
+    },
+    "Spectral Image Inpainting with Deep Learning" => {
+      slides: "/nmf-based-inpainting.pdf"
+    }
+  }
+  if project_assets[title]
+    assets = project_assets[title]
+    lines << "[Paper](#{assets[:paper]})" if assets[:paper]
+    lines << "[Slides](#{assets[:slides]})" if assets[:slides]
+    lines << "[Video](#{assets[:video]})" if assets[:video]
+  end
   skills = project['skills'].to_s.gsub('*', '')
   lines << "*#{skills}*" unless skills.empty?
   Array(project['bullet_points']).each { |point| lines << "- #{point}" }
