@@ -1,5 +1,11 @@
 # [The Academic CV That Gets You Hired](https://github.com/HugoBlox/hugo-theme-academic-cv)
 
+## Local content workflow
+
+- Update your resume source file: `/Users/Ben/Code/ben_resume/resume_linkedln.yaml`
+- Copy it into the site: `data/resume.yaml`
+- Sync site content (after `pnpm install`): `pnpm run sync-resume`
+
 [![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv/start/?utm_source=github&utm_medium=readme)
 
 <h1 align="center">The Portfolio That Works While You Sleep</h1>
