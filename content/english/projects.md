@@ -12,6 +12,7 @@ date = "2026-01-22"
 
 ### Multi-Agent Self-Play for Beating Atari Games
 [GitHub](https://github.com/ben2002chou/MultiAgentReinforcementLearningGames)
+[Paper](/multi-agent-self-play.pdf)
 [Video](https://youtu.be/B6ykyBO_HcU)
 *OpenAI Gym, PettingZoo, PyTorch, RL, Multi-agent systems*
 - Used DQN/PPO self-play to improve Atari win rates by 11–32%.

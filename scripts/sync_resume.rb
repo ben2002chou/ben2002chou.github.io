@@ -73,6 +73,7 @@ project_blocks = (resume['projects'] || []).map do |project|
       paper: "/github_issues.pdf"
     },
     "Multi-Agent Self-Play for Beating Atari Games" => {
+      paper: "/multi-agent-self-play.pdf",
       video: "https://youtu.be/B6ykyBO_HcU"
     },
     "Spectral Image Inpainting with Deep Learning" => {
