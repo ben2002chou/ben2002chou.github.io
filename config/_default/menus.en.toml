@@ -5,12 +5,6 @@
   url = "/"
 
   [[main]]
-  name = "About"
-  weight = 200
-  identifier = "about"
-  url = "/about/"
-
-  [[main]]
   name = "Resume"
   weight = 300
   identifier = "resume"

@@ -58,7 +58,16 @@ end
 
 project_blocks = (resume['projects'] || []).map do |project|
   lines = []
-  lines << "### #{project['title'].to_s.gsub('*', '')}"
+  title = project['title'].to_s.gsub('*', '')
+  lines << "### #{title}"
+  project_links = {
+    "Improving Developer Code Understanding with GitHub Issues and Retrieval-Augmented Generation" => "https://github.com/ben2002chou/CodeUnderstandingRAGGithubIssues",
+    "Multi-Agent Self-Play for Beating Atari Games" => "https://github.com/ben2002chou/MultiAgentReinforcementLearningGames",
+    "Spectral Image Inpainting with Deep Learning" => "https://github.com/ben2002chou/admm-adam-NMF-Inpainting"
+  }
+  if project_links[title]
+    lines << "[GitHub](#{project_links[title]})"
+  end
   skills = project['skills'].to_s.gsub('*', '')
   lines << "*#{skills}*" unless skills.empty?
   Array(project['bullet_points']).each { |point| lines << "- #{point}" }
