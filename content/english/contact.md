@@ -12,6 +12,4 @@ LinkedIn: https://www.linkedin.com/in/benjamin-chou-6aa058228
 
 GitHub: https://github.com/ben2002chou
 
-Resume: [PDF](/resume.pdf)
-
 Citizenship: US Citizen

@@ -69,6 +69,11 @@ title = "GitHub"
 url = "https://github.com/ben2002chou"
 
 [[socialIcons]]
+icon = "fa-solid fa-file-pdf"
+title = "Resume"
+url = "/resume.pdf"
+
+[[socialIcons]]
 icon = "fa-solid fa-envelope"
 title = "Email"
 url = "mailto:ben2002chou@gmail.com"
