@@ -3,7 +3,7 @@ title = "Benjamin Chou"
 author = "Benjamin Chou"
 #copyright = "2020-2021"
 description = "PhD candidate at Purdue University researching AI/ML for audio, music, and multimodal systems."
-profilePicture = "images/profile.jpg"
+profilePicture = "images/profile.png"
 keywords = "audio machine learning, multimodal AI, deep learning, transformers, deepfake detection"
 favicon = "favicons/"
 # example ["css/custom.css"]
