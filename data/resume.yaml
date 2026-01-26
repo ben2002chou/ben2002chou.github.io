@@ -88,6 +88,12 @@ resume:
     (2020–2023)
   - AAAI Student Scholarship (2025), Selected for NeurIPS Volunteer (2025)
   publications:
+  - authors: "**B. Chou**, P. Jajal, N. J. Eliopoulos, J. C. Davis, G. K. Thiravathukal,
+      K. Y.-J. Yun, Y.-H. Lu"
+    title: 'LadderSym: A Multimodal Interleaved Transformer for Music Practice Error
+      Detection'
+    venue: ICLR 2026
+    link: https://arxiv.org/abs/2510.08580
   - authors: P. Jajal, N. J. Eliopoulos, **B. Chou**, G. K. Thiravathukal, J. C. Davis,
       Y. Lu
     title: 'AdaPerceiver: Transformers with Adaptive Width, Depth, and Tokens'
@@ -98,12 +104,6 @@ resume:
       Detection'
     venue: Under Submission
     link: 
-  - authors: "**B. Chou**, P. Jajal, N. J. Eliopoulos, J. C. Davis, G. K. Thiravathukal,
-      K. Y.-J. Yun, Y.-H. Lu"
-    title: 'LadderSym: A Multimodal Interleaved Transformer for Music Practice Error
-      Detection'
-    venue: Accepted to ICLR 2026
-    link: https://arxiv.org/abs/2510.08580
   - authors: P. Jajal, N. J. Eliopoulos, **B. Chou**, G. K. Thiravathukal, J. C. Davis,
       Y. Lu
     title: Inference-Time Alignment of Diffusion Models with Evolutionary Algorithms
