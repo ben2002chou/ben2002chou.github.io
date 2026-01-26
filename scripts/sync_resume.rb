@@ -157,6 +157,8 @@ about_body = [
   education_lines.join("\n")
 ].join("\n").strip
 
+education_body = education_lines.join("\n")
+
 publications_body = publication_lines.join("\n")
 
 projects_body = project_blocks.join("\n\n")
@@ -181,6 +183,7 @@ contact_body = [
 
 pages = {
   'about.md' => [front_matter.call('About', 'Background and education.'), about_body],
+  'education.md' => [front_matter.call('Education', 'Academic background.'), education_body],
   'publications.md' => [front_matter.call('Publications', 'Selected publications and preprints.'), publications_body],
   'projects.md' => [front_matter.call('Projects', 'Selected projects and research prototypes.'), projects_body],
   'experience.md' => [front_matter.call('Experience', 'Industry, research, and leadership experience.'), experience_body],

@@ -29,6 +29,12 @@
   url = "/experience/"
 
   [[main]]
+  name = "Education"
+  weight = 625
+  identifier = "education"
+  url = "/education/"
+
+  [[main]]
   name = "Interests"
   weight = 650
   identifier = "interests"
