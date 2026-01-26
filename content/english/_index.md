@@ -3,7 +3,7 @@ title = "Benjamin Chou"
 summary = "PhD student at Purdue University researching AI/ML for audio, music, and multimodal systems."
 +++
 
-I’m a 3rd-year ECE PhD student at Purdue University. My work focuses on audio and music machine learning, specifically music practice error detection, music source separation, and reliable detection of synthetic and manipulated media with Audio Large Language Models.
+I’m a 3rd-year ECE PhD student at Purdue University, supervised by [Dr. Yung-Hsiang Lu](https://yhlu.net). My work focuses on audio and music machine learning, specifically music practice error detection, music source separation, and reliable detection of synthetic and manipulated media with Audio Large Language Models.
 
 **Currently:** seeking AI/ML research internships and collaborations.
 
@@ -18,6 +18,7 @@ More details: [Full Experience →](/experience/)
 
 ## News
 - (Nov 2025) Published *LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection* preprint. ([arXiv](https://arxiv.org/abs/2510.08580))
+- (Oct 2025) *LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection* accepted to ICLR 2026. ([arXiv](https://arxiv.org/abs/2510.08580))
 - (Sep 2025) Paper accepted to NeurIPS 2025 AI4Music Workshop: *Advancing Multi-Instrument Music Transcription: Results from the 2025 AMT Challenge*. ([OpenReview](https://openreview.net/pdf?id=NG187AZ71W))
 - (Sep 2025) Published *AdaPerceiver: Transformers with Adaptive Width, Depth, and Tokens* preprint. ([arXiv](https://arxiv.org/pdf/2511.18105))
 - (Jun 2025) Organizing AI4Music Workshop at NeurIPS 2025. ([Website](https://aiformusicworkshop.github.io))

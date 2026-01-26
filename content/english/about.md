@@ -4,7 +4,7 @@ description = "Background and education."
 date = "2026-01-22"
 +++
 
-3rd-year ECE PhD Candidate at Purdue University specializing in AI/ML research for audio, music, and multimodal systems. Researching generative model steering, stem separation, Transformers for error detection, and deepfake detection. Track record of high-impact research, including publications at AAAI, WACV and papers currently under review at top-tier venues with exceptional feedback. I am proficient in Audio DSP, Python, PyTorch, TensorFlow, and HPC clusters. I also have organizational and communication skills (experience organizing 3 AI4Music workshops).
+3rd-year ECE PhD Student at Purdue University specializing in AI/ML research for audio, music, and multimodal systems. Researching generative model steering, stem separation, Transformers for error detection, and deepfake detection. Track record of high-impact research, including publications at AAAI, WACV and papers currently under review at top-tier venues with exceptional feedback. I am proficient in Audio DSP, Python, PyTorch, TensorFlow, and HPC clusters. I also have organizational and communication skills (experience organizing 3 AI4Music workshops).
 
 ## Education
 

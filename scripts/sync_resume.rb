@@ -95,10 +95,33 @@ project_blocks = (resume['projects'] || []).map do |project|
   lines.join("\n")
 end
 
+name_map = {
+  "B. Chou" => "Benjamin Shiue-Hal Chou",
+  "P. Jajal" => "Purvish Jajal",
+  "N. J. Eliopoulos" => "Nick John Eliopoulos",
+  "J. C. Davis" => "James C. Davis",
+  "G. K. Thiravathukal" => "George K. Thiruvathukal",
+  "K. Y.-J. Yun" => "Kristen Yeon-Ji Yun",
+  "Y.-H. Lu" => "Yung-Hsiang Lu",
+  "Y. Lu" => "Yung-Hsiang Lu",
+  "T. Nadolsky" => "Tim Nadolsky",
+  "C.-Y. Yang" => "Cheng-Yun Yang",
+  "N. Ravi" => "Nikita Ravi",
+  "O. Chaturvedi" => "Ojas Chaturvedi",
+  "K. Bhardwaj" => "Kayshav Bhardwaj",
+  "T. Gondil" => "Tanay Gondil",
+  "Y. Yan" => "Yujia Yan",
+  "S. Chang" => "Sungkyun Chang",
+  "S. Koppisetti" => "Surya Koppisetti",
+  "Y. Zhu" => "Yi Zhu"
+}
+
 publication_lines = (resume['publications'] || []).map do |pub|
   title = pub['title'].to_s.gsub('*', '')
-  authors = pub['authors'].to_s.gsub('*', '')
+  authors_raw = pub['authors'].to_s.gsub('*', '')
+  authors = authors_raw.split(',').map { |name| name_map.fetch(name.strip, name.strip) }.join(', ')
   venue = pub['venue']
+  venue = "ICLR 2026" if title == "LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection"
   link = pub['link']
   line = "- **#{title}** — #{authors}"
   line += ". *#{venue}*" if venue && !venue.empty?

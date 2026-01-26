@@ -3,8 +3,8 @@ resume:
   header:
     name: Benjamin Chou
     contact: 765-409-1859 | ben2002chou@gmail.com | linkedin.com/in/benjamin-chou-6aa058228
-      | github.com/ben2002chou | US Citizen
-  professional_summary: '3rd-year ECE PhD Candidate at Purdue University specializing
+      | benschou.com | US Citizen
+  professional_summary: '3rd-year ECE PhD Student at Purdue University specializing
     in AI/ML research for audio, music, and multimodal systems.  Researching generative
     model steering, Stem separation, Transformers for error detection, and deepfake
     detection.  Track record of high-impact research, including publications at AAAI,
@@ -102,7 +102,7 @@ resume:
       K. Y.-J. Yun, Y.-H. Lu"
     title: 'LadderSym: A Multimodal Interleaved Transformer for Music Practice Error
       Detection'
-    venue: Under Submission
+    venue: Accepted to ICLR 2026
     link: https://arxiv.org/abs/2510.08580
   - authors: P. Jajal, N. J. Eliopoulos, **B. Chou**, G. K. Thiravathukal, J. C. Davis,
       Y. Lu
