@@ -5,11 +5,12 @@ summary = "PhD student at Purdue University researching AI/ML for audio, music, 
 
 I’m a 3rd-year ECE PhD student at Purdue University, supervised by [Dr. Yung-Hsiang Lu](https://yhlu.net). My work focuses on audio and music machine learning, specifically music practice error detection, music source separation, and reliable detection of synthetic and manipulated media with Audio Large Language Models.
 
-**Currently:** seeking AI/ML research internships and collaborations.
+**Currently:** incoming Audio Applied Research Scientist Intern at Shure Incorporated (May–Aug 2026).
 
 Resume: [PDF](/resume.pdf)
 
 **Experience (summary):**
+- Audio Applied Research Scientist Intern @ Shure Incorporated (2026, incoming)
 - Applied Research Scientist Intern @ Reality Defender (2025)
 - Graduate Research Assistant @ Purdue University (2024–present)
 - Startup Founder @ LocaLens (2023–2024)
@@ -17,6 +18,7 @@ Resume: [PDF](/resume.pdf)
 More details: [Full Experience →](/experience/)
 
 ## News
+- (Jan 2026) Incoming Audio Applied Research Scientist Intern at Shure Incorporated (May–Aug 2026).
 - (Jan 2026) *LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection* accepted to <span class="news-highlight">ICLR 2026</span>. ([arXiv](https://arxiv.org/abs/2510.08580))
 - (Sep 2025) Paper accepted to <span class="news-highlight">NeurIPS 2025 AI4Music Workshop</span>: *Advancing Multi-Instrument Music Transcription: Results from the 2025 AMT Challenge*. ([OpenReview](https://openreview.net/pdf?id=NG187AZ71W))
 - (Sep 2025) Published *AdaPerceiver: Transformers with Adaptive Width, Depth, and Tokens* preprint. ([arXiv](https://arxiv.org/pdf/2511.18105))

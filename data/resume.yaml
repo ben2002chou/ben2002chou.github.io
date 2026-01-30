@@ -7,11 +7,11 @@ resume:
   professional_summary: '3rd-year ECE PhD Student at Purdue University specializing
     in AI/ML research for audio, music, and multimodal systems.  Researching generative
     model steering, Stem separation, Transformers for error detection, and deepfake
-    detection.  Track record of high-impact research, including publications at AAAI,
-    WACV and papers currently under review at top-tier venues with exceptional feedback.  I
-    am proficient in Audio DSP, Python, PyTorch, Tensorflow, and HPC clusters. I also
-    have organizational and communication skills (experience organizing 3 AI4Music
-    workshops).
+    detection.  Track record of high-impact research, including publications at **AAAI**,
+    **ICLR**, **WACV** and papers currently under review at top-tier venues with exceptional
+    feedback.  I am proficient in Audio DSP, Python, PyTorch, Tensorflow, and HPC
+    clusters. I also have organizational and communication skills (experience organizing
+    3 AI4Music workshops).
 
 '
   education:
@@ -34,39 +34,37 @@ resume:
     bullet_points:
     - Developed an in-context learning framework with large audio language models,
       achieving SOTA deepfake detection on in-the-wild speech (+54.9% avg Macro F1
-      improvement). **Natural Language Processing**, **RAG**, **ICL**, **Audio LLMs**,
-      and **model routing**.
+      improvement) (Natural Language Processing, RAG, ICL, Audio LLMs, and model routing).
   - title: Graduate Research Assistant
     organization: Under Dr. Yung-Hsiang Lu, Purdue University
     location: West Lafayette, IN
     date: Jan '24 – Present
     bullet_points:
-    - Developed an AI tutoring model with 6× higher F1 than prior work, accepted to
-      AAAI. **PyTorch**, **NLP**, and **Audio Transformers**.
-    - Leveraged **HPC clusters** and **Linux** environments to engineer generative
-      pipelines for music mistakes, producing two datasets.
-    - Organized 'AI for Music' workshops at AAAI 2025, IEEE ICME 2025, and NeurIPS
-      2025, showcasing **leadership** and **communication**.
+    - Developed an AI tutoring model with 6× higher F1 than prior work, **AAAI** (PyTorch,
+      NLP, and Audio Transformers).
+    - Leveraged HPC clusters and Linux environments to engineer generative pipelines
+      for music mistakes, producing two datasets.
+    - Organized 'AI for Music' workshops at **AAAI 2025**, IEEE **ICME 2025**, and
+      **NeurIPS 2025**, showcasing leadership and communication.
   - title: Startup Founder
     organization: LocaLens
     location: West Lafayette, IN
     date: Mar '23 – Jan '24
     bullet_points:
     - Made an app for menu translation, currency conversion, and allergen alerts using
-      **Flutter** and **Android Studio**.
-    - Built an MVP in 4 months with weekly sprints, emphasizing **leadership** and
-      **collaboration**.
-    - Integrated Google ML Toolkit for cross-platform AI with **computer vision**
-      and **real-time** deployment.
+      Flutter and Android Studio.
+    - Built an MVP in 4 months with weekly sprints, emphasizing leadership and collaboration.
+    - Integrated Google ML Toolkit for cross-platform AI with computer vision and
+      real-time deployment.
   - title: Research Assistant
     organization: Under Dr. Hsun-Ping Hsieh, National Cheng Kung University
     location: Taiwan
     date: Mar '23 – Aug 2023
     bullet_points:
-    - Raised cancer-screening invitation accuracy to 83% using **scikit-learn** and
-      tree-based classification. **machine learning**, **statistics**.
-    - Elevated flash-chip yield by 17% with ensembling and Gaussian processes. **numpy**,
-      **pandas**.
+    - Raised cancer-screening invitation accuracy to 83% using scikit-learn and tree-based
+      classification (machine learning, statistics, data science).
+    - Elevated flash-chip yield by 17% with ensembling and Gaussian processes (numpy,
+      pandas).
   projects:
   - title: "*Improving Developer Code Understanding with GitHub Issues and Retrieval-Augmented
       Generation*"
@@ -85,14 +83,14 @@ resume:
       and deep learning.
   honors_awards:
   - Outstanding Student Scholarship, awarded to top 2 students in NCKU-Purdue program
-    (2020–2023)
-  - AAAI Student Scholarship (2025), Selected for NeurIPS Volunteer (2025)
+    (2020–2023).
+  - "**AAAI** Student Scholarship (2025), Selected for **NeurIPS** Volunteer (2025)."
   publications:
   - authors: "**B. Chou**, P. Jajal, N. J. Eliopoulos, J. C. Davis, G. K. Thiravathukal,
       K. Y.-J. Yun, Y.-H. Lu"
     title: 'LadderSym: A Multimodal Interleaved Transformer for Music Practice Error
       Detection'
-    venue: ICLR 2026
+    venue: "**ICLR 2026**"
     link: https://arxiv.org/abs/2510.08580
   - authors: P. Jajal, N. J. Eliopoulos, **B. Chou**, G. K. Thiravathukal, J. C. Davis,
       Y. Lu
@@ -112,12 +110,12 @@ resume:
   - authors: "**B. Chou**, P. Jajal, N. J. Eliopoulos, T. Nadolsky, C.-Y. Yang, N.
       Ravi, J. C. Davis, K. Y.-J. Yun, Y. Lu"
     title: Detecting Performance Errors with Transformers
-    venue: Accepted to AAAI 2025
+    venue: "**AAAI 2025**"
     link: https://ojs.aaai.org/index.php/AAAI/article/view/34539
   - authors: P. Jajal, N. J. Eliopoulos, **B. Chou**, G. K. Thiravathukal, J. C. Davis,
       Y.-H. Lu
     title: Token Turing Machines are Efficient Vision Models
-    venue: WACV 2025
+    venue: "**WACV 2025**"
     link: https://arxiv.org/abs/2409.07613
   patent:
   - System and Method for Detecting Musical Performance Errors, Patent Application
