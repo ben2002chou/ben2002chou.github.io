@@ -122,9 +122,32 @@ publication_lines = (resume['publications'] || []).map do |pub|
   authors = authors_raw.split(',').map { |name| name_map.fetch(name.strip, name.strip) }.join(', ')
   venue = pub['venue']
   venue = "ICLR 2026" if title == "LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection"
+  venue = "CVPR Findings 2026" if title == "AdaPerceiver: Transformers with Adaptive Width, Depth, and Tokens"
+  venue = "CVPR Findings 2026" if title == "Inference-Time Alignment of Diffusion Models with Evolutionary Algorithms"
+  venue_display = venue.to_s
+  conference_patterns = [
+    /\bICLR\s+\d{4}\b/,
+    /\bCVPR Findings\s+\d{4}\b/,
+    /\bCVPR\s+\d{4}\b/,
+    /\bAAAI\s+\d{4}\b/,
+    /\bWACV\s+\d{4}\b/,
+    /\bNeurIPS\s+\d{4}\b/,
+    /\bICML\s+\d{4}\b/,
+    /\bICCV\s+\d{4}\b/,
+    /\bECCV\s+\d{4}\b/,
+    /\bACL\s+\d{4}\b/,
+    /\bEMNLP\s+\d{4}\b/,
+    /\bICASSP\s+\d{4}\b/,
+    /\bInterspeech\s+\d{4}\b/i
+  ]
+  conference_patterns.each do |pattern|
+    venue_display = venue_display.gsub(pattern) { |match| "**#{match}**" }
+  end
   link = pub['link']
   line = "- **#{title}** — #{authors}"
-  line += ". *#{venue}*" if venue && !venue.empty?
+  if venue && !venue.empty?
+    line += venue_display.include?('**') ? ". #{venue_display}" : ". *#{venue_display}*"
+  end
   line += " ([link](#{link}))" if link && !link.to_s.empty?
   extra_links = {
     "Detecting Performance Errors with Transformers" => {

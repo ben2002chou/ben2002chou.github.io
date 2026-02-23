@@ -1,5 +1,13 @@
 .news-highlight {
-  color: #3b3b3b;
   font-weight: 600;
+  letter-spacing: 0.01em;
   white-space: nowrap;
+}
+
+.theme--light .news-highlight {
+  color: #3b3b3b;
+}
+
+.theme--dark .news-highlight {
+  color: #d7d7d7;
 }
