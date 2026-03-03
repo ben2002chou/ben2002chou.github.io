@@ -125,7 +125,7 @@ publication_lines = (resume['publications'] || []).map do |pub|
   venue = "CVPR Findings 2026" if title == "AdaPerceiver: Transformers with Adaptive Width, Depth, and Tokens"
   venue = "CVPR Findings 2026" if title == "Inference-Time Alignment of Diffusion Models with Evolutionary Algorithms"
   venue_note = {
-    "LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection" => "(top 3.85 %)"
+    "LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection" => "<span class=\"publication-note\">(top 3.85 %)</span>"
   }[title]
   venue_display = venue.to_s
   conference_patterns = [

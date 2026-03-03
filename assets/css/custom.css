@@ -11,3 +11,12 @@
 .theme--dark .news-highlight {
   color: #d7d7d7;
 }
+
+.publication-note {
+  color: #2f6fed;
+  font-weight: 600;
+}
+
+.theme--dark .publication-note {
+  color: #7fb0ff;
+}
