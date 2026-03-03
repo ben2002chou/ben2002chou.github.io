@@ -124,6 +124,9 @@ publication_lines = (resume['publications'] || []).map do |pub|
   venue = "ICLR 2026" if title == "LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection"
   venue = "CVPR Findings 2026" if title == "AdaPerceiver: Transformers with Adaptive Width, Depth, and Tokens"
   venue = "CVPR Findings 2026" if title == "Inference-Time Alignment of Diffusion Models with Evolutionary Algorithms"
+  venue_note = {
+    "LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection" => "(top 3.85 %)"
+  }[title]
   venue_display = venue.to_s
   conference_patterns = [
     /\bICLR\s+\d{4}\b/,
@@ -143,6 +146,7 @@ publication_lines = (resume['publications'] || []).map do |pub|
   conference_patterns.each do |pattern|
     venue_display = venue_display.gsub(pattern) { |match| "**#{match}**" }
   end
+  venue_display += " #{venue_note}" if venue_note
   link = pub['link']
   line = "- **#{title}** — #{authors}"
   if venue && !venue.empty?
