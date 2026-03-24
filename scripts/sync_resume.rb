@@ -46,9 +46,9 @@ experience_logo_map = {
   "Google X" => { src: "/images/experience-logos/google-x.svg", alt: "Google X logo" },
   "Shure" => { src: "/images/experience-logos/shure.png", alt: "Shure logo" },
   "Reality Defender" => { src: "/images/experience-logos/reality-defender.svg", alt: "Reality Defender logo" },
-  "Under Dr. Yung-Hsiang Lu, Purdue University" => { src: "/images/experience-logos/purdue.svg", alt: "Purdue University mark" },
+  "Under Dr. Yung-Hsiang Lu, Purdue University" => { src: "/images/experience-logos/purdue.png", alt: "Purdue University logo" },
   "LocaLens" => { src: "/images/experience-logos/localens.svg", alt: "LocaLens mark" },
-  "Under Dr. Hsun-Ping Hsieh, National Cheng Kung University" => { src: "/images/experience-logos/ncku.svg", alt: "National Cheng Kung University mark" }
+  "Under Dr. Hsun-Ping Hsieh, National Cheng Kung University" => { src: "/images/experience-logos/ncku.png", alt: "National Cheng Kung University logo" }
 }
 
 education_lines = (resume['education'] || []).map do |item|

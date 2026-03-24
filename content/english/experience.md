@@ -45,7 +45,7 @@ date = "2026-01-22"
 
 <div class="experience-entry">
   <div class="experience-entry__logo-wrap">
-    <img class="experience-entry__logo" src="/images/experience-logos/purdue.svg" alt="Purdue University mark" loading="lazy" />
+    <img class="experience-entry__logo" src="/images/experience-logos/purdue.png" alt="Purdue University logo" loading="lazy" />
   </div>
   <div class="experience-entry__content">
     <h3 class="experience-entry__role">Graduate Research Assistant <span class="experience-entry__org">— Under Dr. Yung-Hsiang Lu, Purdue University</span></h3>
@@ -76,7 +76,7 @@ date = "2026-01-22"
 
 <div class="experience-entry">
   <div class="experience-entry__logo-wrap">
-    <img class="experience-entry__logo" src="/images/experience-logos/ncku.svg" alt="National Cheng Kung University mark" loading="lazy" />
+    <img class="experience-entry__logo" src="/images/experience-logos/ncku.png" alt="National Cheng Kung University logo" loading="lazy" />
   </div>
   <div class="experience-entry__content">
     <h3 class="experience-entry__role">Research Assistant <span class="experience-entry__org">— Under Dr. Hsun-Ping Hsieh, National Cheng Kung University</span></h3>
