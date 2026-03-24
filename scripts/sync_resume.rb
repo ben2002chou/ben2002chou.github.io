@@ -62,11 +62,11 @@ end
 experience_blocks = (resume['work_experience'] || []).map do |item|
   logo = experience_logo_map[item['organization'].to_s]
   logo_wrap_class = ["experience-entry__logo-wrap", logo[:wrap_class]].compact.join(' ')
-  bullets = Array(item['bullet_points']).map do |point|
-    "<li>#{CGI.escapeHTML(clean_experience_point(point))}</li>"
+  details = Array(item['bullet_points']).map do |point|
+    %(<p class="experience-entry__detail">#{CGI.escapeHTML(clean_experience_point(point))}</p>)
   end
   if item['title'].to_s.downcase.include?('startup founder')
-    bullets << '<li><a href="https://github.com/ben2002chou/local_lens_app">Code</a></li>'
+    details << '<p class="experience-entry__detail"><a href="https://github.com/ben2002chou/local_lens_app">Code</a></p>'
   end
 
   [
@@ -74,11 +74,11 @@ experience_blocks = (resume['work_experience'] || []).map do |item|
     %(  <div class="#{logo_wrap_class}">),
     %(    <img class="experience-entry__logo" src="#{logo[:src]}" alt="#{CGI.escapeHTML(logo[:alt])}" loading="lazy" />),
     '  </div>',
-    '  <div class="experience-entry__content">',
+    '  <div class="experience-entry__header">',
     %(    <h3 class="experience-entry__role">#{CGI.escapeHTML(item['title'].to_s)} <span class="experience-entry__org">— #{CGI.escapeHTML(item['organization'].to_s)}</span></h3>),
     %(    <p class="experience-entry__meta">#{CGI.escapeHTML(item['location'].to_s)} · #{CGI.escapeHTML(item['date'].to_s)}</p>),
-    bullets.empty? ? '' : %(    <ul class="experience-entry__bullets">\n      #{bullets.join("\n      ")}\n    </ul>),
     '  </div>',
+    details.empty? ? '' : %(  <div class="experience-entry__details">\n    #{details.join("\n    ")}\n  </div>),
     '</div>'
   ].reject(&:empty?).join("\n")
 end
