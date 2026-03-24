@@ -6,10 +6,10 @@ resume:
       | benschou.com | US Citizen
   professional_summary: '3rd-year ECE PhD Student at Purdue University specializing
     in AI/ML research for audio, music, and multimodal systems.  Researching generative
-    model steering, stem separation, Transformers for error detection, and deepfake
-    detection.  I am proficient in Audio DSP, Python, PyTorch, TensorFlow, and HPC
-    clusters. I also have organizational and communication skills (experience organizing
-    3 AI4Music workshops).
+    model steering, stem separation, Transformers for error detection, and LALMs for
+    deepfake detection.  I am proficient in Audio DSP, Python, PyTorch, TensorFlow,
+    and HPC clusters. I also have organizational and communication skills (experience
+    organizing 3 AI4Music workshops).
 
 '
   education:
@@ -25,10 +25,16 @@ resume:
     gpa: 4.0/4.3
     details: []
   work_experience:
+  - title: PhD Resident (Incoming)
+    organization: Google X
+    location: Mountain View, CA
+    date: Apr '26 – Jun '26
+    bullet_points:
+    - Joining Google X as a PhD Resident.
   - title: Audio Applied Research Scientist Intern (Incoming)
     organization: Shure
     location: Niles, IL
-    date: May '26 – Aug '26
+    date: Jul '26 – Sep '26
     bullet_points:
     - Will work on speech enhancement and recognition.
   - title: Applied Research Scientist Intern
@@ -94,12 +100,12 @@ resume:
       K. Y.-J. Yun, Y.-H. Lu"
     title: 'LadderSym: A Multimodal Interleaved Transformer for Music Practice Error
       Detection'
-    venue: ICLR 2026
+    venue: ICLR 2026 (top 3.85%)
     link: https://arxiv.org/abs/2510.08580
   - authors: P. Jajal, N. J. Eliopoulos, **B. Chou**, G. K. Thiravathukal, J. C. Davis,
       Y. Lu
     title: 'AdaPerceiver: Transformers with Adaptive Width, Depth, and Tokens'
-    venue: Under Submission
+    venue: CVPR 2026 Findings
     link: https://arxiv.org/pdf/2511.18105
   - authors: "**B. Chou**, Y. Zhu, S. Koppisetti"
     title: 'ICLAD: In-Context Learning with Comparison-Guidance for Audio Deepfake
@@ -109,7 +115,7 @@ resume:
   - authors: P. Jajal, N. J. Eliopoulos, **B. Chou**, G. K. Thiravathukal, J. C. Davis,
       Y. Lu
     title: Inference-Time Alignment of Diffusion Models with Evolutionary Algorithms
-    venue: Under Submission
+    venue: CVPR 2026 Findings
     link: https://arxiv.org/abs/2506.00299
   - authors: "**B. Chou**, P. Jajal, N. J. Eliopoulos, T. Nadolsky, C.-Y. Yang, N.
       Ravi, J. C. Davis, K. Y.-J. Yun, Y. Lu"

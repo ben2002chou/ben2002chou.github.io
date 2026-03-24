@@ -5,12 +5,13 @@ summary = "PhD student at Purdue University researching AI/ML for audio, music, 
 
 I’m a 3rd-year ECE PhD student at Purdue University, supervised by [Dr. Yung-Hsiang Lu](https://yhlu.net). My work focuses on audio and music machine learning, specifically music practice error detection, music source separation, and reliable detection of synthetic and manipulated media with Audio Large Language Models.
 
-**Currently:** Graduate Research Assistant at Purdue University; incoming Audio Applied Research Scientist Intern at Shure Incorporated (May–Aug 2026).
+**Currently:** Graduate Research Assistant at Purdue University; incoming PhD Resident at Google X in Mountain View (Apr-Jun 2026) and incoming Audio Applied Research Scientist Intern at Shure (Jul-Sep 2026).
 
 Resume: [PDF](/resume.pdf)
 
 **Experience (summary):**
-- Audio Applied Research Scientist Intern @ Shure Incorporated (2026, incoming)
+- PhD Resident @ Google X (2026, incoming)
+- Audio Applied Research Scientist Intern @ Shure (2026, incoming)
 - Applied Research Scientist Intern @ Reality Defender (2025)
 - Graduate Research Assistant @ Purdue University (2024–present)
 - Startup Founder @ LocaLens (2023–2024)
@@ -18,7 +19,8 @@ Resume: [PDF](/resume.pdf)
 More details: [Full Experience →](/experience/)
 
 ## News
-- (Jan 2026) Incoming Audio Applied Research Scientist Intern at Shure Incorporated (May–Aug 2026).
+- (Mar 2026) Incoming PhD Resident at Google X in Mountain View (Apr-Jun 2026).
+- (Mar 2026) Incoming Audio Applied Research Scientist Intern at Shure (Jul-Sep 2026).
 - (Jan 2026) *LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection* accepted to <span class="news-highlight">ICLR 2026</span>. ([arXiv](https://arxiv.org/abs/2510.08580))
 - (Jan 2026) *AdaPerceiver: Transformers with Adaptive Width, Depth, and Tokens* accepted to <span class="news-highlight">CVPR Findings 2026</span>. ([arXiv](https://arxiv.org/pdf/2511.18105))
 - (Jan 2026) *Inference-Time Alignment of Diffusion Models with Evolutionary Algorithms* accepted to <span class="news-highlight">CVPR Findings 2026</span>. ([arXiv](https://arxiv.org/abs/2506.00299))

@@ -4,8 +4,12 @@ description = "Industry, research, and leadership experience."
 date = "2026-01-22"
 +++
 
+### PhD Resident (Incoming) — Google X
+*Mountain View, CA · Apr '26 – Jun '26*
+- Joining Google X as a PhD Resident.
+
 ### Audio Applied Research Scientist Intern (Incoming) — Shure
-*Niles, IL · May '26 – Aug '26*
+*Niles, IL · Jul '26 – Sep '26*
 - Will work on speech enhancement and recognition.
 
 ### Applied Research Scientist Intern — Reality Defender
