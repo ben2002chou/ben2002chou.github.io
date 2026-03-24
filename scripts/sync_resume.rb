@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require 'yaml'
 require 'fileutils'
+require 'cgi'
 
 root = File.expand_path('..', __dir__)
 source = ENV['RESUME_SOURCE'] || '/Users/Ben/Code/ben_resume/resume_linkedln.yaml'
@@ -25,6 +26,30 @@ summary = summary.gsub(/\s+/, ' ')
 header = resume['header'] || {}
 contact = (header['contact'] || '').split('|').map(&:strip).reject(&:empty?)
 
+def clean_experience_point(point)
+  original = point.to_s
+  cleaned = original
+  if original.include?('**')
+    last_bold = original.rindex('**')
+    period_before_bold = original.rindex('.', last_bold)
+    cleaned = original[0..period_before_bold] if period_before_bold
+  end
+  cleaned = cleaned.gsub(/\*\*([^*]+)\*\*/, '\1')
+  cleaned = cleaned.gsub(/\s{2,}/, ' ').strip
+  cleaned = cleaned.gsub(/\s+([.,;:])/, '\1')
+  cleaned = cleaned.gsub(/\s+and$/, '').strip
+  cleaned = cleaned.gsub(/[,;:]+$/, '').strip
+  cleaned
+end
+
+experience_logo_map = {
+  "Google X" => { src: "/images/experience-logos/google-x.svg", alt: "Google X logo" },
+  "Shure" => { src: "/images/experience-logos/shure.png", alt: "Shure logo" },
+  "Reality Defender" => { src: "/images/experience-logos/reality-defender.svg", alt: "Reality Defender logo" },
+  "Under Dr. Yung-Hsiang Lu, Purdue University" => { src: "/images/experience-logos/purdue.svg", alt: "Purdue University mark" },
+  "LocaLens" => { src: "/images/experience-logos/localens.svg", alt: "LocaLens mark" },
+  "Under Dr. Hsun-Ping Hsieh, National Cheng Kung University" => { src: "/images/experience-logos/ncku.svg", alt: "National Cheng Kung University mark" }
+}
 
 education_lines = (resume['education'] || []).map do |item|
   details = []
@@ -35,28 +60,26 @@ education_lines = (resume['education'] || []).map do |item|
 end
 
 experience_blocks = (resume['work_experience'] || []).map do |item|
-  lines = []
-  lines << "### #{item['title']} — #{item['organization']}"
-  lines << "*#{item['location']} · #{item['date']}*"
-  Array(item['bullet_points']).each do |point|
-    original = point.to_s
-    cleaned = original
-    if original.include?('**')
-      last_bold = original.rindex('**')
-      period_before_bold = original.rindex('.', last_bold)
-      cleaned = original[0..period_before_bold] if period_before_bold
-    end
-    cleaned = cleaned.gsub(/\*\*([^*]+)\*\*/, '\1')
-    cleaned = cleaned.gsub(/\s{2,}/, ' ').strip
-    cleaned = cleaned.gsub(/\s+([.,;:])/, '\1')
-    cleaned = cleaned.gsub(/\s+and$/, '').strip
-    cleaned = cleaned.gsub(/[,;:]+$/, '').strip
-    lines << "- #{cleaned}"
+  logo = experience_logo_map[item['organization'].to_s]
+  bullets = Array(item['bullet_points']).map do |point|
+    "<li>#{CGI.escapeHTML(clean_experience_point(point))}</li>"
   end
   if item['title'].to_s.downcase.include?('startup founder')
-    lines << "- Code: https://github.com/ben2002chou/local_lens_app"
+    bullets << '<li><a href="https://github.com/ben2002chou/local_lens_app">Code</a></li>'
   end
-  lines.join("\n")
+
+  [
+    '<div class="experience-entry">',
+    '  <div class="experience-entry__logo-wrap">',
+    %(    <img class="experience-entry__logo" src="#{logo[:src]}" alt="#{CGI.escapeHTML(logo[:alt])}" loading="lazy" />),
+    '  </div>',
+    '  <div class="experience-entry__content">',
+    %(    <h3 class="experience-entry__role">#{CGI.escapeHTML(item['title'].to_s)} <span class="experience-entry__org">— #{CGI.escapeHTML(item['organization'].to_s)}</span></h3>),
+    %(    <p class="experience-entry__meta">#{CGI.escapeHTML(item['location'].to_s)} · #{CGI.escapeHTML(item['date'].to_s)}</p>),
+    bullets.empty? ? '' : %(    <ul class="experience-entry__bullets">\n      #{bullets.join("\n      ")}\n    </ul>),
+    '  </div>',
+    '</div>'
+  ].reject(&:empty?).join("\n")
 end
 
 project_blocks = (resume['projects'] || []).map do |project|

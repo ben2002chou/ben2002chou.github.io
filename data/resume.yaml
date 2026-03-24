@@ -6,10 +6,10 @@ resume:
       | benschou.com | US Citizen
   professional_summary: '3rd-year ECE PhD Student at Purdue University specializing
     in AI/ML research for audio, music, and multimodal systems.  Researching generative
-    model steering, stem separation, Transformers for error detection, and LALMs for
-    deepfake detection.  I am proficient in Audio DSP, Python, PyTorch, TensorFlow,
-    and HPC clusters. I also have organizational and communication skills (experience
-    organizing 3 AI4Music workshops).
+    model steering, stem separation, Transformers for error detection, and training-free
+    strategies for Multimodal LLMs.  I am proficient in Audio DSP, Python, PyTorch,
+    TensorFlow, and HPC clusters. I also have organizational and communication skills
+    (experience organizing 3 AI4Music workshops).
 
 '
   education:
