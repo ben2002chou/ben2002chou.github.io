@@ -44,10 +44,10 @@ end
 
 experience_logo_map = {
   "Google X" => { src: "/images/experience-logos/google-x.svg", alt: "Google X logo" },
-  "Shure" => { src: "/images/experience-logos/shure.png", alt: "Shure logo" },
+  "Shure" => { src: "/images/experience-logos/shure.png", alt: "Shure logo", wrap_class: "experience-entry__logo-wrap--dark" },
   "Reality Defender" => { src: "/images/experience-logos/reality-defender.svg", alt: "Reality Defender logo" },
   "Under Dr. Yung-Hsiang Lu, Purdue University" => { src: "/images/experience-logos/purdue.png", alt: "Purdue University logo" },
-  "LocaLens" => { src: "/images/experience-logos/localens.svg", alt: "LocaLens mark" },
+  "LocaLens" => { src: "/images/experience-logos/Title_v3-2.png", alt: "LocaLens logo" },
   "Under Dr. Hsun-Ping Hsieh, National Cheng Kung University" => { src: "/images/experience-logos/ncku.png", alt: "National Cheng Kung University logo" }
 }
 
@@ -61,6 +61,7 @@ end
 
 experience_blocks = (resume['work_experience'] || []).map do |item|
   logo = experience_logo_map[item['organization'].to_s]
+  logo_wrap_class = ["experience-entry__logo-wrap", logo[:wrap_class]].compact.join(' ')
   bullets = Array(item['bullet_points']).map do |point|
     "<li>#{CGI.escapeHTML(clean_experience_point(point))}</li>"
   end
@@ -70,7 +71,7 @@ experience_blocks = (resume['work_experience'] || []).map do |item|
 
   [
     '<div class="experience-entry">',
-    '  <div class="experience-entry__logo-wrap">',
+    %(  <div class="#{logo_wrap_class}">),
     %(    <img class="experience-entry__logo" src="#{logo[:src]}" alt="#{CGI.escapeHTML(logo[:alt])}" loading="lazy" />),
     '  </div>',
     '  <div class="experience-entry__content">',

@@ -18,7 +18,7 @@ date = "2026-01-22"
 </div>
 
 <div class="experience-entry">
-  <div class="experience-entry__logo-wrap">
+  <div class="experience-entry__logo-wrap experience-entry__logo-wrap--dark">
     <img class="experience-entry__logo" src="/images/experience-logos/shure.png" alt="Shure logo" loading="lazy" />
   </div>
   <div class="experience-entry__content">
@@ -60,7 +60,7 @@ date = "2026-01-22"
 
 <div class="experience-entry">
   <div class="experience-entry__logo-wrap">
-    <img class="experience-entry__logo" src="/images/experience-logos/localens.svg" alt="LocaLens mark" loading="lazy" />
+    <img class="experience-entry__logo" src="/images/experience-logos/Title_v3-2.png" alt="LocaLens logo" loading="lazy" />
   </div>
   <div class="experience-entry__content">
     <h3 class="experience-entry__role">Startup Founder <span class="experience-entry__org">— LocaLens</span></h3>
