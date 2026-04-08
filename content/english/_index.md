@@ -19,6 +19,7 @@ Resume: [PDF](/resume.pdf)
 More details: [Full Experience →](/experience/)
 
 ## News
+- (Apr 2026) *ICLAD: In-Context Learning with Comparison-Guidance for Audio Deepfake Detection* accepted to <span class="news-highlight">ACL Findings 2026</span>.
 - (Mar 2026) Incoming PhD Resident at Google X in Mountain View (Apr-Jun 2026).
 - (Mar 2026) Incoming Audio Applied Research Scientist Intern at Shure (Jul-Sep 2026).
 - (Jan 2026) *LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection* accepted to <span class="news-highlight">ICLR 2026</span>. ([arXiv](https://arxiv.org/abs/2510.08580))

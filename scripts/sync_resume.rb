@@ -43,12 +43,12 @@ def clean_experience_point(point)
 end
 
 experience_logo_map = {
-  "Google X" => { src: "/images/experience-logos/google-x.svg", alt: "Google X logo" },
-  "Shure" => { src: "/images/experience-logos/shure.png", alt: "Shure logo", wrap_class: "experience-entry__logo-wrap--dark" },
-  "Reality Defender" => { src: "/images/experience-logos/reality-defender.svg", alt: "Reality Defender logo" },
-  "Under Dr. Yung-Hsiang Lu, Purdue University" => { src: "/images/experience-logos/purdue.png", alt: "Purdue University logo" },
-  "LocaLens" => { src: "/images/experience-logos/Title_v3-2.png", alt: "LocaLens logo" },
-  "Under Dr. Hsun-Ping Hsieh, National Cheng Kung University" => { src: "/images/experience-logos/ncku.png", alt: "National Cheng Kung University logo" }
+  "Google X" => { src: "/images/experience-logos/google-x.svg", alt: "Google X logo", logo_class: "experience-entry__logo--square" },
+  "Shure" => { src: "/images/experience-logos/shure.png", alt: "Shure logo", wrap_class: "experience-entry__logo-wrap--dark", logo_class: "experience-entry__logo--shure" },
+  "Reality Defender" => { src: "/images/experience-logos/reality-defender.svg", alt: "Reality Defender logo", logo_class: "experience-entry__logo--square" },
+  "Under Dr. Yung-Hsiang Lu, Purdue University" => { src: "/images/experience-logos/purdue.png", alt: "Purdue University logo", logo_class: "experience-entry__logo--square" },
+  "LocaLens" => { src: "/images/experience-logos/Title_v3-2.png", alt: "LocaLens logo", logo_class: "experience-entry__logo--localens" },
+  "Under Dr. Hsun-Ping Hsieh, National Cheng Kung University" => { src: "/images/experience-logos/ncku.png", alt: "National Cheng Kung University logo", logo_class: "experience-entry__logo--square" }
 }
 
 education_lines = (resume['education'] || []).map do |item|
@@ -62,6 +62,7 @@ end
 experience_blocks = (resume['work_experience'] || []).map do |item|
   logo = experience_logo_map[item['organization'].to_s]
   logo_wrap_class = ["experience-entry__logo-wrap", logo[:wrap_class]].compact.join(' ')
+  logo_class = ["experience-entry__logo", logo[:logo_class]].compact.join(' ')
   details = Array(item['bullet_points']).map do |point|
     %(<p class="experience-entry__detail">#{CGI.escapeHTML(clean_experience_point(point))}</p>)
   end
@@ -72,13 +73,13 @@ experience_blocks = (resume['work_experience'] || []).map do |item|
   [
     '<div class="experience-entry">',
     %(  <div class="#{logo_wrap_class}">),
-    %(    <img class="experience-entry__logo" src="#{logo[:src]}" alt="#{CGI.escapeHTML(logo[:alt])}" loading="lazy" />),
+    %(    <img class="#{logo_class}" src="#{logo[:src]}" alt="#{CGI.escapeHTML(logo[:alt])}" loading="lazy" />),
     '  </div>',
-    '  <div class="experience-entry__header">',
+    '  <div class="experience-entry__content">',
     %(    <h3 class="experience-entry__role">#{CGI.escapeHTML(item['title'].to_s)} <span class="experience-entry__org">— #{CGI.escapeHTML(item['organization'].to_s)}</span></h3>),
     %(    <p class="experience-entry__meta">#{CGI.escapeHTML(item['location'].to_s)} · #{CGI.escapeHTML(item['date'].to_s)}</p>),
+    details.empty? ? '' : %(    <div class="experience-entry__details">\n      #{details.join("\n      ")}\n    </div>),
     '  </div>',
-    details.empty? ? '' : %(  <div class="experience-entry__details">\n    #{details.join("\n    ")}\n  </div>),
     '</div>'
   ].reject(&:empty?).join("\n")
 end
@@ -147,6 +148,7 @@ publication_lines = (resume['publications'] || []).map do |pub|
   venue = pub['venue']
   venue = "ICLR 2026" if title == "LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection"
   venue = "CVPR Findings 2026" if title == "AdaPerceiver: Transformers with Adaptive Width, Depth, and Tokens"
+  venue = "ACL Findings 2026" if title == "ICLAD: In-Context Learning with Comparison-Guidance for Audio Deepfake Detection"
   venue = "CVPR Findings 2026" if title == "Inference-Time Alignment of Diffusion Models with Evolutionary Algorithms"
   venue_note = {
     "LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection" => "<span class=\"publication-note\">(top 3.85 %)</span>"
@@ -154,6 +156,7 @@ publication_lines = (resume['publications'] || []).map do |pub|
   venue_display = venue.to_s
   conference_patterns = [
     /\bICLR\s+\d{4}\b/,
+    /\bACL Findings\s+\d{4}\b/,
     /\bCVPR Findings\s+\d{4}\b/,
     /\bCVPR\s+\d{4}\b/,
     /\bAAAI\s+\d{4}\b/,
