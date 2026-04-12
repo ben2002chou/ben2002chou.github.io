@@ -5,14 +5,15 @@ date = "2026-01-22"
 +++
 
 <div class="experience-entry">
-  <div class="experience-entry__logo-wrap">
-    <img class="experience-entry__logo experience-entry__logo--square" src="/images/experience-logos/google-x.svg" alt="Google X logo" loading="lazy" />
+  <div class="experience-entry__logo-wrap experience-entry__logo-wrap--combo">
+    <img class="experience-entry__logo experience-entry__logo--google-wordmark" src="/images/experience-logos/google-wordmark.png" alt="Google logo" loading="lazy" />
+    <img class="experience-entry__logo experience-entry__logo--google-xmark" src="/images/experience-logos/google-x.svg" alt="Google X logo" loading="lazy" />
   </div>
   <div class="experience-entry__content">
-    <h3 class="experience-entry__role">PhD Resident (Incoming) <span class="experience-entry__org">— Google X</span></h3>
+    <h3 class="experience-entry__role">PhD Resident <span class="experience-entry__org">— Google X</span></h3>
     <p class="experience-entry__meta">Mountain View, CA · Apr &#39;26 – Jun &#39;26</p>
     <div class="experience-entry__details">
-      <p class="experience-entry__detail">Joining Google X as a PhD Resident.</p>
+      <p class="experience-entry__detail">Working as a PhD Resident at Google X.</p>
     </div>
   </div>
 </div>

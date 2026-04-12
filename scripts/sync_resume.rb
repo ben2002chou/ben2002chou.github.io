@@ -43,7 +43,15 @@ def clean_experience_point(point)
 end
 
 experience_logo_map = {
-  "Google X" => { src: "/images/experience-logos/google-x.svg", alt: "Google X logo", logo_class: "experience-entry__logo--square" },
+  "Google X" => {
+    src: "/images/experience-logos/google-wordmark.png",
+    alt: "Google logo",
+    logo_class: "experience-entry__logo--google-wordmark",
+    secondary_src: "/images/experience-logos/google-x.svg",
+    secondary_alt: "Google X logo",
+    secondary_logo_class: "experience-entry__logo--google-xmark",
+    wrap_class: "experience-entry__logo-wrap--combo"
+  },
   "Shure" => { src: "/images/experience-logos/shure.png", alt: "Shure logo", wrap_class: "experience-entry__logo-wrap--dark", logo_class: "experience-entry__logo--shure" },
   "Reality Defender" => { src: "/images/experience-logos/reality-defender.svg", alt: "Reality Defender logo", logo_class: "experience-entry__logo--square" },
   "Under Dr. Yung-Hsiang Lu, Purdue University" => { src: "/images/experience-logos/purdue.png", alt: "Purdue University logo", logo_class: "experience-entry__logo--square" },
@@ -63,6 +71,16 @@ experience_blocks = (resume['work_experience'] || []).map do |item|
   logo = experience_logo_map[item['organization'].to_s]
   logo_wrap_class = ["experience-entry__logo-wrap", logo[:wrap_class]].compact.join(' ')
   logo_class = ["experience-entry__logo", logo[:logo_class]].compact.join(' ')
+  logo_markup =
+    if logo[:secondary_src]
+      secondary_logo_class = ["experience-entry__logo", logo[:secondary_logo_class]].compact.join(' ')
+      [
+        %(    <img class="#{logo_class}" src="#{logo[:src]}" alt="#{CGI.escapeHTML(logo[:alt])}" loading="lazy" />),
+        %(    <img class="#{secondary_logo_class}" src="#{logo[:secondary_src]}" alt="#{CGI.escapeHTML(logo[:secondary_alt])}" loading="lazy" />)
+      ].join("\n")
+    else
+      %(    <img class="#{logo_class}" src="#{logo[:src]}" alt="#{CGI.escapeHTML(logo[:alt])}" loading="lazy" />)
+    end
   details = Array(item['bullet_points']).map do |point|
     %(<p class="experience-entry__detail">#{CGI.escapeHTML(clean_experience_point(point))}</p>)
   end
@@ -73,7 +91,7 @@ experience_blocks = (resume['work_experience'] || []).map do |item|
   [
     '<div class="experience-entry">',
     %(  <div class="#{logo_wrap_class}">),
-    %(    <img class="#{logo_class}" src="#{logo[:src]}" alt="#{CGI.escapeHTML(logo[:alt])}" loading="lazy" />),
+    logo_markup,
     '  </div>',
     '  <div class="experience-entry__content">',
     %(    <h3 class="experience-entry__role">#{CGI.escapeHTML(item['title'].to_s)} <span class="experience-entry__org">— #{CGI.escapeHTML(item['organization'].to_s)}</span></h3>),

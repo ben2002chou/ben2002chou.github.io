@@ -48,6 +48,11 @@
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
 }
 
+.experience-entry__logo-wrap--combo {
+  width: 4.2rem;
+  gap: 0.28rem;
+}
+
 .experience-entry__logo {
   display: block;
   width: auto;
@@ -60,6 +65,16 @@
 .experience-entry__logo--square {
   max-width: 2.15rem;
   max-height: 2.15rem;
+}
+
+.experience-entry__logo--google-wordmark {
+  max-width: 2.55rem;
+  max-height: 0.9rem;
+}
+
+.experience-entry__logo--google-xmark {
+  max-width: 1rem;
+  max-height: 1rem;
 }
 
 .experience-entry__logo--shure {
@@ -133,6 +148,11 @@
     padding: 0.16rem 0.34rem;
   }
 
+  .experience-entry__logo-wrap--combo {
+    width: 3.7rem;
+    gap: 0.24rem;
+  }
+
   .experience-entry__logo {
     max-width: 3.15rem;
     max-height: 1.8rem;
@@ -141,6 +161,16 @@
   .experience-entry__logo--square {
     max-width: 1.9rem;
     max-height: 1.9rem;
+  }
+
+  .experience-entry__logo--google-wordmark {
+    max-width: 2.2rem;
+    max-height: 0.78rem;
+  }
+
+  .experience-entry__logo--google-xmark {
+    max-width: 0.9rem;
+    max-height: 0.9rem;
   }
 
   .experience-entry__logo--shure {

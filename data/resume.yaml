@@ -25,12 +25,12 @@ resume:
     gpa: 4.0/4.3
     details: []
   work_experience:
-  - title: PhD Resident (Incoming)
+  - title: PhD Resident
     organization: Google X
     location: Mountain View, CA
     date: Apr '26 – Jun '26
     bullet_points:
-    - Joining Google X as a PhD Resident.
+    - Working as a PhD Resident at Google X.
   - title: Audio Applied Research Scientist Intern (Incoming)
     organization: Shure
     location: Niles, IL
@@ -110,7 +110,7 @@ resume:
   - authors: "**B. Chou**, Y. Zhu, S. Koppisetti"
     title: 'ICLAD: In-Context Learning with Comparison-Guidance for Audio Deepfake
       Detection'
-    venue: ACL Findings 2026
+    venue: Under Submission
     link: 
   - authors: P. Jajal, N. J. Eliopoulos, **B. Chou**, G. K. Thiravathukal, J. C. Davis,
       Y. Lu
