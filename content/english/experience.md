@@ -11,9 +11,9 @@ date = "2026-01-22"
   </div>
   <div class="experience-entry__content">
     <h3 class="experience-entry__role">PhD Resident <span class="experience-entry__org">— Google X</span></h3>
-    <p class="experience-entry__meta">Mountain View, CA · Apr &#39;26 – Jun &#39;26</p>
+    <p class="experience-entry__meta">Mountain View, CA · Apr &#39;26 – Present</p>
     <div class="experience-entry__details">
-      <p class="experience-entry__detail">Working as a PhD Resident at Google X.</p>
+      <p class="experience-entry__detail">Orchestrating LLM agents for code review workflows with LangChain, Vertex AI, Google Cloud Platform (GCP), and GitHub CLI.</p>
     </div>
   </div>
 </div>

@@ -4,7 +4,7 @@ resume:
     name: Benjamin Chou
     contact: 765-409-1859 | ben2002chou@gmail.com | linkedin.com/in/benjamin-chou-6aa058228
       | benschou.com | US Citizen
-  professional_summary: '3rd-year ECE PhD Student at Purdue University specializing
+  professional_summary: '4th-year ECE PhD Student at Purdue University specializing
     in AI/ML research for audio, music, and multimodal systems.  Researching generative
     model steering, stem separation, Transformers for error detection, and training-free
     strategies for Multimodal LLMs.  I am proficient in Audio DSP, Python, PyTorch,
@@ -12,6 +12,13 @@ resume:
     (experience organizing 3 AI4Music workshops).
 
 '
+  skills:
+  - "**LLM & Agent Systems:** LangChain, Vertex AI, prompt engineering, RAG, agent
+    orchestration"
+  - "**Cloud & Developer Tooling:** Google Cloud Platform (GCP), GitHub CLI, GitHub
+    API, Git, REST APIs"
+  - "**ML & Audio:** Python, PyTorch, TensorFlow, Transformers, Audio DSP, Linux,
+    HPC"
   education:
   - degree: Ph.D. in Electrical & Computer Engineering
     institution: Purdue University
@@ -28,9 +35,10 @@ resume:
   - title: PhD Resident
     organization: Google X
     location: Mountain View, CA
-    date: Apr '26 – Jun '26
+    date: Apr '26 – Present
     bullet_points:
-    - Working as a PhD Resident at Google X.
+    - Orchestrating LLM agents for code review workflows with **LangChain**, **Vertex
+      AI**, **Google Cloud Platform (GCP)**, and **GitHub CLI**.
   - title: Audio Applied Research Scientist Intern (Incoming)
     organization: Shure
     location: Niles, IL
@@ -110,7 +118,7 @@ resume:
   - authors: "**B. Chou**, Y. Zhu, S. Koppisetti"
     title: 'ICLAD: In-Context Learning with Comparison-Guidance for Audio Deepfake
       Detection'
-    venue: Under Submission
+    venue: ACL 2026 Findings
     link: 
   - authors: P. Jajal, N. J. Eliopoulos, **B. Chou**, G. K. Thiravathukal, J. C. Davis,
       Y. Lu
