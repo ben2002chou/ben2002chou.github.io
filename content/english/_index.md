@@ -3,9 +3,9 @@ title = "Benjamin Chou"
 summary = "PhD student at Purdue University researching AI/ML for audio, music, and multimodal systems."
 +++
 
-I’m a 3rd-year ECE PhD student at Purdue University, supervised by [Dr. Yung-Hsiang Lu](https://yhlu.net). My work focuses on audio and music machine learning, specifically music practice error detection, music source separation, and reliable detection of synthetic and manipulated media with Audio Large Language Models.
+I’m a 4th-year ECE PhD student at Purdue University, supervised by [Dr. Yung-Hsiang Lu](https://yhlu.net). My work focuses on audio and music machine learning, specifically music practice error detection, music source separation, and reliable detection of synthetic and manipulated media with Audio Large Language Models.
 
-**Currently:** Graduate Research Assistant at Purdue University; PhD Resident at Google X in Mountain View (Apr-Jun 2026); incoming Audio Applied Research Scientist Intern at Shure (Jul-Sep 2026).
+**Currently:** Graduate Research Assistant at Purdue University; PhD Resident at Google X in Mountain View (Apr 2026 - Present); incoming Audio Applied Research Scientist Intern at Shure (Jul-Sep 2026).
 
 Resume: [PDF](/resume.pdf)
 
@@ -19,8 +19,8 @@ Resume: [PDF](/resume.pdf)
 More details: [Full Experience →](/experience/)
 
 ## News
-- (Apr 2026) *ICLAD: In-Context Learning with Comparison-Guidance for Audio Deepfake Detection* accepted to <span class="news-highlight">ACL Findings 2026</span>.
-- (Apr 2026) Started as PhD Resident at Google X in Mountain View (Apr-Jun 2026).
+- (Apr 2026) *ICLAD: In-Context Learning with Comparison-Guidance for Audio Deepfake Detection* accepted to <span class="news-highlight">ACL 2026 Findings</span>. ([arXiv](https://arxiv.org/abs/2604.16749))
+- (Apr 2026) Started as PhD Resident at Google X in Mountain View (Apr 2026 - Present).
 - (Mar 2026) Incoming Audio Applied Research Scientist Intern at Shure (Jul-Sep 2026).
 - (Jan 2026) *LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection* accepted to <span class="news-highlight">ICLR 2026</span>. ([arXiv](https://arxiv.org/abs/2510.08580))
 - (Jan 2026) *AdaPerceiver: Transformers with Adaptive Width, Depth, and Tokens* accepted to <span class="news-highlight">CVPR Findings 2026</span>. ([arXiv](https://arxiv.org/pdf/2511.18105))

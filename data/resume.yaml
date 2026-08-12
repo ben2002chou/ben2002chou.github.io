@@ -13,10 +13,10 @@ resume:
 
 '
   skills:
-  - "**LLM & Agent Systems:** LangChain, Vertex AI, prompt engineering, RAG, agent
-    orchestration"
+  - "**LLM & Agent Systems:** LangChain, Vertex AI, RAG, coding agents, agent skills,
+    loop engineering, knowledge graphs, deep research, web surfing"
   - "**Cloud & Developer Tooling:** Google Cloud Platform (GCP), GitHub CLI, GitHub
-    API, Git, REST APIs"
+    API, Linear, Git, REST APIs"
   - "**ML & Audio:** Python, PyTorch, TensorFlow, Transformers, Audio DSP, Linux,
     HPC"
   education:
@@ -37,8 +37,11 @@ resume:
     location: Mountain View, CA
     date: Apr '26 – Present
     bullet_points:
-    - Orchestrating LLM agents for code review workflows with **LangChain**, **Vertex
-      AI**, **Google Cloud Platform (GCP)**, and **GitHub CLI**.
+    - Building a fully autonomous supply chain with LLM autonomous-loop orchestration
+      and knowledge graphs for LLMs to coordinate planning, reasoning, and execution.
+    - Developing LLM agents for code review, deep research, and web surfing (**LangChain**,
+      **Vertex AI**, **RAG**, **coding agents**, **agent skills**, **loop engineering**,
+      **Google Cloud Platform (GCP)**, **GitHub CLI**, **Linear**).
   - title: Audio Applied Research Scientist Intern (Incoming)
     organization: Shure
     location: Niles, IL
@@ -119,7 +122,7 @@ resume:
     title: 'ICLAD: In-Context Learning with Comparison-Guidance for Audio Deepfake
       Detection'
     venue: ACL 2026 Findings
-    link: 
+    link: https://arxiv.org/abs/2604.16749
   - authors: P. Jajal, N. J. Eliopoulos, **B. Chou**, G. K. Thiravathukal, J. C. Davis,
       Y. Lu
     title: Inference-Time Alignment of Diffusion Models with Evolutionary Algorithms
