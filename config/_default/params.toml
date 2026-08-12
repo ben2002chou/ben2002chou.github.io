@@ -71,7 +71,7 @@ url = "https://github.com/ben2002chou"
 [[socialIcons]]
 icon = "fa-regular fa-file-lines"
 title = "Resume"
-url = "/resume.pdf"
+url = "/resume.pdf?v=4d953b2"
 
 [[socialIcons]]
 icon = "fa-solid fa-envelope"

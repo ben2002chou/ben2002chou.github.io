@@ -8,7 +8,7 @@
   name = "Resume"
   weight = 300
   identifier = "resume"
-  url = "/resume.pdf"
+  url = "/resume.pdf?v=4d953b2"
 
   [[main]]
   name = "Publications"
