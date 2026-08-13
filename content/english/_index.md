@@ -5,13 +5,13 @@ summary = "PhD student at Purdue University researching AI/ML for audio, music, 
 
 I’m a 4th-year ECE PhD student at Purdue University, supervised by [Dr. Yung-Hsiang Lu](https://yhlu.net). My work focuses on audio and music machine learning, specifically music practice error detection, music source separation, and reliable detection of synthetic and manipulated media with Audio Large Language Models.
 
-**Currently:** Graduate Research Assistant at Purdue University; PhD Resident at Google X in Mountain View (Apr 2026 - Present); incoming Audio Applied Research Scientist Intern at Shure (Jul-Sep 2026).
+**Currently:** Graduate Research Assistant at Purdue University; PhD Resident at Google X in Mountain View (Apr 2026 - Present); Audio Applied Research Scientist Intern at Shure (Jul-Sep 2026).
 
-Resume: [PDF](/resume.pdf?v=4d953b2)
+Resume: [PDF](/resume.pdf?v=64b0f984)
 
 **Experience (summary):**
 - PhD Resident @ Google X (2026, present)
-- Audio Applied Research Scientist Intern @ Shure (2026, incoming)
+- Audio Applied Research Scientist Intern @ Shure (2026)
 - Applied Research Scientist Intern @ Reality Defender (2025)
 - Graduate Research Assistant @ Purdue University (2024–present)
 - Startup Founder @ LocaLens (2023–2024)

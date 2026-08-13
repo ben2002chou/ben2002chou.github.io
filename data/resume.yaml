@@ -42,12 +42,12 @@ resume:
     - Developing LLM agents for code review, deep research, and web surfing (**LangChain**,
       **Vertex AI**, **RAG**, **coding agents**, **agent skills**, **loop engineering**,
       **Google Cloud Platform (GCP)**, **GitHub CLI**, **Linear**).
-  - title: Audio Applied Research Scientist Intern (Incoming)
+  - title: Audio Applied Research Scientist Intern
     organization: Shure
     location: Niles, IL
     date: Jul '26 – Sep '26
     bullet_points:
-    - Will work on speech enhancement and recognition.
+    - Developing real-time speech enhancement and separation systems.
   - title: Applied Research Scientist Intern
     organization: Reality Defender
     location: Manhattan, New York (remote)

@@ -24,10 +24,10 @@ date = "2026-01-22"
     <img class="experience-entry__logo experience-entry__logo--shure" src="/images/experience-logos/shure.png" alt="Shure logo" loading="lazy" />
   </div>
   <div class="experience-entry__content">
-    <h3 class="experience-entry__role">Audio Applied Research Scientist Intern (Incoming) <span class="experience-entry__org">— Shure</span></h3>
+    <h3 class="experience-entry__role">Audio Applied Research Scientist Intern <span class="experience-entry__org">— Shure</span></h3>
     <p class="experience-entry__meta">Niles, IL · Jul &#39;26 – Sep &#39;26</p>
     <div class="experience-entry__details">
-      <p class="experience-entry__detail">Will work on speech enhancement and recognition.</p>
+      <p class="experience-entry__detail">Developing real-time speech enhancement and separation systems.</p>
     </div>
   </div>
 </div>
