@@ -7,7 +7,7 @@ I’m a 4th-year ECE PhD student at Purdue University, supervised by [Dr. Yung-H
 
 **Currently:** Graduate Research Assistant at Purdue University; PhD Resident at Google X in Mountain View (Apr 2026 - Present); Audio Applied Research Scientist Intern at Shure (Jul-Sep 2026).
 
-Resume: [PDF](/resume.pdf?v=64b0f984)
+Resume: [PDF](/resume-64b0f984.pdf)
 
 **Experience (summary):**
 - PhD Resident @ Google X (2026, present)
