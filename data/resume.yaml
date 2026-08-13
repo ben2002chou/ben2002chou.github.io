@@ -35,7 +35,7 @@ resume:
   - title: PhD Resident
     organization: Google X
     location: Mountain View, CA
-    date: Apr '26 – Present
+    date: Apr '26 – Jul '26
     bullet_points:
     - Building a fully autonomous supply chain with LLM autonomous-loop orchestration
       and knowledge graphs for LLMs to coordinate planning, reasoning, and execution.
