@@ -107,12 +107,14 @@ project_blocks = (resume['projects'] || []).map do |project|
   title = project['title'].to_s.gsub('*', '')
   lines << "### #{title}"
   project_links = {
+    "NoteSep: Score-Informed Note Separation" => "https://benschou.com/notesep/",
     "Improving Developer Code Understanding with GitHub Issues and Retrieval-Augmented Generation" => "https://github.com/ben2002chou/CodeUnderstandingRAGGithubIssues",
     "Multi-Agent Self-Play for Beating Atari Games" => "https://github.com/ben2002chou/MultiAgentReinforcementLearningGames",
     "Spectral Image Inpainting with Deep Learning" => "https://github.com/ben2002chou/admm-adam-NMF-Inpainting"
   }
   if project_links[title]
-    lines << "[GitHub](#{project_links[title]})"
+    link_label = title == "NoteSep: Score-Informed Note Separation" ? "Interactive demo" : "GitHub"
+    lines << "[#{link_label}](#{project_links[title]})"
   end
   project_assets = {
     "Improving Developer Code Understanding with GitHub Issues and Retrieval-Augmented Generation" => {
@@ -146,6 +148,7 @@ name_map = {
   "G. K. Thiravathukal" => "George K. Thiruvathukal",
   "K. Y.-J. Yun" => "Kristen Yeon-Ji Yun",
   "Y.-H. Lu" => "Yung-Hsiang Lu",
+  "H.-W. Dong" => "Hao-Wen Dong",
   "Y. Lu" => "Yung-Hsiang Lu",
   "T. Nadolsky" => "Tim Nadolsky",
   "C.-Y. Yang" => "Cheng-Yun Yang",

@@ -87,6 +87,10 @@ resume:
     - Elevated flash-chip yield by 17% with ensembling and Gaussian processes (NumPy,
       pandas).
   projects:
+  - title: "*NoteSep: Score-Informed Note Separation*"
+    bullet_points:
+    - Interactive demo for score-informed note extraction and separation in polyphonic
+      audio.
   - title: "*Improving Developer Code Understanding with GitHub Issues and Retrieval-Augmented
       Generation*"
     skills: "**ChatGPT API**, **REST**, **Git**"
@@ -107,6 +111,11 @@ resume:
     (2020–2023).
   - AAAI Student Scholarship (2025), selected for NeurIPS volunteer (2025).
   publications:
+  - authors: "**B. Chou**, P. Jajal, N. J. Eliopoulos, J. C. Davis, G. K. Thiravathukal,
+      K. Y.-J. Yun, H.-W. Dong, Y.-H. Lu"
+    title: 'On a Separate Note: Robust Score-Informed Note Separation with a Two-Stream
+      TFC–TDF U-Net and Adaptive Set Ownership'
+    venue: Preprint
   - authors: "**B. Chou**, P. Jajal, N. J. Eliopoulos, J. C. Davis, G. K. Thiravathukal,
       K. Y.-J. Yun, Y.-H. Lu"
     title: 'LadderSym: A Multimodal Interleaved Transformer for Music Practice Error
