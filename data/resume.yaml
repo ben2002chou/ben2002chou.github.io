@@ -116,6 +116,7 @@ resume:
     title: 'On a Separate Note: Robust Score-Informed Note Separation with a Two-Stream
       TFC–TDF U-Net and Adaptive Set Ownership'
     venue: Preprint
+    link: https://arxiv.org/abs/2609.29071
   - authors: "**B. Chou**, P. Jajal, N. J. Eliopoulos, J. C. Davis, G. K. Thiravathukal,
       K. Y.-J. Yun, Y.-H. Lu"
     title: 'LadderSym: A Multimodal Interleaved Transformer for Music Practice Error

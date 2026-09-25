@@ -115,6 +115,7 @@ project_blocks = (resume['projects'] || []).map do |project|
   if project_links[title]
     link_label = title == "NoteSep: Score-Informed Note Separation" ? "Interactive demo" : "GitHub"
     lines << "[#{link_label}](#{project_links[title]})"
+    lines[-1] += " · [Preprint](https://arxiv.org/abs/2609.29071)" if title == "NoteSep: Score-Informed Note Separation"
   end
   project_assets = {
     "Improving Developer Code Understanding with GitHub Issues and Retrieval-Augmented Generation" => {
@@ -202,6 +203,9 @@ publication_lines = (resume['publications'] || []).map do |pub|
   end
   line += " ([link](#{link}))" if link && !link.to_s.empty?
   extra_links = {
+    "On a Separate Note: Robust Score-Informed Note Separation with a Two-Stream TFC–TDF U-Net and Adaptive Set Ownership" => {
+      demo: "https://benschou.com/notesep/"
+    },
     "Detecting Performance Errors with Transformers" => {
       code: "https://github.com/ben2002chou/Polytune",
       video: "https://underline.io/lecture/111588-detecting-music-performance-errors-with-transformers"
@@ -217,6 +221,7 @@ publication_lines = (resume['publications'] || []).map do |pub|
     links = []
     links << "[Code](#{extra_links[title][:code]})" if extra_links[title][:code]
     links << "[Video](#{extra_links[title][:video]})" if extra_links[title][:video]
+    links << "[Demo](#{extra_links[title][:demo]})" if extra_links[title][:demo]
     line += " " + links.join(' · ') unless links.empty?
   end
   line

@@ -19,7 +19,7 @@ Resume: [PDF](/resume-02bfaf6d.pdf)
 More details: [Full Experience →](/experience/)
 
 ## News
-- (Sep 2026) New preprint: *On a Separate Note: Robust Score-Informed Note Separation with a Two-Stream TFC–TDF U-Net and Adaptive Set Ownership*. ([Interactive demo](https://benschou.com/notesep/))
+- (Sep 2026) New preprint: *On a Separate Note: Robust Score-Informed Note Separation with a Two-Stream TFC–TDF U-Net and Adaptive Set Ownership*. ([arXiv](https://arxiv.org/abs/2609.29071) · [Interactive demo](https://benschou.com/notesep/))
 - (Apr 2026) *ICLAD: In-Context Learning with Comparison-Guidance for Audio Deepfake Detection* accepted to <span class="news-highlight">ACL 2026 Findings</span>. ([arXiv](https://arxiv.org/abs/2604.16749))
 - (Apr 2026) Started as PhD Resident at Google X in Mountain View (Apr-Jul 2026).
 - (Mar 2026) Incoming Audio Applied Research Scientist Intern at Shure (Jul-Sep 2026).

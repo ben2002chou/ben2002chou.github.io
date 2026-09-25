@@ -5,7 +5,7 @@ date = "2026-01-22"
 +++
 
 ### NoteSep: Score-Informed Note Separation
-[Interactive demo](https://benschou.com/notesep/)
+[Interactive demo](https://benschou.com/notesep/) · [Preprint](https://arxiv.org/abs/2609.29071)
 - Interactive demo for score-informed note extraction and separation in polyphonic audio.
 
 ### Improving Developer Code Understanding with GitHub Issues and Retrieval-Augmented Generation

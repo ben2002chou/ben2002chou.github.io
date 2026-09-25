@@ -4,7 +4,7 @@ description = "Selected publications and preprints."
 date = "2026-01-22"
 +++
 
-- **On a Separate Note: Robust Score-Informed Note Separation with a Two-Stream TFC–TDF U-Net and Adaptive Set Ownership** — Benjamin Shiue-Hal Chou, Purvish Jajal, Nicholas John Eliopoulos, James C. Davis, George K. Thiruvathukal, Kristen Yeon-Ji Yun, Hao-Wen Dong, Yung-Hsiang Lu. *Preprint*
+- **On a Separate Note: Robust Score-Informed Note Separation with a Two-Stream TFC–TDF U-Net and Adaptive Set Ownership** — Benjamin Shiue-Hal Chou, Purvish Jajal, Nicholas John Eliopoulos, James C. Davis, George K. Thiruvathukal, Kristen Yeon-Ji Yun, Hao-Wen Dong, Yung-Hsiang Lu. *Preprint* ([arXiv](https://arxiv.org/abs/2609.29071) · [Demo](https://benschou.com/notesep/))
 - **LadderSym: A Multimodal Interleaved Transformer for Music Practice Error Detection** — Benjamin Shiue-Hal Chou, Purvish Jajal, Nick John Eliopoulos, James C. Davis, George K. Thiruvathukal, Kristen Yeon-Ji Yun, Yung-Hsiang Lu. **ICLR 2026** <span class="publication-note">(top 3.85 %)</span> ([link](https://arxiv.org/abs/2510.08580))
 - **AdaPerceiver: Transformers with Adaptive Width, Depth, and Tokens** — Purvish Jajal, Nick John Eliopoulos, Benjamin Shiue-Hal Chou, George K. Thiruvathukal, James C. Davis, Yung-Hsiang Lu. **CVPR Findings 2026** ([link](https://arxiv.org/pdf/2511.18105)) [Code](https://github.com/pjjajal/adaperceiver-public)
 - **ICLAD: In-Context Learning with Comparison-Guidance for Audio Deepfake Detection** — Benjamin Shiue-Hal Chou, Yi Zhu, Surya Koppisetti. **ACL 2026 Findings** ([arXiv](https://arxiv.org/abs/2604.16749))
