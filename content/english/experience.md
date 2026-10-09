@@ -25,9 +25,10 @@ date = "2026-01-22"
   </div>
   <div class="experience-entry__content">
     <h3 class="experience-entry__role">Audio Applied Research Scientist Intern <span class="experience-entry__org">— Shure</span></h3>
-    <p class="experience-entry__meta">Niles, IL · Jul &#39;26 – Sep &#39;26</p>
+    <p class="experience-entry__meta">Niles, IL · Jul 2026 - Present</p>
     <div class="experience-entry__details">
-      <p class="experience-entry__detail">Developing real-time speech enhancement and separation systems.</p>
+      <p class="experience-entry__detail">Researching personalized speech enhancement and target speech extraction for multi-speaker conferencing systems.</p>
+      <p class="experience-entry__detail">Investigating small, real-time-capable generative models for conferencing audio (flow matching, MeanFlow).</p>
     </div>
   </div>
 </div>

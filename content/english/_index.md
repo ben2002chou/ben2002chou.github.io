@@ -3,11 +3,11 @@ title = "Benjamin Chou"
 summary = "PhD student at Purdue University researching AI/ML for audio, music, and multimodal systems."
 +++
 
-I’m a 4th-year ECE PhD student at Purdue University, supervised by [Dr. Yung-Hsiang Lu](https://yhlu.net). My work focuses on audio and music machine learning, specifically music practice error detection, music source separation, and reliable detection of synthetic and manipulated media with Audio Large Language Models.
+I’m a final-year ECE PhD student at Purdue University, supervised by [Dr. Yung-Hsiang Lu](https://yhlu.net). My work focuses on audio and music machine learning, specifically music practice error detection, music source separation, and reliable detection of synthetic and manipulated media with Audio Large Language Models.
 
-**Currently:** Graduate Research Assistant at Purdue University; Audio Applied Research Scientist Intern at Shure (Jul-Sep 2026).
+**Currently:** Graduate Research Assistant at Purdue University; Audio Applied Research Scientist Intern at Shure (Jul 2026–present).
 
-Resume: [PDF](/resume-02bfaf6d.pdf)
+Resume: [PDF](/resume-aa15b454.pdf)
 
 **Experience (summary):**
 - PhD Resident @ Google X (Apr-Jul 2026)

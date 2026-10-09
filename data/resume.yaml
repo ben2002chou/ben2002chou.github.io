@@ -4,14 +4,10 @@ resume:
     name: Benjamin Chou
     contact: 765-409-1859 | ben2002chou@gmail.com | linkedin.com/in/benjamin-chou-6aa058228
       | benschou.com | US Citizen
-  professional_summary: '4th-year ECE PhD Student at Purdue University specializing
-    in AI/ML research for audio, music, and multimodal systems.  Researching generative
-    model steering, stem separation, Transformers for error detection, and training-free
-    strategies for Multimodal LLMs.  I am proficient in Audio DSP, Python, PyTorch,
-    TensorFlow, and HPC clusters. I also have organizational and communication skills
-    (experience organizing 3 AI4Music workshops).
-
-'
+  professional_summary: 'Final-year Purdue ECE PhD student researching audio, music,
+    and multimodal AI/ML: personalized speech enhancement, note-level music separation,
+    music error detection with Transformers, and training-free Multimodal LLMs. Proficient
+    in Audio DSP, Python, PyTorch, TensorFlow, and HPC. Organized three AI4Music workshops.'
   skills:
   - "**LLM & Agent Systems:** LangChain, Vertex AI, RAG, coding agents, agent skills,
     loop engineering, knowledge graphs, deep research, web surfing"
@@ -23,12 +19,14 @@ resume:
   - degree: Ph.D. in Electrical & Computer Engineering
     institution: Purdue University
     location: West Lafayette, IN
-    date: 2023 -- Present
+    date: 2023 - Present
     gpa: 3.8/4.0
+    details:
+    - 'Expected graduation: Sep 2027 (tentative)'
   - degree: B.Sc. in Electrical Engineering
     institution: National Cheng Kung University
     location: Tainan, Taiwan
-    date: 2020 -- 2023
+    date: 2020 - 2023
     gpa: 4.0/4.3
     details: []
   work_experience:
@@ -45,9 +43,12 @@ resume:
   - title: Audio Applied Research Scientist Intern
     organization: Shure
     location: Niles, IL
-    date: Jul '26 – Sep '26
+    date: Jul 2026 - Present
     bullet_points:
-    - Developing real-time speech enhancement and separation systems.
+    - Researching personalized speech enhancement and target speech extraction for
+      multi-speaker conferencing systems.
+    - Investigating small, real-time-capable generative models for conferencing audio
+      (flow matching, MeanFlow).
   - title: Applied Research Scientist Intern
     organization: Reality Defender
     location: Manhattan, New York (remote)
@@ -115,7 +116,7 @@ resume:
       K. Y.-J. Yun, H.-W. Dong, Y.-H. Lu"
     title: 'On a Separate Note: Robust Score-Informed Note Separation with a Two-Stream
       TFC–TDF U-Net and Adaptive Set Ownership'
-    venue: Preprint
+    venue: Submitted to ICASSP 2027
     link: https://arxiv.org/abs/2609.29071
   - authors: "**B. Chou**, P. Jajal, N. J. Eliopoulos, J. C. Davis, G. K. Thiravathukal,
       K. Y.-J. Yun, Y.-H. Lu"

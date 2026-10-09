@@ -4,7 +4,7 @@ require 'fileutils'
 require 'cgi'
 
 root = File.expand_path('..', __dir__)
-source = ENV['RESUME_SOURCE'] || '/Users/Ben/Code/ben_resume/resume_linkedln.yaml'
+source = ENV['RESUME_SOURCE'] || File.join(root, 'data', 'resume.yaml')
 
 unless File.exist?(source)
   warn "Resume source not found: #{source}"
@@ -270,7 +270,9 @@ pages = {
   'contact.md' => [front_matter.call('Contact', 'Get in touch.'), contact_body]
 }
 
+selected_pages = ENV['RESUME_PAGES']&.split(',')&.map { |name| "#{name.strip}.md" }
 pages.each do |filename, parts|
+  next if selected_pages && !selected_pages.include?(filename)
   File.write(File.join(content_dir, filename), parts.join("\n\n").strip + "\n")
 end
 
