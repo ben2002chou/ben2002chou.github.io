@@ -7,10 +7,10 @@ I’m a final-year ECE PhD student at Purdue University, supervised by [Dr. Yung
 
 **Currently:** Graduate Research Assistant at Purdue University; Audio Applied Research Scientist Intern at Shure (Jul 2026–present).
 
-Resume: [PDF](/resume-aa15b454.pdf)
+Resume: [PDF](/resume-44b14ff4.pdf)
 
 **Experience (summary):**
-- PhD Resident @ Google X (Apr-Jul 2026)
+- PhD Resident @ Google X (Apr-Jul 2026): automated agent development with LLM graph orchestration and loop engineering; built a code-review agent that replaced the team's internal agent.
 - Audio Applied Research Scientist Intern @ Shure (2026)
 - Applied Research Scientist Intern @ Reality Defender (2025)
 - Graduate Research Assistant @ Purdue University (2024–present)

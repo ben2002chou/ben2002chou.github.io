@@ -35,10 +35,11 @@ resume:
     location: Mountain View, CA
     date: Apr '26 – Jul '26
     bullet_points:
-    - Building a fully autonomous supply chain with LLM autonomous-loop orchestration
-      and knowledge graphs for LLMs to coordinate planning, reasoning, and execution.
-    - Developing LLM agents for code review, deep research, and web surfing (**LangChain**,
-      **Vertex AI**, **RAG**, **coding agents**, **agent skills**, **loop engineering**,
+    - Automated agent development with LLM graph orchestration and loop engineering,
+      producing prototypes with novel capabilities that matched or exceeded those
+      of human-designed pipelines.
+    - Built an LLM code-review agent that replaced the team's internal agent with
+      stronger review capabilities (**LangChain**, **Vertex AI**, **RAG**, **agent skills**,
       **Google Cloud Platform (GCP)**, **GitHub CLI**, **Linear**).
   - title: Audio Applied Research Scientist Intern
     organization: Shure

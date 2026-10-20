@@ -13,8 +13,8 @@ date = "2026-01-22"
     <h3 class="experience-entry__role">PhD Resident <span class="experience-entry__org">— Google X</span></h3>
     <p class="experience-entry__meta">Mountain View, CA · Apr &#39;26 – Jul &#39;26</p>
     <div class="experience-entry__details">
-      <p class="experience-entry__detail">Building a fully autonomous supply chain with LLM autonomous-loop orchestration and knowledge graphs for LLMs to coordinate planning, reasoning, and execution.</p>
-      <p class="experience-entry__detail">Developing LLM agents for code review, deep research, and web surfing with LangChain, Vertex AI, RAG, coding agents, agent skills, loop engineering, Google Cloud Platform (GCP), GitHub CLI, and Linear.</p>
+      <p class="experience-entry__detail">Automated agent development with LLM graph orchestration and loop engineering, producing prototypes with novel capabilities that matched or exceeded those of human-designed pipelines.</p>
+      <p class="experience-entry__detail">Built an LLM code-review agent that replaced the team's internal agent with stronger review capabilities (LangChain, Vertex AI, RAG, agent skills, Google Cloud Platform (GCP), GitHub CLI, Linear).</p>
     </div>
   </div>
 </div>
