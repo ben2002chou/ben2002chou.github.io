@@ -30,6 +30,13 @@ resume:
     gpa: 4.0/4.3
     details: []
   work_experience:
+  - title: Returning Intern
+    organization: Google X
+    location: Mountain View, CA
+    date: Jan '27 – Jul '27
+    bullet_points:
+    - Returning to Google X to continue work on LLM graph orchestration, loop engineering,
+      and code-review agents.
   - title: PhD Resident
     organization: Google X
     location: Mountain View, CA
